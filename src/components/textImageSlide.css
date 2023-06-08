@@ -1,0 +1,58 @@
+/* *{
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	letter-spacing: 1.2px ;
+	-webkit-font-smoothing: antialiased;
+} */
+
+.text-image-wrapper{
+	font-family: 'Poppins', sans-serif ;
+	/* background-color: #121212 ; */
+	overflow: hidden;
+	/* color: #fff ; */
+}
+/* h1{
+	text-align: center;
+	font-size: 60px ;
+	padding: 80px ;
+} */
+.text-image-main{
+	padding: 60px ;
+	height: 100vh ;
+	position: relative;
+	width: 100% ;
+}
+
+.filled-text{
+	position: absolute;
+	top: 200px ;
+	left: 100px ;
+	z-index: 1 ;
+	font-size: 100px ;
+	font-weight: 600 ;
+	color: white;
+}
+
+.outline-text {
+	position: absolute;
+	top: 200px ;
+	left: 100px ;
+	z-index: 3 ;
+	font-size: 100px ;
+	font-weight: 600;
+/*   https://css-tricks.com/adding-stroke-to-web-text/ */
+	-webkit-text-stroke: 4px ghostwhite;
+  text-border: 4px ghostwhite;
+	color: transparent;
+}
+
+.text-image-image {
+	position: absolute;
+	top: 50px ;
+	left: 600px ;
+	z-index: 2 ;
+	height: 400px ;
+	width: auto ;
+}

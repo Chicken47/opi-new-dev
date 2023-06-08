@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:700");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Raleway, sans-serif;
+	margin: 0;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+h1 {
+	font-size: 6rem;
+	margin: 0;
+}
+
+h2 {
+	font-size: 3.5rem;
+	margin: 0;
+}
+
+.wrapper {
+	position: relative;
+}
+
+section {
+	min-height: 100vh;
+	padding: 1rem;
+	position: relative;
+	background-color: cornsilk;
+}
+
+section h1,
+section h2 {
+	position: sticky;
+	top: 1rem;
+	left: 0;
+}
+
+[data-section="2"] {
+	min-height: 300vh;
+	background-color: pink;
+}
+
+[data-section="3"] {
+	min-height: 300vh;
+	background-color: lightblue;
+}
+
+.shape {
+	width: 10rem;
+	height: 10rem;
+	background-color: deeppink;
+}
+
+.timeline {
+	width: 2rem;
+	height: 2rem;
+	background-color: blue;
+	border-radius: 50%;
+	top: -0.8rem;
+	position: relative;
+}
+
+.timeline-track {
+	position: fixed;
+	top: calc(100vh - 5rem);
+	left: 1rem;
+	width: calc(100% - 2rem);
+	height: 0.4rem;
+	background-color: cornflowerblue;
+}
