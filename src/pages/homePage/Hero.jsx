@@ -40,10 +40,10 @@ const Hero = () => {
       </div>
       <div className="flex w-full h-full py-5">
         <div className="w-2/5 p-16 flex flex-col items-start justify-center">
-          <span className="font-extrabold text-[20px] md:text-[30px] text-left w-full text-black">
+          <span className="font-extrabold font-sans text-[22px] md:text-[30px] text-left w-full text-black">
             Navigating Challenges
           </span>
-          <span className="font-extrabold text-[20px] md:text-[30px] text-left text-black">
+          <span className="font-extrabold text-[20px] font-sans md:text-[30px] text-left text-black">
             Creating Impact
           </span>
           <p className="text-black max-w-[600px] text-[14px] md:text-[18px] text-left">
@@ -55,31 +55,37 @@ const Hero = () => {
             About Us
           </button>
         </div>
-        <div className="w-3/5 flex flex-col space-y-5">
+        <div className="w-3/5 flex flex-col space-y-5 items-center justify-center">
           <div className="flex space-x-5">
-            <HoverCard
-              title="Health"
-              subtitle="We provide expertise in health policy, system strengthening, program evaluation, and innovative interventions."
-              image="/images/png/about-focus-one.png"
-              marginTop={30}
-              width={250}
-              height={250}
-            />
-            <HoverCard
-              title="FinTech"
-              subtitle="We guide organizations through financial technology complexities, offering regulatory analysis, market assessments, and inclusive digital solutions."
-              image="/images/png/about-focus-two.png"
-              width={180}
-              height={300}
-            />
-            <HoverCard
-              title="Gender Equity"
-              subtitle="We promote gender equity through mainstreaming, violence prevention, economic empowerment, and responsive evaluation."
-              image="/images/png/services-two.png"
-              marginTop={100}
-              width={250}
-              height={220}
-            />
+            <div>
+              <HoverCard
+                title="Health"
+                subtitle="We provide expertise in health policy, system strengthening, program evaluation, and innovative interventions."
+                image="/images/png/about-focus-one.png"
+                marginTop={30}
+                width={250}
+                height={250}
+              />
+            </div>
+            <div>
+              <HoverCard
+                title="FinTech"
+                subtitle="We guide organizations through financial technology complexities, offering regulatory analysis, market assessments, and inclusive digital solutions."
+                image="/images/png/about-focus-two.png"
+                width={180}
+                height={300}
+              />
+            </div>
+            <div>
+              <HoverCard
+                title="Gender Equity"
+                subtitle="We promote gender equity through mainstreaming, violence prevention, economic empowerment, and responsive evaluation."
+                image="/images/png/services-two.png"
+                marginTop={100}
+                width={250}
+                height={220}
+              />
+            </div>
           </div>
           <div className="flex space-x-5">
             <HoverCard
