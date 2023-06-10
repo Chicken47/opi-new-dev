@@ -44,7 +44,6 @@ const AboutHero = () => {
         0.8,
         {
           y: -1200,
-          skew: 90,
           stagger: {
             amount: 0.2,
           },
