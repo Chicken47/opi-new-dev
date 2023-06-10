@@ -119,13 +119,13 @@ const AboutHero = () => {
         <div className="w-2/5 p-16 flex flex-col items-start justify-center overflow-hidden">
           <span
             ref={(el) => (lineOneRef = el)}
-            className="font-extrabold font-sans text-[22px] md:text-[50px] text-left w-full text-white"
+            className="font-extrabold font-oswald text-[22px] md:text-[50px] text-left w-full text-white"
           >
             About Us
           </span>
           <p
             ref={(el) => (paraRef = el)}
-            className="text-white max-w-[600px] text-[14px] md:text-[16px] text-left"
+            className="text-white max-w-[600px] text-[14px] md:text-[20px] font-garamond text-left"
           >
             At OPI, we believe that policy and impact go hand in hand. Our
             multidisciplinary team brings together diverse backgrounds, ranging

@@ -39,7 +39,7 @@ const TextReveal = () => {
 
   return (
     <>
-      <div className="w-full py-64 bg-white reveal">
+      <div className="w-full py-20 bg-white reveal">
         <div ref={triggerRef} className="w-2/3 bg-white">
           {text.split("").map((letter, index) => (
             <span

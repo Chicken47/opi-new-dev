@@ -33,14 +33,14 @@ const ShortText = () => {
   return (
     <div className="flex justify-evenly px-20 pb-32">
       <div className="flex flex-col items-start py-40 w-1/2 px-20">
-        <span className={`text-[18px]`}>
+        <span className={`text-[20px] font-garamond`}>
           We are a dynamic consulting firm committed to driving positive change
           through innovative solutions and strategic partnerships. With our
           unique blend of expertise and passion, we empower organizations and
           governments to create meaningful impact and navigate complex
           challenges.
         </span>
-        <div className="px-8 py-2 mt-10 font-bold text-[#CE2273] uppercase transition-all bg-gray-200 border-2 border-[#CE2273] rounded cursor-pointer hover:border-gray-300 hover:bg-[#CE2273] hover:text-white hover:font-bold hover:border-2 hover:rounded-lg">
+        <div className="px-8 py-2 mt-10 font-bold text-ipink uppercase transition-all bg-gray-200 border-2 border-ipink rounded cursor-pointer hover:border-gray-300 hover:bg-[#CE2273] hover:text-white hover:font-bold hover:border-2 hover:rounded-lg">
           Check out more
         </div>
       </div>

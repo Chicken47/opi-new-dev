@@ -126,19 +126,19 @@ const Hero = () => {
         <div className="w-2/5 p-16 flex flex-col items-start justify-center overflow-hidden">
           <span
             ref={(el) => (lineOneRef = el)}
-            className="font-extrabold font-sans text-[22px] md:text-[30px] text-left w-full text-white"
+            className="font-extrabold font-oswald text-[22px] md:text-[50px] text-left w-full text-white"
           >
             Open for
           </span>
           <span
             ref={(el) => (lineTwoRef = el)}
-            className="font-extrabold text-[20px] font-sans md:text-[30px] text-left text-white"
+            className="font-extrabold text-[20px] font-oswald md:text-[45px] -mt-8 text-left text-white"
           >
-            Policy & Impact
+            Policy and Impact
           </span>
           <p
             ref={(el) => (paraRef = el)}
-            className="text-white max-w-[600px] text-[14px] md:text-[18px] text-left"
+            className="text-white max-w-[600px] font-garamond text-[14px] md:text-[18px] text-left"
           >
             Driving Positive Change through Innovative Solutions and Strategic
             Partnerships: Empowering Organisations to Navigate Complex

@@ -22,6 +22,9 @@ const ProvidedServices = () => {
   }, []);
   return (
     <div>
+      <span className="font-bold text-[50px] w-full text-center flex justify-center font-mont">
+        Our Services
+      </span>
       <div className="container">
         <div className="gallery">
           <div className="gallery__col">
