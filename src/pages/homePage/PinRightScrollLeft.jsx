@@ -253,7 +253,7 @@ const PinRightScrollLeft = () => {
             Learn
           </span>
           <div>
-            <span className={` text-white learn-desc font-bold`}>
+            <span className={` text-white learn-desc`}>
               We create innovative knowledge products and programs, empowering
               continuous learning and growth through research and evidence-based
               methodologies.
@@ -278,7 +278,7 @@ const PinRightScrollLeft = () => {
             Involve
           </span>
           <div>
-            <span className={` text-white involve-desc font-bold`}>
+            <span className={` text-white involve-desc`}>
               We foster strategic collaborations and partnerships, setting clear
               objectives to align with our clients' goals. By bringing together
               like-minded organizations and individuals, we amplify our
@@ -303,7 +303,7 @@ const PinRightScrollLeft = () => {
             Implement
           </span>
           <div>
-            <span className={` text-white implement-desc font-bold`}>
+            <span className={` text-white implement-desc`}>
               Our mission is to catalyze digital solutions, extending beyond
               traditional approaches, to support development and revenue models.
               We thrive in thematic areas, using cutting-edge technology to

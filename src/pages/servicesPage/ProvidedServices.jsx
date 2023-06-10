@@ -37,7 +37,6 @@ const ProvidedServices = () => {
                   />
                 </picture>
               </a>
-
               <div className="gallery__description flex flex-col">
                 <span className="font-extrabold text-[26px]">
                   Public Policy Development and Analysis
@@ -112,8 +111,8 @@ const ProvidedServices = () => {
                   foster collaboration.
                 </span>
               </div>
-                 </div>
-                 <div className="gallery__item">
+            </div>
+            <div className="gallery__item">
               <a href="#" className="gallery__link">
                 <picture className="gallery__picture">
                   <img
@@ -262,7 +261,6 @@ const ProvidedServices = () => {
                 </span>
               </div>
             </div>
-            
           </div>
         </div>
       </div>

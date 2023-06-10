@@ -3,12 +3,12 @@ import React from "react";
 const ShortText = () => {
   return (
     <div className="flex flex-col items-start py-40 pl-40 bg-gray-200">
-      <span className={` text-[22px] w-2/3`}>
+      <span className={` text-[18px] w-2/3`}>
         Partnering with passionate leaders and visionary entrepreneurs, we apply
         creativity, strategy, design and data to re-invent businesses, drive
         growth and orchestrate customer centric transformation.
       </span>
-      <span className={` text-[22px] w-2/3 mt-2`}>
+      <span className={` text-[18px] w-2/3 mt-2`}>
         Together we strive to shape a regenerative future that is both
         sustainable and inclusive for businesses, people and planet.
       </span>

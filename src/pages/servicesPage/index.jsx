@@ -7,7 +7,6 @@ import ProvidedServices from "./ProvidedServices";
 const ServicesPage = () => {
   return (
     <div className="w-full">
-      <Services />
       <ProvidedServices />
       <Footer />
     </div>

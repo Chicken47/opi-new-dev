@@ -4,22 +4,37 @@ import { gsap, Power3 } from "gsap";
 import "./intro.css";
 
 const Hero = () => {
-  const tl = gsap.timeline();
-  const ease = Power3.easeOut();
+  const ease = Power3.easeInOut();
   let introRef = useRef(null);
+  let hoverOne = useRef(null);
+  let hoverTwo = useRef(null);
+  let hoverThree = useRef(null);
+  let hoverFour = useRef(null);
+  let hoverFive = useRef(null);
 
   useEffect(() => {
-    setTimeout(() => {
-      tl.to(introRef, 0.5, {
+    let ctx = gsap.context(() => {
+      const tl = gsap.timeline();
+      tl.to(introRef, 0.3, {
         yPercent: -100,
+        opacity: 0.5,
         delay: 2,
         ease: ease,
       });
-    }, 0.6);
+      tl.from([hoverOne, hoverTwo, hoverThree, hoverFour, hoverFive], 1, {
+        y: -1200,
+        skew: 90,
+        stagger: {
+          amount: 0.4,
+        },
+        ease: ease,
+      });
+    });
+    return () => ctx.revert();
   }, []);
 
   return (
-    <div className="w-full h-screen flex flex-col relative overflow-hidden">
+    <div className="w-full h-screen flex flex-col relative overflow-hidden main-hero-wrapper">
       <div
         ref={(el) => (introRef = el)}
         className="bg-black absolute w-full h-full top-0 left-0 z-50 flex items-center justify-center"
@@ -28,9 +43,9 @@ const Hero = () => {
           <span className="title-inner">Welcome to opi</span>
         </span>
       </div>
-      <div className="w-full flex justify-between px-20">
+      <div className="w-full flex justify-between px-20 py-5">
         <div>
-          <img src="/images/png/HeaderLogo.png" className="h-[80px]" />
+          <img src="/images/png/opi.png" className="h-[40px]" />
         </div>
         <div className="flex items-center space-x-8">
           <span>About Us</span>
@@ -57,7 +72,7 @@ const Hero = () => {
         </div>
         <div className="w-3/5 flex flex-col space-y-5 items-center justify-center">
           <div className="flex space-x-5">
-            <div>
+            <div ref={(el) => (hoverOne = el)}>
               <HoverCard
                 title="Health"
                 subtitle="We provide expertise in health policy, system strengthening, program evaluation, and innovative interventions."
@@ -67,7 +82,7 @@ const Hero = () => {
                 height={250}
               />
             </div>
-            <div>
+            <div ref={(el) => (hoverTwo = el)}>
               <HoverCard
                 title="FinTech"
                 subtitle="We guide organizations through financial technology complexities, offering regulatory analysis, market assessments, and inclusive digital solutions."
@@ -76,34 +91,38 @@ const Hero = () => {
                 height={300}
               />
             </div>
-            <div>
+            <div ref={(el) => (hoverThree = el)}>
               <HoverCard
                 title="Gender Equity"
                 subtitle="We promote gender equity through mainstreaming, violence prevention, economic empowerment, and responsive evaluation."
                 image="/images/png/services-two.png"
-                marginTop={100}
+                marginTop={50}
                 width={250}
                 height={220}
               />
             </div>
           </div>
           <div className="flex space-x-5">
-            <HoverCard
-              title="Climate"
-              subtitle="Our services include climate policy, impact assessments, green growth strategies, and climate adaptation/mitigation project design."
-              image="/images/png/about-focus-four.png"
-              marginLeft={20}
-              width={350}
-              height={300}
-            />
-            <HoverCard
-              title="Policy Analysis"
-              subtitle="Our rigorous analysis covers research, impact assessments, and concise briefs for informed strategies."
-              image="/images/png/about-focus-five.png"
-              marginTop={30}
-              width={350}
-              height={250}
-            />
+            <div ref={(el) => (hoverFour = el)}>
+              <HoverCard
+                title="Climate"
+                subtitle="Our services include climate policy, impact assessments, green growth strategies, and climate adaptation/mitigation project design."
+                image="/images/png/about-focus-four.png"
+                marginLeft={20}
+                width={350}
+                height={300}
+              />
+            </div>
+            <div ref={(el) => (hoverFive = el)}>
+              <HoverCard
+                title="Policy Analysis"
+                subtitle="Our rigorous analysis covers research, impact assessments, and concise briefs for informed strategies."
+                image="/images/png/about-focus-five.png"
+                marginTop={30}
+                width={350}
+                height={250}
+              />
+            </div>
           </div>
         </div>
       </div>
