@@ -23,8 +23,6 @@ const ProvidedServices = () => {
   return (
     <div>
       <div className="container">
-        <h1 className="title">Our Projects</h1>
-
         <div className="gallery">
           <div className="gallery__col">
             <div className="gallery__item">
@@ -141,7 +139,6 @@ const ProvidedServices = () => {
               </div>
             </div>
           </div>
-
           <div className="gallery__col">
             <div className="gallery__item">
               <a href="#" className="gallery__link">

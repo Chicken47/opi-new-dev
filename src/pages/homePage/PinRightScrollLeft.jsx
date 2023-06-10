@@ -123,58 +123,6 @@ const PinRightScrollLeft = () => {
         delay: 0.1,
       }
     );
-
-    gsap.fromTo(
-      ".learn-back-image",
-      { scale: 0, opacity: 0.1 },
-      {
-        scale: 1,
-        opacity: 0.6,
-        x: 200,
-        y: -100,
-        scrollTrigger: {
-          trigger: ".learn-back-image",
-          start: "top bottom",
-          end: "top center",
-          scrub: true,
-        },
-      }
-    );
-
-    gsap.fromTo(
-      ".involve-back-image",
-      { scale: 0, opacity: 0.1 },
-      {
-        scale: 1,
-        opacity: 0.6,
-        x: 100,
-        y: 0,
-        scrollTrigger: {
-          trigger: ".involve-back-image",
-          start: "top bottom",
-          end: "top center",
-          scrub: true,
-        },
-      }
-    );
-
-    gsap.fromTo(
-      ".implement-back-image",
-      { scale: 0, opacity: 0.1 },
-      {
-        scale: 1,
-        opacity: 0.6,
-        x: 30,
-        y: -100,
-        scrollTrigger: {
-          trigger: ".implement-back-image",
-          start: "top bottom",
-          end: "top center",
-          scrub: true,
-        },
-      }
-    );
-
     gsap.fromTo(
       ".learn-header",
       { opacity: 0, x: -100 },
@@ -182,9 +130,10 @@ const PinRightScrollLeft = () => {
         opacity: 1,
         x: 0,
         scrollTrigger: {
-          trigger: ".learn-image",
+          trigger: ".learn-text",
           start: "top bottom",
-          end: "bottom 50%",
+          end: "bottom center",
+          scrub: true,
         },
       }
     );
@@ -195,9 +144,10 @@ const PinRightScrollLeft = () => {
         x: 0,
         opacity: 1,
         scrollTrigger: {
-          trigger: ".involve-image",
+          trigger: ".involve-text",
           start: "top bottom",
-          end: "bottom 50%",
+          end: "bottom center",
+          scrub: true,
         },
       }
     );
@@ -209,22 +159,21 @@ const PinRightScrollLeft = () => {
         opacity: 1,
         fontSize: 60,
         scrollTrigger: {
-          trigger: ".implement-image",
+          trigger: ".implement-text",
           start: "top bottom",
-          end: "bottom 50%",
+          end: "bottom center",
+          scrub: true,
         },
       }
     );
-    gsap.utils.toArray(".gallery__img").forEach((image) => {
-      gsap.to(image, {
+    gsap.utils.toArray(".descriptionn").forEach((image) => {
+      gsap.to(".descriptionn", {
         y: "-23%",
         scrollTrigger: {
-          trigger: image,
+          trigger: ".descriptionn",
           start: "top bottom",
           end: "bottom top",
           scrub: 1,
-          // markers: true,
-          endTrigger: image,
         },
       });
     });
@@ -241,7 +190,7 @@ const PinRightScrollLeft = () => {
         id="left"
         className="w-1/2 px-16 overflow-hidden bg-[#02315E]"
       >
-        <div className="relative z-20 flex flex-col justify-center h-screen p-20 learn">
+        <div className="relative z-20 flex flex-col justify-center h-[80vh] p-20 learn">
           {/* <img
             src="/images/png/pillarBg1.png"
             alt=""
@@ -253,7 +202,7 @@ const PinRightScrollLeft = () => {
             Learn
           </span>
           <div>
-            <span className={` text-white learn-desc`}>
+            <span className={` text-white descriptionn`}>
               We create innovative knowledge products and programs, empowering
               continuous learning and growth through research and evidence-based
               methodologies.
@@ -261,11 +210,11 @@ const PinRightScrollLeft = () => {
             <img
               src="/images/png/learnImg.png"
               alt=""
-              className="w-[300px] mt-20 float-right mr-20 learn-image"
+              className="w-[300px] mt-20 float-right shadow-xl rounded shadow-black learn-image"
             />
           </div>
         </div>
-        <div className="relative z-20 flex flex-col justify-center h-screen p-20 involve">
+        <div className="relative z-20 flex flex-col justify-center h-[80vh] p-20 involve">
           {/* <img
             src="/images/png/pillarBg2.png"
             alt=""
@@ -278,7 +227,7 @@ const PinRightScrollLeft = () => {
             Involve
           </span>
           <div>
-            <span className={` text-white involve-desc`}>
+            <span className={` text-white descriptionn`}>
               We foster strategic collaborations and partnerships, setting clear
               objectives to align with our clients' goals. By bringing together
               like-minded organizations and individuals, we amplify our
@@ -287,11 +236,11 @@ const PinRightScrollLeft = () => {
             <img
               src="/images/png/bgImg.png"
               alt=""
-              className="w-[300px] mt-20 float-right mr-20 involve-image"
+              className="w-[300px] mt-16 float-right involve-image shadow-xl shadow-black rounded"
             />
           </div>
         </div>
-        <div className="relative z-20 flex flex-col justify-center h-screen p-20 implement">
+        <div className="relative z-20 flex flex-col justify-center h-[80vh] p-20 implement">
           {/* <img
             src="/images/png/pillarBg3.png"
             alt=""
@@ -303,7 +252,7 @@ const PinRightScrollLeft = () => {
             Implement
           </span>
           <div>
-            <span className={` text-white implement-desc`}>
+            <span className={` text-white descriptionn z-50`}>
               Our mission is to catalyze digital solutions, extending beyond
               traditional approaches, to support development and revenue models.
               We thrive in thematic areas, using cutting-edge technology to
@@ -313,7 +262,7 @@ const PinRightScrollLeft = () => {
             <img
               src="/images/png/bgImg1.png"
               alt=""
-              className="w-[300px] mt-20 float-right mr-20 implement-image"
+              className="w-[300px] mt-20 float-right top-0 implement-image shadow-xl shadow-black rounded"
             />
           </div>
         </div>

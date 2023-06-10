@@ -2,9 +2,8 @@ import React, { useEffect, useRef } from "react";
 import HoverCard from "../../components/HoverCard";
 import { gsap, Power3 } from "gsap";
 import { useNavigate } from "react-router-dom";
-import "./intro.css";
 
-const Hero = () => {
+const ServicesHero = () => {
   const ease = Power3.easeInOut();
   let introRef = useRef(null);
   let logoRef = useRef(null);
@@ -24,12 +23,6 @@ const Hero = () => {
   useEffect(() => {
     let ctx = gsap.context(() => {
       const tl = gsap.timeline();
-      tl.to(introRef, 0.3, {
-        yPercent: -100,
-        opacity: 0.5,
-        delay: 2,
-        ease: ease,
-      });
       tl.from(logoRef, 0.2, {
         y: -100,
         ease: ease,
@@ -59,7 +52,7 @@ const Hero = () => {
         },
         "-=1"
       );
-      tl.from([lineOneRef, lineTwoRef, paraRef], 0.5, {
+      tl.from([lineOneRef, paraRef], 0.5, {
         y: 50,
         ease: ease,
         opacity: 0,
@@ -73,16 +66,8 @@ const Hero = () => {
 
   return (
     <div className="w-full h-screen flex flex-col relative overflow-hidden main-hero-wrapper">
-      <div className="absolute w-full h-full bg-img bg-black">
+      <div className="absolute w-full h-full bg-img bg-black ">
         <img src="/images/png/about-focus-two.png" className="opacity-10" />
-      </div>
-      <div
-        ref={(el) => (introRef = el)}
-        className="bg-black absolute w-full h-full top-0 left-0 z-50 flex items-center justify-center"
-      >
-        <span className="z-50 text-white intro-title">
-          <span className="title-inner">Welcome to opi</span>
-        </span>
       </div>
       <div className="w-full flex justify-between px-20 py-5">
         <div
@@ -127,23 +112,19 @@ const Hero = () => {
         <div className="w-2/5 p-16 flex flex-col items-start justify-center overflow-hidden">
           <span
             ref={(el) => (lineOneRef = el)}
-            className="font-extrabold font-sans text-[22px] md:text-[30px] text-left w-full text-white"
+            className="font-extrabold font-sans text-[22px] md:text-[50px] text-left w-full text-white"
           >
-            Open for
-          </span>
-          <span
-            ref={(el) => (lineTwoRef = el)}
-            className="font-extrabold text-[20px] font-sans md:text-[30px] text-left text-white"
-          >
-            Policy & Impact
+            Our Services
           </span>
           <p
             ref={(el) => (paraRef = el)}
-            className="text-white max-w-[600px] text-[14px] md:text-[18px] text-left"
+            className="text-white max-w-[600px] text-[14px] md:text-[16px] text-left"
           >
-            Driving Positive Change through Innovative Solutions and Strategic
-            Partnerships: Empowering Organisations to Navigate Complex
-            Challenges
+            We understand that each client and project is unique, and we pride
+            ourselves on our ability to tailor our services to specific needs
+            and contexts. Get in touch with us today to explore how we can
+            collaborate to achieve your organization's goals and create a
+            lasting impact.
           </p>
           {/* <button className="px-6 py-1 mt-[2vh] rounded hover:shadow-2xl hover:shadow-slate-800 transition-all border border-white bg-black text-white font-bold uppercase text-[14px]">
             About Us
@@ -209,4 +190,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default ServicesHero;
