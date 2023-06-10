@@ -9,7 +9,7 @@ const ShortText = () => {
     gsap.registerPlugin(ScrollTrigger);
     let ctx = gsap.context(() => {
       gsap.fromTo(
-        shortImageRef,
+        ".aboutimage",
         {
           yPercent: 20,
           scale: 1,
@@ -19,7 +19,7 @@ const ShortText = () => {
           scale: 2,
           ease: ease,
           scrollTrigger: {
-            trigger: shortImageRef,
+            trigger: ".aboutimage",
             scrub: true,
             start: "top bottom",
             end: "bottom top",
@@ -47,8 +47,7 @@ const ShortText = () => {
       <div className="w-1/2 flex items-center justify-center overflow-hidden">
         <img
           src="/images/png/bgimg1.png"
-          alt=""
-          className="object-cover w-4/5 object-center overflow-hidden h-[300px]"
+          className="object-cover w-4/5 object-center overflow-hidden h-[300px] aboutimage"
           ref={(el) => (shortImageRef = el)}
         />
       </div>
