@@ -47,88 +47,89 @@ const PinLeftOne = () => {
   }, []);
 
   return (
-    <div
-      ref={(el) => (triggerRef = el)}
-      className="flex justify-start w-full trigger overflow-hidden"
-    >
+    <div className="w-full flex justify-center">
       <div
-        ref={(el) => (sectionRef = el)}
-        id="left"
-        className="w-1/2 p-16 flex flex-col overflow-hidden bg-white sticky"
+        ref={(el) => (triggerRef = el)}
+        className="flex max-w-[1366px] justify-start w-full trigger overflow-hidden"
       >
-        <span className="text-[50px] w-full text-left font-bold font-inter text-pblue">
-          Implement
-        </span>
-        <span className="font-jose w-full text-left text-[20px] text-black">
-          Our mission is to catalyze digital solutions, extending beyond
-          traditional approaches, to support development and revenue models. We
-          thrive in thematic areas, using cutting-edge technology to drive
-          impactful change. Join us in embracing digital transformation and
-          exploring new frontiers together.
-        </span>
-        <div className="overflow-hidden mt-10 shadow-xl">
-          <img
-            src="/images/png/about-focus-four.png"
-            alt=""
-            className="plsro-image"
-          />
-        </div>
-      </div>
-      <div
-        id="right"
-        className={`w-1/2 flex flex-col overflow-hidden bg-white`}
-      >
-        <div className="h-auto py-20 flex flex-col">
-          <span
-            id="slide-text-two"
-            className="text-[32px] font-inter font-bold text-pblue"
-          >
-            Consortium Building and Partnerships
+        <div
+          ref={(el) => (sectionRef = el)}
+          id="left"
+          className="w-1/2 p-16 flex flex-col overflow-hidden bg-white sticky"
+        >
+          <span className="text-[50px] w-full text-left font-bold font-inter text-pblue">
+            Implement
           </span>
-          <div className="flex flex-col space-y-5 mt-16">
-            <span
-              id="slide-text-two"
-              className="text-ipink font-mont font-bold text-[20px]"
-            >
-              Capacity Building
-            </span>
-            <span
-              id="slide-text-two"
-              className="text-black font-jose text-[20px] max-w-[450px]"
-            >
-              Enhancing skills and knowledge through targeted trainings and
-              development programs.
-            </span>{" "}
-            <span
-              id="slide-text-two"
-              className="text-ipink font-mont font-bold text-[20px]"
-            >
-              Technical Assistance
-            </span>
-            <span
-              id="slide-text-two"
-              className="text-black font-jose text-[20px] max-w-[450px]"
-            >
-              Mobilizing resources and providing early-stage support to startups
-              for growth and success.
-            </span>{" "}
-            <span
-              id="slide-text-two"
-              className="text-ipink font-mont font-bold text-[20px]"
-            >
-              Catalytic Funding
-            </span>
-            <span
-              id="slide-text-two"
-              className="text-black font-jose text-[20px] max-w-[450px]"
-            >
-              Accessing financing support from accelerators, funders, and
-              investors to fuel innovation and accelerate business growth.
-            </span>
+          <span className="font-jose w-full text-left text-[20px] text-black">
+            Our mission is to catalyze digital solutions, extending beyond
+            traditional approaches, to support development and revenue models.
+            We thrive in thematic areas, using cutting-edge technology to drive
+            impactful change. Join us in embracing digital transformation and
+            exploring new frontiers together.
+          </span>
+          <div className="overflow-hidden mt-10 shadow-xl">
+            <img
+              src="/images/png/about-focus-four.png"
+              alt=""
+              className="plsro-image"
+            />
           </div>
         </div>
-        <div className="h-auto py-20 flex flex-col">
-          {/* <span
+        <div
+          id="right"
+          className={`w-1/2 flex flex-col overflow-hidden bg-white`}
+        >
+          <div className="h-auto py-20 flex flex-col">
+            <span
+              id="slide-text-two"
+              className="text-[32px] font-inter font-bold text-pblue"
+            >
+              Consortium Building and Partnerships
+            </span>
+            <div className="flex flex-col space-y-5 mt-16">
+              <span
+                id="slide-text-two"
+                className="text-ipink font-mont font-bold text-[20px]"
+              >
+                Capacity Building
+              </span>
+              <span
+                id="slide-text-two"
+                className="text-black font-jose text-[20px] max-w-[450px]"
+              >
+                Enhancing skills and knowledge through targeted trainings and
+                development programs.
+              </span>{" "}
+              <span
+                id="slide-text-two"
+                className="text-ipink font-mont font-bold text-[20px]"
+              >
+                Technical Assistance
+              </span>
+              <span
+                id="slide-text-two"
+                className="text-black font-jose text-[20px] max-w-[450px]"
+              >
+                Mobilizing resources and providing early-stage support to
+                startups for growth and success.
+              </span>{" "}
+              <span
+                id="slide-text-two"
+                className="text-ipink font-mont font-bold text-[20px]"
+              >
+                Catalytic Funding
+              </span>
+              <span
+                id="slide-text-two"
+                className="text-black font-jose text-[20px] max-w-[450px]"
+              >
+                Accessing financing support from accelerators, funders, and
+                investors to fuel innovation and accelerate business growth.
+              </span>
+            </div>
+          </div>
+          <div className="h-auto py-20 flex flex-col">
+            {/* <span
             id="slide-text-two"
             className="text-[32px] font-bold font-inter text-pblue"
           >
@@ -150,6 +151,7 @@ const PinLeftOne = () => {
               <br />
             </span>
           </div> */}
+          </div>
         </div>
       </div>
     </div>

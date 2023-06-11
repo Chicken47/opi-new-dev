@@ -3,7 +3,6 @@ import { ScrollTrigger } from "gsap/all";
 import React, { useEffect, useRef } from "react";
 
 const ShortText = () => {
-  let shortImageRef = useRef(null);
   const ease = Power3.easeOut();
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -33,8 +32,8 @@ const ShortText = () => {
   return (
     <div className="w-full flex justify-center">
       <div className="flex justify-between items-center py-20 max-w-[1366px] w-full">
-        <div className="flex flex-col justify-center items-start w-1/2 bg-pink-200 pr-60">
-          <span className={`text-[18px] bg-green-200 font-jose w-full`}>
+        <div className="flex flex-col justify-center items-start w-1/2 pl-20 pr-60">
+          <span className={`text-[18px] font-jose w-full`}>
             We are a dynamic consulting firm committed to driving positive
             change through innovative solutions and strategic partnerships.
             <br />
@@ -50,8 +49,7 @@ const ShortText = () => {
         <div className="w-1/2 flex items-center justify-center overflow-hidden">
           <img
             src="/images/png/about-focus-three.png"
-            className="object-cover w-4/5 object-center overflow-hidden h-[300px] about-about-image"
-            ref={(el) => (shortImageRef = el)}
+            className="object-cover w-4/5 object-center overflow-hidden h-full about-about-image"
           />
         </div>
       </div>

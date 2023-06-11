@@ -4,14 +4,14 @@ import SetApart from "./SetApart";
 import AboutIntro from "./AboutShortText";
 import AboutHero from "./AboutHero";
 import FounderSection from "./FounderSection";
-import { ScrollSection } from "./ScrollSection";
+// import { ScrollSection } from "./ScrollSection";
 
 const AboutPage = () => {
   return (
     <div className="w-full overflow-hidden">
       <AboutHero />
       <AboutIntro />
-      <ScrollSection />
+      {/* <ScrollSection /> */}
       <SetApart />
       <FounderSection />
       <Footer />

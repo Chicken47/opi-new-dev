@@ -49,130 +49,134 @@ const PinRight = () => {
   }, []);
 
   return (
-    <div
-      ref={(el) => (triggerRef = el)}
-      className="flex justify-start w-full trigger overflow-hidden"
-    >
+    <div className="w-full flex justify-center bg-oblue">
       <div
-        id="left"
-        className={`w-1/2 flex flex-col p-16 overflow-hidden bg-oblue sticky`}
+        ref={(el) => (triggerRef = el)}
+        className="flex justify-start max-w-[1366px] w-full trigger overflow-hidden"
       >
-        <div className="h-auto py-20 flex flex-col">
-          <span
-            id="slide-text-one"
-            className="text-[32px] font-bold font-inter text-black"
-          >
-            Communications, Outreach, and Partnerships
-          </span>
-          <div className="flex flex-col space-y-5 mt-16">
+        <div
+          id="left"
+          className={`w-1/2 flex flex-col p-16 overflow-hidden bg-oblue sticky`}
+        >
+          <div className="h-auto py-20 flex flex-col">
             <span
               id="slide-text-one"
-              className="text-pblue font-inter font-bold text-[20px]"
+              className="text-[32px] font-bold font-inter text-black"
             >
-              Engagement
+              Communications, Outreach, and Partnerships
             </span>
+            <div className="flex flex-col space-y-5 mt-16">
+              <span
+                id="slide-text-one"
+                className="text-pblue font-inter font-bold text-[20px]"
+              >
+                Engagement
+              </span>
+              <span
+                id="slide-text-one"
+                className="text-black font-jose text-[20px] max-w-[450px]"
+              >
+                - Regional knowledge sharing through events, exchange workshops,
+                and study visits, and investments.
+              </span>
+              <span
+                id="slide-text-one"
+                className="text-pblue font-inter font-bold text-[20px]"
+              >
+                Collaborations
+              </span>
+              <span
+                id="slide-text-one"
+                className="text-black font-jose text-[20px] max-w-[450px]"
+              >
+                - Facilitate partnership channels, define the required
+                collaborations, the roles of partnering organizations and
+                bodies.
+              </span>
+            </div>
+          </div>
+          <div className="h-auto py-20 flex flex-col">
             <span
               id="slide-text-one"
-              className="text-black font-jose text-[20px] max-w-[450px]"
+              className="text-[32px] font-inter font-bold text-black"
             >
-              - Regional knowledge sharing through events, exchange workshops,
-              and study visits, and investments.
+              Multi-Disciplinary | Sectoral | Stakeholder Partnerships
             </span>
-            <span
-              id="slide-text-one"
-              className="text-pblue font-inter font-bold text-[20px]"
-            >
-              Collaborations
-            </span>
-            <span
-              id="slide-text-one"
-              className="text-black font-jose text-[20px] max-w-[450px]"
-            >
-              - Facilitate partnership channels, define the required
-              collaborations, the roles of partnering organizations and bodies.
-            </span>
+            <div className="flex flex-col space-y-5 mt-10">
+              <span
+                id="slide-text-one"
+                className="text-pblue font-inter font-bold text-[20px]"
+              >
+                Funding
+              </span>
+              <span
+                id="slide-text-one"
+                className="text-black font-jose text-[20px] max-w-[450px]"
+              >
+                Facilitate partnership channels, define the required
+                collaborations, the roles of partnering organizations and
+                bodies.
+              </span>
+              <span
+                id="slide-text-one"
+                className="text-pblue font-inter font-bold text-[20px]"
+              >
+                Implementation
+              </span>
+              <span
+                id="slide-text-one"
+                className="text-black font-jose text-[20px] max-w-[450px]"
+              >
+                Build and scale solutions and products in the thematic areas
+              </span>
+              <span
+                id="slide-text-one"
+                className="text-pblue font-inter font-bold text-[20px]"
+              >
+                Network
+              </span>
+              <span
+                id="slide-text-one"
+                className="text-black font-jose text-[20px] max-w-[450px]"
+              >
+                Outreach, learning and knowledge exchange
+              </span>
+              <span
+                id="slide-text-one"
+                className="text-pblue font-inter font-bold text-[20px]"
+              >
+                Ecosystem
+              </span>
+              <span
+                id="slide-text-one"
+                className="text-black font-jose text-[20px] max-w-[450px]"
+              >
+                Enhance and strengthen systems and approaches
+              </span>
+            </div>
           </div>
         </div>
-        <div className="h-auto py-20 flex flex-col">
-          <span
-            id="slide-text-one"
-            className="text-[32px] font-inter font-bold text-black"
-          >
-            Multi-Disciplinary | Sectoral | Stakeholder Partnerships
+        <div
+          id="right"
+          ref={(el) => (sectionRef = el)}
+          className="w-1/2 p-16 flex flex-col items-center overflow-hidden bg-oblue "
+        >
+          <span className="text-[50px] w-full text-left font-bold font-inter text-black">
+            Involve
           </span>
-          <div className="flex flex-col space-y-5 mt-10">
-            <span
-              id="slide-text-one"
-              className="text-pblue font-inter font-bold text-[20px]"
-            >
-              Funding
-            </span>
-            <span
-              id="slide-text-one"
-              className="text-black font-jose text-[20px] max-w-[450px]"
-            >
-              Facilitate partnership channels, define the required
-              collaborations, the roles of partnering organizations and bodies.
-            </span>
-            <span
-              id="slide-text-one"
-              className="text-pblue font-inter font-bold text-[20px]"
-            >
-              Implementation
-            </span>
-            <span
-              id="slide-text-one"
-              className="text-black font-jose text-[20px] max-w-[450px]"
-            >
-              Build and scale solutions and products in the thematic areas
-            </span>
-            <span
-              id="slide-text-one"
-              className="text-pblue font-inter font-bold text-[20px]"
-            >
-              Network
-            </span>
-            <span
-              id="slide-text-one"
-              className="text-black font-jose text-[20px] max-w-[450px]"
-            >
-              Outreach, learning and knowledge exchange
-            </span>
-            <span
-              id="slide-text-one"
-              className="text-pblue font-inter font-bold text-[20px]"
-            >
-              Ecosystem
-            </span>
-            <span
-              id="slide-text-one"
-              className="text-black font-jose text-[20px] max-w-[450px]"
-            >
-              Enhance and strengthen systems and approaches
-            </span>
+          <span className="font-jose w-full text-left text-[20px] text-black">
+            We foster strategic collaborations and partnerships, setting clear
+            objectives to align with our clients' goals. By bringing together
+            like-minded organizations and individuals, we amplify our collective
+            impact.
+          </span>
+          <div className="overflow-hidden mt-10 shadow-xl">
+            <img
+              src="/images/png/services-four.png"
+              alt=""
+              className="prsl-image"
+            />
           </div>
-        </div>
-      </div>
-      <div
-        id="right"
-        ref={(el) => (sectionRef = el)}
-        className="w-1/2 p-16 flex flex-col items-center overflow-hidden bg-oblue "
-      >
-        <span className="text-[50px] w-full text-left font-bold font-inter text-black">
-          Involve
-        </span>
-        <span className="font-jose w-full text-left text-[20px] text-black">
-          We foster strategic collaborations and partnerships, setting clear
-          objectives to align with our clients' goals. By bringing together
-          like-minded organizations and individuals, we amplify our collective
-          impact.
-        </span>
-        <div className="overflow-hidden mt-10 shadow-xl">
-          <img
-            src="/images/png/services-four.png"
-            alt=""
-            className="prsl-image"
-          />
         </div>
       </div>
     </div>
