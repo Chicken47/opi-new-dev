@@ -1,5 +1,5 @@
-import { Power3, gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
+// import { Power3, gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/all";
 import React, { useEffect, useRef } from "react";
 
 const AboutIntro = () => {
