@@ -60,7 +60,7 @@ const PinRight = () => {
         <div className="h-auto py-20 flex flex-col">
           <span
             id="slide-text-one"
-            className="text-[32px] font-bold font-oswald text-white"
+            className="text-[32px] font-bold font-oswald text-ipink"
           >
             Communications, Outreach, and Partnerships
           </span>
@@ -96,7 +96,7 @@ const PinRight = () => {
         <div className="h-auto py-20 flex flex-col">
           <span
             id="slide-text-one"
-            className="text-[32px] font-oswald font-bold text-white"
+            className="text-[32px] font-oswald font-bold text-ipink"
           >
             Multi-Disciplinary | Sectoral | Stakeholder Partnerships
           </span>
@@ -158,7 +158,7 @@ const PinRight = () => {
         ref={(el) => (sectionRef = el)}
         className="w-1/2 p-16 flex flex-col items-center overflow-hidden bg-pblue "
       >
-        <span className="text-[50px] w-full text-left font-bold font-oswald text-white">
+        <span className="text-[50px] w-full text-left font-bold font-oswald text-ipink">
           Involve
         </span>
         <span className="font-garamond w-full text-left text-[20px] text-white">

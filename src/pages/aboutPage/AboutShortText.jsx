@@ -3,32 +3,32 @@ import { ScrollTrigger } from "gsap/all";
 import React, { useEffect, useRef } from "react";
 
 const AboutIntro = () => {
-  let shortImageRef = useRef(null);
-  const ease = Power3.easeOut();
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    let ctx = gsap.context(() => {
-      gsap.fromTo(
-        ".aboutimage",
-        {
-          yPercent: 20,
-          scale: 1,
-        },
-        {
-          yPercent: -20,
-          scale: 2,
-          ease: ease,
-          scrollTrigger: {
-            trigger: ".aboutimage",
-            scrub: true,
-            start: "top bottom",
-            end: "bottom top",
-          },
-        }
-      );
-    });
-    return () => ctx.revert();
-  });
+  // let shortImageRef = useRef(null);
+  // const ease = Power3.easeOut();
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
+  //   let ctx = gsap.context(() => {
+  //     gsap.fromTo(
+  //       ".aboutimage",
+  //       {
+  //         yPercent: 20,
+  //         scale: 1,
+  //       },
+  //       {
+  //         yPercent: -20,
+  //         scale: 2,
+  //         ease: ease,
+  //         scrollTrigger: {
+  //           trigger: ".aboutimage",
+  //           scrub: true,
+  //           start: "top bottom",
+  //           end: "bottom top",
+  //         },
+  //       }
+  //     );
+  //   });
+  //   return () => ctx.revert();
+  // });
 
   return (
     <div className="flex justify-evenly px-20 pb-32 mt-10">
@@ -48,7 +48,7 @@ const AboutIntro = () => {
         <img
           src="/images/png/bgimg1.png"
           className="object-cover w-4/5 object-center overflow-hidden h-[300px] aboutimage"
-          ref={(el) => (shortImageRef = el)}
+          // ref={(el) => (shortImageRef = el)}
         />
       </div>
     </div>

@@ -60,7 +60,7 @@ const PinLeftScrollRight = () => {
         id="left"
         className="w-1/2 p-16 flex flex-col overflow-hidden bg-oblue sticky"
       >
-        <span className="text-[50px] w-full text-left font-bold font-oswald text-black">
+        <span className="text-[50px] w-full text-left font-bold font-oswald text-pblue">
           Learn
         </span>
         <span className="font-garamond w-full text-left text-[20px] text-black">
@@ -83,7 +83,7 @@ const PinLeftScrollRight = () => {
         <div className="h-auto py-20 flex flex-col">
           <span
             id="slide-text-text"
-            className="text-[32px] font-oswald font-bold text-black"
+            className="text-[32px] font-oswald font-bold text-pblue"
           >
             Knowledge Management
           </span>
@@ -171,7 +171,7 @@ const PinLeftScrollRight = () => {
         <div className="h-auto py-20 flex flex-col">
           <span
             id="slide-text-text"
-            className="text-[32px] font-oswald font-bold text-black"
+            className="text-[32px] font-oswald font-bold text-pblue"
           >
             Open Digital Dialogue
           </span>
