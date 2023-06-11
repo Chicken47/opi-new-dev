@@ -9,7 +9,7 @@ const ServicesIntro = () => {
     gsap.registerPlugin(ScrollTrigger);
     let ctx = gsap.context(() => {
       gsap.fromTo(
-        shortImageRef,
+        ".about-services-image",
         {
           yPercent: 20,
           scale: 1,
@@ -19,7 +19,7 @@ const ServicesIntro = () => {
           scale: 2,
           ease: ease,
           scrollTrigger: {
-            trigger: shortImageRef,
+            trigger: ".about-services-image",
             scrub: true,
             start: "top bottom",
             end: "bottom top",
@@ -51,7 +51,7 @@ const ServicesIntro = () => {
         <img
           src="/images/png/bgimg1.png"
           alt=""
-          className="object-cover w-4/5 object-center overflow-hidden h-[300px]"
+          className="object-cover w-4/5 object-center overflow-hidden h-[300px] about-services-image"
           ref={(el) => (shortImageRef = el)}
         />
       </div>
