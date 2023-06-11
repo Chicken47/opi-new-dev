@@ -3,7 +3,6 @@ import { ScrollTrigger } from "gsap/all";
 import React, { useEffect, useRef } from "react";
 
 const ServicesIntro = () => {
-  let shortImageRef = useRef(null);
   const ease = Power3.easeOut();
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -52,7 +51,6 @@ const ServicesIntro = () => {
           src="/images/png/bgimg1.png"
           alt=""
           className="object-cover w-4/5 object-center overflow-hidden h-[300px] about-services-image"
-          ref={(el) => (shortImageRef = el)}
         />
       </div>
     </div>

@@ -3,13 +3,12 @@ import { ScrollTrigger } from "gsap/all";
 import React, { useEffect, useRef } from "react";
 
 const AboutIntro = () => {
-  let shortImageRef = useRef(null);
   const ease = Power3.easeOut();
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     let ctx = gsap.context(() => {
       gsap.fromTo(
-        ".aboutimage",
+        ".abboout-image",
         {
           yPercent: 20,
           scale: 1,
@@ -19,7 +18,7 @@ const AboutIntro = () => {
           scale: 2,
           ease: ease,
           scrollTrigger: {
-            trigger: ".aboutimage",
+            trigger: ".abboout-image",
             scrub: true,
             start: "top bottom",
             end: "bottom top",
@@ -47,8 +46,7 @@ const AboutIntro = () => {
       <div className="w-1/2 flex items-center justify-center overflow-hidden">
         <img
           src="/images/png/bgimg1.png"
-          className="object-cover w-4/5 object-center overflow-hidden h-[300px] aboutimage"
-          ref={(el) => (shortImageRef = el)}
+          className="object-cover w-4/5 object-center overflow-hidden h-[300px] abboout-image"
         />
       </div>
     </div>

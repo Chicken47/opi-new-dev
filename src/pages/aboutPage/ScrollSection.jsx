@@ -41,7 +41,7 @@ export const ScrollSection = () => {
           className="scroll-section-inner h-full w-[200vw] flex relative"
         >
           <div className="scroll-section h-screen w-[100vw] flex flex-col justify-evenly  bg-pblue p-20">
-            <span className="font-mont font-bold text-[50px] text-white">
+            <span className="font-mont font-bold text-[50px] text-ipink">
               Our Mission
             </span>
             <div className="flex justify-between w-full">
@@ -66,7 +66,7 @@ export const ScrollSection = () => {
             </div>
           </div>
           <div className="scroll-section h-screen w-[100vw] flex flex-col justify-evenly bg-pblue p-20">
-            <span className="font-mont font-bold text-[50px] w-full text-left text-white">
+            <span className="font-mont font-bold text-[50px] w-full text-left text-ipink">
               & Goals
             </span>
             <div className="flex justify-evenly w-[100vw]">
