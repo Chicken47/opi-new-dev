@@ -47,7 +47,7 @@ const FounderSection = () => {
           Managing Director
         </span>
         <span className="w-full text-center font-oswald text-[22px]">
-          Sireesha Peramabathina
+          Sireesha Perambathina
         </span>
         <span className="flex justify-center w-2/3 rounded mt-10 overflow-hidden">
           <img
