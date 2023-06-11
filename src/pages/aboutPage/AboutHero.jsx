@@ -66,15 +66,7 @@ const AboutHero = () => {
   return (
     <div className="w-full h-screen flex justify-center bg-black">
       <div className="w-full h-screen max-w-[1366px] flex flex-col relative overflow-hidden main-hero-wrapper">
-        {/* <div
-          ref={(el) => (introRef = el)}
-          className="bg-black absolute w-full h-full top-0 left-0 z-50 flex items-center justify-center"
-        >
-          <span className="z-50 text-white intro-title">
-            <span className="title-inner">Welcome to opi</span>
-          </span>
-        </div> */}
-        <div className="w-full flex justify-between py-5">
+        <div className="w-full flex justify-between py-5 px-10">
           <div
             ref={(el) => (logoRef = el)}
             onClick={() => navigate("/")}
@@ -84,32 +76,25 @@ const AboutHero = () => {
           </div>
           <div className="flex items-center space-x-8">
             <a
-              href="/"
-              ref={(el) => (header_item_one = el)}
-              className="text-white font-bold cursor-pointer"
-            >
-              Home
-            </a>
-            <a
               href="/about"
               ref={(el) => (header_item_one = el)}
               className="text-white font-bold cursor-pointer"
             >
-              About Us
+              Who We Are
             </a>
             <a
               href="/services"
               ref={(el) => (header_item_two = el)}
               className="text-white font-bold cursor-pointer"
             >
-              Services
+              What We Do
             </a>
             <a
               href="/about"
               ref={(el) => (header_item_three = el)}
               className="text-white font-bold cursor-pointer"
             >
-              Contact
+              Connect With Us
             </a>
           </div>
         </div>
@@ -134,9 +119,6 @@ const AboutHero = () => {
               local contexts and global best practices to design tailored
               strategies that address the most pressing challenges of our time.
             </p>
-            {/* <button className="px-6 py-1 mt-[2vh] rounded hover:shadow-2xl hover:shadow-slate-800 transition-all border border-white bg-black text-white font-bold uppercase text-[14px]">
-            About Us
-          </button> */}
           </div>
           <div className="w-3/5 flex flex-col space-y-5 items-center justify-center">
             <div className="flex space-x-5">

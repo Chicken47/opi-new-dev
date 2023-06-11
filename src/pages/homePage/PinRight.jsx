@@ -68,7 +68,7 @@ const PinRight = () => {
             <div className="flex flex-col space-y-5 mt-16">
               <span
                 id="slide-text-one"
-                className="text-pblue font-inter font-bold text-[20px]"
+                className="text-white font-inter font-bold text-[20px]"
               >
                 Engagement
               </span>
@@ -81,7 +81,7 @@ const PinRight = () => {
               </span>
               <span
                 id="slide-text-one"
-                className="text-pblue font-inter font-bold text-[20px]"
+                className="text-white font-inter font-bold text-[20px]"
               >
                 Collaborations
               </span>
@@ -105,7 +105,7 @@ const PinRight = () => {
             <div className="flex flex-col space-y-5 mt-10">
               <span
                 id="slide-text-one"
-                className="text-pblue font-inter font-bold text-[20px]"
+                className="text-white font-inter font-bold text-[20px]"
               >
                 Funding
               </span>
@@ -119,7 +119,7 @@ const PinRight = () => {
               </span>
               <span
                 id="slide-text-one"
-                className="text-pblue font-inter font-bold text-[20px]"
+                className="text-white font-inter font-bold text-[20px]"
               >
                 Implementation
               </span>
@@ -131,7 +131,7 @@ const PinRight = () => {
               </span>
               <span
                 id="slide-text-one"
-                className="text-pblue font-inter font-bold text-[20px]"
+                className="text-white font-inter font-bold text-[20px]"
               >
                 Network
               </span>
@@ -143,7 +143,7 @@ const PinRight = () => {
               </span>
               <span
                 id="slide-text-one"
-                className="text-pblue font-inter font-bold text-[20px]"
+                className="text-white font-inter font-bold text-[20px]"
               >
                 Ecosystem
               </span>

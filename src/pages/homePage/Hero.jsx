@@ -80,7 +80,7 @@ const Hero = () => {
             <span className="title-inner">Welcome to opi</span>
           </span>
         </div>
-        <div className="w-full flex justify-between py-5">
+        <div className="w-full flex justify-between py-5 px-10">
           <div
             ref={(el) => (logoRef = el)}
             onClick={() => navigate("/")}
@@ -90,32 +90,25 @@ const Hero = () => {
           </div>
           <div className="flex items-center space-x-8">
             <a
-              href="/"
-              ref={(el) => (header_item_one = el)}
-              className="text-white font-bold cursor-pointer"
-            >
-              Home
-            </a>
-            <a
               href="/about"
               ref={(el) => (header_item_one = el)}
               className="text-white font-bold cursor-pointer"
             >
-              About Us
+              Who We Are
             </a>
             <a
               href="/services"
               ref={(el) => (header_item_two = el)}
               className="text-white font-bold cursor-pointer"
             >
-              Services
+              What We Do
             </a>
             <a
               href="/about"
               ref={(el) => (header_item_three = el)}
               className="text-white font-bold cursor-pointer"
             >
-              Contact
+              Connect With Us
             </a>
           </div>
         </div>

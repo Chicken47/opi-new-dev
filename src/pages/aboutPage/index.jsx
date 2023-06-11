@@ -4,6 +4,7 @@ import SetApart from "./SetApart";
 import AboutIntro from "./AboutShortText";
 import AboutHero from "./AboutHero";
 import FounderSection from "./FounderSection";
+import MapSection from "./MapSection";
 
 const AboutPage = () => {
   return (
@@ -12,6 +13,7 @@ const AboutPage = () => {
       <AboutIntro />
       <SetApart />
       <FounderSection />
+      <MapSection />
       <Footer />
     </div>
   );

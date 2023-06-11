@@ -67,7 +67,7 @@ const ServicesHero = () => {
     <div className="w-full flex justify-center bg-black">
       <div className="w-full h-screen max-w-[1366px] flex justify-center bg-black">
         <div className="w-full h-screen max-w-[1366px] flex flex-col relative overflow-hidden main-hero-wrapper">
-          <div className="w-full flex justify-between py-5">
+          <div className="w-full flex justify-between py-5 px-10">
             <div
               ref={(el) => (logoRef = el)}
               onClick={() => navigate("/")}
@@ -77,32 +77,25 @@ const ServicesHero = () => {
             </div>
             <div className="flex items-center space-x-8">
               <a
-                href="/"
-                ref={(el) => (header_item_one = el)}
-                className="text-white font-bold cursor-pointer"
-              >
-                Home
-              </a>
-              <a
                 href="/about"
                 ref={(el) => (header_item_one = el)}
                 className="text-white font-bold cursor-pointer"
               >
-                About Us
+                Who We Are
               </a>
               <a
                 href="/services"
                 ref={(el) => (header_item_two = el)}
                 className="text-white font-bold cursor-pointer"
               >
-                Services
+                What We Do
               </a>
               <a
                 href="/about"
                 ref={(el) => (header_item_three = el)}
                 className="text-white font-bold cursor-pointer"
               >
-                Contact
+                Connect With Us
               </a>
             </div>
           </div>
