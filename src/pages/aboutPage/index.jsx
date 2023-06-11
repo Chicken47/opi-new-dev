@@ -4,7 +4,6 @@ import SetApart from "./SetApart";
 import AboutIntro from "./AboutShortText";
 import AboutHero from "./AboutHero";
 import FounderSection from "./FounderSection";
-import AboutShort from "./AboutShort";
 import { ScrollSection } from "./ScrollSection";
 
 const AboutPage = () => {

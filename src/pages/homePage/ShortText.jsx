@@ -19,7 +19,7 @@ const ShortText = () => {
           scale: 2,
           ease: ease,
           scrollTrigger: {
-            trigger: ".aboutimage",
+            trigger: ".about-about-image",
             scrub: true,
             start: "top bottom",
             end: "bottom top",
@@ -46,8 +46,8 @@ const ShortText = () => {
       </div>
       <div className="w-1/2 flex items-center justify-center overflow-hidden">
         <img
-          src="/public/images/png/about-focus-three.png"
-          className="object-cover w-4/5 object-center overflow-hidden h-[300px] aboutimage"
+          src="/images/png/about-focus-three.png"
+          className="object-cover w-4/5 object-center overflow-hidden h-[300px] about-about-image"
           ref={(el) => (shortImageRef = el)}
         />
       </div>

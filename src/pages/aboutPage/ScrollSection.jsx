@@ -28,23 +28,6 @@ export const ScrollSection = () => {
         },
       }
     );
-    gsap.fromTo(
-      ".img-One",
-      {
-        opacity: 0,
-      },
-      {
-        ease: "none",
-        opacity: 1,
-        duration: 1,
-        scrollTrigger: {
-          trigger: ".img-One",
-          start: "center right",
-          end: "center center",
-          scrub: true,
-        },
-      }
-    );
     return () => {
       pin.kill();
     };
