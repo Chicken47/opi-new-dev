@@ -7,7 +7,7 @@ import "./intro.css";
 
 const Hero = () => {
   const ease = Power3.easeInOut();
-  let introRef = useRef(null);
+  // let introRef = useRef(null);
   let logoRef = useRef(null);
   let header_item_one = useRef(null);
   let header_item_two = useRef(null);
@@ -24,12 +24,12 @@ const Hero = () => {
   useEffect(() => {
     let ctx = gsap.context(() => {
       const tl = gsap.timeline();
-      // tl.to(introRef, 0.3, {
-      //   yPercent: -100,
-      //   opacity: 0.5,
-      //   delay: 2,
-      //   ease: ease,
-      // });
+      tl.to(introRef, 0.3, {
+        yPercent: -100,
+        opacity: 0.5,
+        delay: 2,
+        ease: ease,
+      });
       tl.from(logoRef, 0.2, {
         y: -100,
         ease: ease,
@@ -73,14 +73,14 @@ const Hero = () => {
   return (
     <div className="w-full h-screen flex justify-center bg-black">
       <div className="w-full h-screen max-w-[1366px] flex flex-col relative overflow-hidden main-hero-wrapper">
-        {/* <div
+        <div
           ref={(el) => (introRef = el)}
           className="bg-black absolute w-full h-full top-0 left-0 z-50 flex items-center justify-center"
         >
           <span className="z-50 text-white intro-title">
             <span className="title-inner">Welcome to opi</span>
           </span>
-        </div> */}
+        </div>
         <div className="w-full flex justify-between py-5">
           <div
             ref={(el) => (logoRef = el)}
