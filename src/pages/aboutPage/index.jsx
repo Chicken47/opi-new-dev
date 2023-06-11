@@ -5,13 +5,14 @@ import AboutIntro from "./AboutShortText";
 import AboutHero from "./AboutHero";
 import FounderSection from "./FounderSection";
 import AboutShort from "./AboutShort";
+import { ScrollSection } from "./ScrollSection";
 
 const AboutPage = () => {
   return (
     <div className="w-full overflow-hidden">
       <AboutHero />
       <AboutIntro />
-      <AboutShort />
+      <ScrollSection />
       <SetApart />
       <FounderSection />
       <Footer />

@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import AboutHoverCard from "../../components/AboutHoverCard";
 
 export const ScrollSection = () => {
   const sectionRef = useRef(null);
@@ -22,7 +23,7 @@ export const ScrollSection = () => {
           trigger: triggerRef.current,
           start: "top top",
           end: "2000 top",
-          scrub: true,
+          scrub: 1,
           pin: triggerRef.current,
         },
       }
@@ -30,7 +31,7 @@ export const ScrollSection = () => {
     gsap.fromTo(
       ".img-One",
       {
-        opacity: 0
+        opacity: 0,
       },
       {
         ease: "none",
@@ -50,70 +51,54 @@ export const ScrollSection = () => {
   }, []);
 
   return (
-    <section className="p-20 overflow-hidden bg-indigo-800 rounded shadow-xl scroll-section-outer">
-      <div ref={triggerRef} className="h-[80vh]">
+    <section className="overflow-hidden h-full rounded scroll-section-outer">
+      <div ref={triggerRef} className="h-full">
         <div
           ref={sectionRef}
-          className="scroll-section-inner h-[80vh] w-[200vw] flex relative"
+          className="scroll-section-inner h-full w-[200vw] flex relative"
         >
-          <div className="h-full p-10 mt-10 bg-white rounded-l-xl">
-            <span className="font-sans font-extrabold text-[5vh] text-indigo-800 text-right">
-              Our Approach
+          <div className="scroll-section h-screen w-[100vw] flex flex-col justify-evenly  bg-black p-20">
+            <span className="font-mont font-bold text-[50px] text-white">
+              Our Mission
             </span>
-          </div>
-          <div className="scroll-section h-[80vh] w-[90vw] flex bg-white mt-10 p-20">
-            <div className="flex flex-col w-1/2 h-full p-10">
-              <img src="/images/png/about-collaboration.png" alt="" className="h-[20vw] object-contain"/>
-              <div className="flex flex-col items-start">
-                <span className="text-[40px] font-extrabold">
-                  Collaboration
-                </span>
-                <span>
-                  We believe in the power of partnerships. By working closely
-                  with our clients and stakeholders, we co-create solutions that
-                  are sustainable, inclusive, and aligned with their goals.
-                </span>
-              </div>
-            </div>
-            <div className="flex flex-col-reverse w-1/2 h-full p-10">
-              <img src="/images/png/about-innovation.png" alt="" className="h-[20vw] object-contain"/>
-              <div className="flex flex-col items-start">
-                <span className="text-[40px] font-extrabold">Innovation</span>
-                <span>
-                  We embrace innovation to drive social impact. Through
-                  cutting-edge technologies, data-driven insights, and creative
-                  problem-solving, we strive to revolutionize traditional
-                  approaches and unlock new opportunities.
-                </span>
-              </div>
+            <div className="flex justify-between w-full">
+              <AboutHoverCard
+                imageUrl={"/images/png/about-focus-one.png"}
+                cardColor={"bg-oblue"}
+                text={"Improving access to information"}
+                textColor={"text-black"}
+              />
+              <AboutHoverCard
+                imageUrl={"/images/png/about-focus-two.png"}
+                cardColor={"bg-pblue"}
+                text={"Inspiring cross-sectoral communication"}
+                textColor={"text-white"}
+              />
+              <AboutHoverCard
+                imageUrl={"/images/png/about-focus-three.png"}
+                cardColor={"bg-ipink"}
+                text={"Increasing efficiency and productivity"}
+                textColor={"text-black"}
+              />
             </div>
           </div>
-          <div className="scroll-section h-[80vh] w-[90vw] flex p-20 bg-white mt-10">
-            <div className="flex flex-col-reverse w-1/2 h-full p-10">
-              <img src="/images/png/about-evidence.png" alt="" className="h-[20vw] object-contain img-One"/>
-              <div className="flex flex-col items-start">
-                <span className="text-[40px] font-extrabold">
-                  Evidence-Based
-                </span>
-                <span>
-                  We are committed to delivering results. Our rigorous
-                  monitoring and evaluation frameworks allow us to track
-                  progress, measure impact, and continuously refine our
-                  strategies for optimal outcomes.
-                </span>
-              </div>
-            </div>
-            <div className="flex flex-col w-1/2 h-full p-10">
-              <img src="/images/png/about-gender.png" alt="" className="h-[20vw] object-contain"/>
-              <div className="flex flex-col items-start">
-                <span className="text-[40px] font-extrabold">Gender Lens</span>
-                <span>
-                  We recognize the critical role of gender in shaping societal
-                  dynamics. Our gender-sensitive approach ensures that our
-                  solutions address the unique needs and barriers faced by women
-                  and other marginalized groups.
-                </span>
-              </div>
+          <div className="scroll-section h-screen w-[100vw] flex flex-col justify-evenly bg-black p-20">
+            <span className="font-mont font-bold text-[50px] w-full text-left text-white">
+              & Goals
+            </span>
+            <div className="flex justify-evenly w-[100vw]">
+              <AboutHoverCard
+                imageUrl={"/images/png/services-one.png"}
+                cardColor={"bg-oblue"}
+                text={"Creating resilient and PPR-enabled health systems."}
+                textColor={"text-black"}
+              />
+              <AboutHoverCard
+                imageUrl={"/images/png/services-two.png"}
+                cardColor={"bg-pblue"}
+                text={"Ensuring financial and digital inclusion"}
+                textColor={"text-white"}
+              />
             </div>
           </div>
         </div>

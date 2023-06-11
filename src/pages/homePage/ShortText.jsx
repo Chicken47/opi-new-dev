@@ -46,7 +46,7 @@ const ShortText = () => {
       </div>
       <div className="w-1/2 flex items-center justify-center overflow-hidden">
         <img
-          src="/images/png/bgimg1.png"
+          src="/public/images/png/about-focus-three.png"
           className="object-cover w-4/5 object-center overflow-hidden h-[300px] aboutimage"
           ref={(el) => (shortImageRef = el)}
         />

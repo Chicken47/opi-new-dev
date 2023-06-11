@@ -1,0 +1,65 @@
+.about-hover-card-container {
+  width: 300px;
+  color: white;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  place-self: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+}
+
+.about-hover-card-content {
+  padding: 30px;
+  transition: all 1s;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hover-card-content * {
+  opacity: 0;
+  transform: translateY(10px);
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+}
+
+.about-hover-card-content h1 {
+  transition-delay: 0.4s;
+}
+
+.about-hover-card-content p {
+  transition-delay: 0.2s;
+}
+
+.about-hover-card-container:hover .content {
+  opacity: 1;
+}
+
+.about-hover-card-container:hover h1 {
+  transform: translateY(0px);
+  transition-delay: 0s;
+  opacity: 1;
+}
+
+.about-hover-card-container:hover p {
+  transform: translateY(0px);
+  transition-delay: 0.2s;
+  opacity: 1;
+}
+
+.about-hover-card-container:hover a {
+  transform: translateY(0px);
+  transition-delay: 0.4s, 0.4s, 0s, 0s;
+  opacity: 1;
+}
+
+.about-hover-card-container:hover .content {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+}
