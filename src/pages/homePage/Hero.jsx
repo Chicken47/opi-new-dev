@@ -120,10 +120,10 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex justify-between w-full h-full py-5">
-          <div className="w-2/5 flex flex-col items-start justify-center overflow-hidden">
+          <div className="w-2/5 pl-20 flex flex-col items-start justify-center overflow-hidden">
             <span
               ref={(el) => (lineOneRef = el)}
-              className="font-extrabold font-inter text-[22px] md:text-[50px] text-left w-full text-white"
+              className="font-extrabold font-inter text-[22px] md:text-[45px] text-left w-full text-white"
             >
               Open for
             </span>

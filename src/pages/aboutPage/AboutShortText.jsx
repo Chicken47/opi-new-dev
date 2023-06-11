@@ -48,7 +48,7 @@ const AboutIntro = () => {
         </div>
         <div className="w-1/2 flex items-center justify-center overflow-hidden">
           <img
-            src="/images/png/about-focus-three.png"
+            src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
             className="object-cover w-4/5 object-center overflow-hidden h-full aaaabout-about-image"
           />
         </div>
