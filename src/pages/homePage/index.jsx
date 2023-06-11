@@ -4,7 +4,9 @@ import TextReveal from "./TextReveal";
 import PinRightScrollLeft from "./PinRightScrollLeft";
 import Footer from "../../components/Footer";
 import ShortText from "./ShortText";
-// import OurApproach from "./OurApproach";
+import PinLeftScrollRight from "./PinLeftScrollRight";
+import PinRight from "./PinRight";
+import PinLeftOne from "./PinLeftOne";
 
 export const HomePage = () => {
   return (
@@ -12,8 +14,9 @@ export const HomePage = () => {
       <Hero />
       <TextReveal />
       <ShortText />
-      <PinRightScrollLeft />
-      {/* <OurApproach /> */}
+      <PinLeftScrollRight />
+      <PinRight />
+      <PinLeftOne />
       <Footer />
     </div>
   );

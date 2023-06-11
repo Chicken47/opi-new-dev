@@ -111,7 +111,7 @@ const ServicesHero = () => {
         <div className="w-2/5 p-16 flex flex-col items-start justify-center overflow-hidden">
           <span
             ref={(el) => (lineOneRef = el)}
-            className="font-extrabold font-sans text-[22px] md:text-[50px] text-left w-full text-white"
+            className="font-extrabold font-mont text-[22px] md:text-[50px] text-left w-full text-white"
           >
             Our Services
           </span>
