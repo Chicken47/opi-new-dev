@@ -40,7 +40,7 @@ export const ScrollSection = () => {
           ref={sectionRef}
           className="scroll-section-inner h-full w-[200vw] flex relative"
         >
-          <div className="scroll-section h-screen w-[100vw] flex flex-col justify-evenly  bg-black p-20">
+          <div className="scroll-section h-screen w-[100vw] flex flex-col justify-evenly  bg-pblue p-20">
             <span className="font-mont font-bold text-[50px] text-white">
               Our Mission
             </span>
@@ -65,7 +65,7 @@ export const ScrollSection = () => {
               />
             </div>
           </div>
-          <div className="scroll-section h-screen w-[100vw] flex flex-col justify-evenly bg-black p-20">
+          <div className="scroll-section h-screen w-[100vw] flex flex-col justify-evenly bg-pblue p-20">
             <span className="font-mont font-bold text-[50px] w-full text-left text-white">
               & Goals
             </span>

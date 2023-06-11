@@ -18,13 +18,16 @@ const OurApproach = () => {
             : `+=${targetsHeight[index + 1].offsetHeight}px`;
         const opacityFirst = index === 0 ? 1 : 0;
         const opacitySecond = index === targetsHeight.length - 1 ? 1 : 0;
+        gsap.from(".under-approach", {
+          scaleX: 0,
+        });
         const tl = gsap
           .timeline({
             defaults: { duration: 1 },
             scrollTrigger: {
               trigger: target,
               pin: true,
-              scrub: true,
+              scrub: 5,
               start: "center center",
               end,
               toggleActions: "restart none reverse reset",
@@ -39,10 +42,10 @@ const OurApproach = () => {
   });
   return (
     <div>
-      <span className="w-full font-mont font-extrabold text-[50px] flex justify-center text-center">
+      <span className="w-full items-center font-mont flex-col font-extrabold text-[50px] flex justify-center text-center pb-10">
         Our Approach
       </span>
-      <div class="approach-card approach-height">
+      <div class="approach-card approach-height bg-oblue">
         <div class="card__img-holder w-1/2">
           <img src="/images/png/bgImg1.png" />
         </div>
@@ -58,11 +61,11 @@ const OurApproach = () => {
         </div>
       </div>
 
-      <div class="approach-card approach-height card--reverse">
+      <div class="approach-card approach-height card--reverse bg-pblue">
         <div class="card__img-holder w-1/2">
           <img src="/images/png/bgImg.png" />
         </div>
-        <div class="card__text">
+        <div class="card__text text-white">
           <span className="font-oswald font-extrabold text-[50px]">
             Innovative
           </span>
@@ -73,7 +76,7 @@ const OurApproach = () => {
         </div>
       </div>
 
-      <div class="approach-card approach-height">
+      <div class="approach-card approach-height bg-ipink">
         <div class="card__img-holder w-1/2">
           <img src="/images/png/services-two.png" />
         </div>
@@ -90,7 +93,7 @@ const OurApproach = () => {
         </div>
       </div>
 
-      <div class="approach-card approach-height card--reverse">
+      <div class="approach-card approach-height card--reverse bg-oblue">
         <div class="card__img-holder w-1/2">
           <img src="/images/png/services-three.png" />
         </div>
