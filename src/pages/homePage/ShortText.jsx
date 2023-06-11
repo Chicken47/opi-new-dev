@@ -9,7 +9,7 @@ const ShortText = () => {
     gsap.registerPlugin(ScrollTrigger);
     let ctx = gsap.context(() => {
       gsap.fromTo(
-        ".aboutimage",
+        ".about-about-image",
         {
           yPercent: 20,
           scale: 1,
