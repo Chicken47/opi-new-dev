@@ -51,7 +51,7 @@ const AboutHero = () => {
         },
         "-=1"
       );
-      tl.from([lineOneRef, paraRef], 0.5, {
+      tl.from([lineTwoRef, paraRef], 0.5, {
         y: 50,
         ease: ease,
         opacity: 0,
@@ -64,15 +64,23 @@ const AboutHero = () => {
   }, []);
 
   return (
-    <div className="w-full flex justify-center bg-black">
-      <div className="w-full max-w-[1366px] h-screen flex flex-col relative overflow-hidden main-hero-wrapper">
-        <div className="w-full flex justify-between px-20 py-5">
+    <div className="w-full h-screen flex justify-center bg-black">
+      <div className="w-full h-screen max-w-[1366px] flex flex-col relative overflow-hidden main-hero-wrapper">
+        {/* <div
+          ref={(el) => (introRef = el)}
+          className="bg-black absolute w-full h-full top-0 left-0 z-50 flex items-center justify-center"
+        >
+          <span className="z-50 text-white intro-title">
+            <span className="title-inner">Welcome to opi</span>
+          </span>
+        </div> */}
+        <div className="w-full flex justify-between py-5">
           <div
             ref={(el) => (logoRef = el)}
             onClick={() => navigate("/")}
             className="cursor-pointer"
           >
-            <img src="/images/png/opi.png" className="h-[40px]" />
+            <img src="/images/png/Union.png" className="h-[40px]" />
           </div>
           <div className="flex items-center space-x-8">
             <a
@@ -105,25 +113,26 @@ const AboutHero = () => {
             </a>
           </div>
         </div>
-        <div className="flex w-full h-full py-5">
-          <div className="w-2/5 p-16 flex flex-col items-start justify-center overflow-hidden">
+        <div className="flex justify-between w-full h-full py-5">
+          <div className="w-2/5 flex flex-col items-start justify-center overflow-hidden">
             <span
-              ref={(el) => (lineOneRef = el)}
-              className="font-extrabold font-oswald text-[22px] md:text-[50px] text-left w-full text-white"
+              ref={(el) => (lineTwoRef = el)}
+              className="font-extrabold text-[20px] font-inter md:text-[45px] text-left text-ipink"
             >
               About Us
             </span>
             <p
               ref={(el) => (paraRef = el)}
-              className="text-white max-w-[600px] text-[14px] md:text-[20px] font-jose text-left"
+              className="text-white max-w-[600px] font-jose text-[14px] md:text-[18px] text-left mt-10"
             >
               At OPI, we believe that policy and impact go hand in hand. Our
               multidisciplinary team brings together diverse backgrounds,
               ranging from policy analysis and advocacy to project management
               and technology, enabling us to tackle complex societal issues with
-              a holistic approach. We leverage our deep understanding of local
-              contexts and global best practices to design tailored strategies
-              that address the most pressing challenges of our time.
+              <br />
+              <br />a holistic approach. We leverage our deep understanding of
+              local contexts and global best practices to design tailored
+              strategies that address the most pressing challenges of our time.
             </p>
             {/* <button className="px-6 py-1 mt-[2vh] rounded hover:shadow-2xl hover:shadow-slate-800 transition-all border border-white bg-black text-white font-bold uppercase text-[14px]">
             About Us

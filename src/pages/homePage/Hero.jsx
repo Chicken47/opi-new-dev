@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import HoverCard from "../../components/HoverCard";
 import { gsap, Power3 } from "gsap";
 import { useNavigate } from "react-router-dom";
+import HoverCardOne from "../../components/HoverCardOne";
 import "./intro.css";
 
 const Hero = () => {
@@ -15,7 +16,6 @@ const Hero = () => {
   let hoverTwo = useRef(null);
   let hoverThree = useRef(null);
   let hoverFour = useRef(null);
-  let hoverFive = useRef(null);
   let lineOneRef = useRef(null);
   let lineTwoRef = useRef(null);
   let paraRef = useRef(null);
@@ -24,12 +24,12 @@ const Hero = () => {
   useEffect(() => {
     let ctx = gsap.context(() => {
       const tl = gsap.timeline();
-      tl.to(introRef, 0.3, {
-        yPercent: -100,
-        opacity: 0.5,
-        delay: 2,
-        ease: ease,
-      });
+      // tl.to(introRef, 0.3, {
+      //   yPercent: -100,
+      //   opacity: 0.5,
+      //   delay: 2,
+      //   ease: ease,
+      // });
       tl.from(logoRef, 0.2, {
         y: -100,
         ease: ease,
@@ -47,7 +47,7 @@ const Hero = () => {
         "-=0.3"
       );
       tl.from(
-        [hoverOne, hoverTwo, hoverThree, hoverFour, hoverFive],
+        [hoverOne, hoverTwo, hoverThree, hoverFour],
         0.8,
         {
           y: -1200,
@@ -73,21 +73,21 @@ const Hero = () => {
   return (
     <div className="w-full h-screen flex justify-center bg-black">
       <div className="w-full h-screen max-w-[1366px] flex flex-col relative overflow-hidden main-hero-wrapper">
-        <div
+        {/* <div
           ref={(el) => (introRef = el)}
           className="bg-black absolute w-full h-full top-0 left-0 z-50 flex items-center justify-center"
         >
           <span className="z-50 text-white intro-title">
             <span className="title-inner">Welcome to opi</span>
           </span>
-        </div>
+        </div> */}
         <div className="w-full flex justify-between py-5">
           <div
             ref={(el) => (logoRef = el)}
             onClick={() => navigate("/")}
             className="cursor-pointer"
           >
-            <img src="/images/png/opi.png" className="h-[40px]" />
+            <img src="/images/png/Union.png" className="h-[40px]" />
           </div>
           <div className="flex items-center space-x-8">
             <a
@@ -147,56 +147,70 @@ const Hero = () => {
           </button> */}
           </div>
           <div className="w-3/5 flex flex-col space-y-5 items-center justify-center">
-            <div className="flex space-x-5">
-              <div ref={(el) => (hoverOne = el)}>
-                <HoverCard
-                  title="Health"
-                  subtitle="We provide expertise in health policy, system strengthening, program evaluation, and innovative interventions."
-                  image="/images/png/about-focus-one.png"
-                  marginTop={30}
-                  width={250}
-                  height={250}
+            <div className="flex justify-center items-center">
+              <div
+                ref={(el) => (hoverOne = el)}
+                className="bg-green-400 h-auto"
+              >
+                <HoverCardOne
+                  title={"Digital Economy"}
+                  subtitles={
+                    "Embrace the digital revolution with our transformative strategies and cutting-edge technologies. Unlock new opportunities, optimize operations, and stay ahead in the rapidly evolving digital economy."
+                  }
+                  width={280}
+                  height={290}
+                  marginLeft={-250}
+                  marginTop={-420}
+                  imageUrl={
+                    "https://media4.giphy.com/media/1lCG3iiJB9w0NkqpU9/giphy.gif?cid=ecf05e47r2omoylzaz55e773wncamx3kc5fr8dcvtx5ya4ie&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+                  }
                 />
               </div>
               <div ref={(el) => (hoverTwo = el)}>
-                <HoverCard
-                  title="FinTech"
-                  subtitle="We guide organizations through financial technology complexities, offering regulatory analysis, market assessments, and inclusive digital solutions."
-                  image="/images/png/about-focus-two.png"
-                  width={180}
-                  height={300}
-                />
-              </div>
-              <div ref={(el) => (hoverThree = el)}>
-                <HoverCard
-                  title="Gender Equity"
-                  subtitle="We promote gender equity through mainstreaming, violence prevention, economic empowerment, and responsive evaluation."
-                  image="/images/png/services-two.png"
-                  marginTop={50}
-                  width={250}
-                  height={220}
+                <HoverCardOne
+                  title={"Health"}
+                  subtitles={
+                    "Building healthier communities through innovative solutions and strategic partnerships. From policy design to healthcare system optimization, we empower organizations to enhance patient care and improve health outcomes."
+                  }
+                  width={280}
+                  height={290}
+                  marginTop={-400}
+                  marginLeft={60}
+                  imageUrl={
+                    "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80"
+                  }
                 />
               </div>
             </div>
-            <div className="flex space-x-5">
-              <div ref={(el) => (hoverFour = el)}>
-                <HoverCard
-                  title="Climate"
-                  subtitle="Our services include climate policy, impact assessments, green growth strategies, and climate adaptation/mitigation project design."
-                  image="/images/png/about-focus-four.png"
-                  marginLeft={20}
-                  width={350}
-                  height={300}
+            <div className="flex justify-center items-center ">
+              <div ref={(el) => (hoverThree = el)}>
+                <HoverCardOne
+                  title={"Gender Equality"}
+                  subtitles={
+                    "Championing equality and inclusivity in all spheres of life. We work with organizations to develop gender-responsive policies, foster diverse and inclusive workplaces, and empower individuals to thrive."
+                  }
+                  width={280}
+                  height={290}
+                  marginLeft={-250}
+                  marginTop={-100}
+                  imageUrl={
+                    "https://images.unsplash.com/photo-1550332781-aecd27f7434f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+                  }
                 />
               </div>
-              <div ref={(el) => (hoverFive = el)}>
-                <HoverCard
-                  title="Policy Analysis"
-                  subtitle="Our rigorous analysis covers research, impact assessments, and concise briefs for informed strategies."
-                  image="/images/png/about-focus-five.png"
-                  marginTop={30}
-                  width={350}
-                  height={250}
+              <div ref={(el) => (hoverFour = el)}>
+                <HoverCardOne
+                  title={"Climate Change"}
+                  subtitles={
+                    "Join the global movement towards a sustainable future. Our expertise in climate action helps organizations reduce their environmental footprint, adapt to change, and contribute to a greener, more resilient world."
+                  }
+                  width={280}
+                  height={290}
+                  marginLeft={60}
+                  marginTop={-90}
+                  imageUrl={
+                    "https://i.giphy.com/media/oj4HL6yoqbLRv7iUqI/giphy.webp"
+                  }
                 />
               </div>
             </div>
