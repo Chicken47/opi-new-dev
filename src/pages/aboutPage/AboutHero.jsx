@@ -114,7 +114,7 @@ const AboutHero = () => {
           </div>
         </div>
         <div className="flex justify-between w-full h-full py-5">
-          <div className="w-2/5 flex flex-col items-start justify-center overflow-hidden">
+          <div className="w-2/5 flex flex-col items-start justify-center overflow-hidden pl-20">
             <span
               ref={(el) => (lineTwoRef = el)}
               className="font-extrabold text-[20px] font-inter md:text-[45px] text-left text-ipink"

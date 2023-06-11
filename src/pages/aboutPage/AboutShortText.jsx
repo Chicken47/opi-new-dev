@@ -32,7 +32,7 @@ const AboutIntro = () => {
   return (
     <div className="w-full flex justify-center">
       <div className="flex justify-between items-center py-20 max-w-[1366px] w-full">
-        <div className="flex flex-col justify-center items-start w-1/2 max-w-[600px] pl-20 pr-60">
+        <div className="flex flex-col justify-center items-start w-1/2 max-w-[600px] pl-20 ">
           <span className={`text-[18px] font-jose w-full`}>
             We are a dynamic consulting firm committed to driving positive
             change through innovative solutions and strategic partnerships.
