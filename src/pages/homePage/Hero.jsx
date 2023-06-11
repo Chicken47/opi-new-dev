@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import HoverCard from "../../components/HoverCard";
 import { gsap, Power3 } from "gsap";
 import { useNavigate } from "react-router-dom";
 import HoverCardOne from "../../components/HoverCardOne";
@@ -7,7 +6,7 @@ import "./intro.css";
 
 const Hero = () => {
   const ease = Power3.easeInOut();
-  // let introRef = useRef(null);
+  let introRef = useRef(null);
   let logoRef = useRef(null);
   let header_item_one = useRef(null);
   let header_item_two = useRef(null);
