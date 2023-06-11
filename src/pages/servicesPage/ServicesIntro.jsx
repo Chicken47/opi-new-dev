@@ -32,7 +32,7 @@ const ServicesIntro = () => {
   return (
     <div className="flex justify-evenly px-20 pb-32 pt-40">
       <div className="flex flex-col items-start py-40 w-1/2 px-20">
-        <span className={`text-[18px] font-garamond`}>
+        <span className={`text-[18px] font-jose`}>
           At OPI - Open for Policy and Impact, we offer a wide range of
           consulting services designed to address the complex challenges faced
           by organizations and governments. Our services are tailored to meet

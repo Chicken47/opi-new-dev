@@ -34,7 +34,7 @@ const SetApart = () => {
           <span className="font-bold text-[32px] font-oswald group-hover:text-oblue">
             Local Expertise
           </span>
-          <span className="font-garamond text-[18px] mt-[2vh]">
+          <span className="font-jose text-[18px] mt-[2vh]">
             With our deep roots in India, we possess a nuanced understanding of
             the country's socio-cultural fabric, regulatory landscape, and
             development challenges. This local knowledge enables us to navigate
@@ -46,7 +46,7 @@ const SetApart = () => {
           <span className="font-bold text-[32px] font-oswald group-hover:text-pblue">
             Client-Centered
           </span>
-          <span className="font-garamond text-[18px] mt-[2vh]">
+          <span className="font-jose text-[18px] mt-[2vh]">
             Our clients are at the heart of everything we do. We prioritize
             their needs, goals, and aspirations, and tailor our services to
             ensure maximum value creation and sustainable impact.
@@ -56,7 +56,7 @@ const SetApart = () => {
           <span className="font-bold text-[32px] font-oswald group-hover:text-ipink">
             Leadership
           </span>
-          <span className="font-garamond text-[18px] mt-[2vh]">
+          <span className="font-jose text-[18px] mt-[2vh]">
             We stay ahead of the curve by staying abreast of emerging trends,
             policy developments, and innovative practices. Our thought
             leadership enables us to provide strategic advice and shape the

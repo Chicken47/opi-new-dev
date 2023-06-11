@@ -31,25 +31,29 @@ const ShortText = () => {
   });
 
   return (
-    <div className="flex justify-evenly px-20 pb-32">
-      <div className="flex flex-col items-start py-40 w-1/2 px-20">
-        <span className={`text-[20px] font-garamond`}>
-          We are a dynamic consulting firm committed to driving positive change
-          through innovative solutions and strategic partnerships. With our
-          unique blend of expertise and passion, we empower organizations and
-          governments to create meaningful impact and navigate complex
-          challenges.
-        </span>
-        <div className="px-8 py-2 mt-10 font-bold text-ipink uppercase transition-all bg-gray-200 border-2 border-ipink rounded cursor-pointer hover:border-gray-300 hover:bg-[#CE2273] hover:text-white hover:font-bold hover:border-2 hover:rounded-lg">
-          Check out more
+    <div className="w-full flex justify-center">
+      <div className="flex justify-between items-center py-20 max-w-[1366px] w-full">
+        <div className="flex flex-col justify-center items-start w-1/2 bg-pink-200 pr-60">
+          <span className={`text-[18px] bg-green-200 font-jose w-full`}>
+            We are a dynamic consulting firm committed to driving positive
+            change through innovative solutions and strategic partnerships.
+            <br />
+            <br />
+            With our unique blend of expertise and passion, we empower
+            organizations and governments to create meaningful impact and
+            navigate complex challenges.
+          </span>
+          <div className="px-8 py-2 mt-10 font-bold text-white uppercase transition-all bg-ipink border-2 border-ipink rounded cursor-pointer hover:font-bold hover:border-2 hover:rounded-lg">
+            Check out more
+          </div>
         </div>
-      </div>
-      <div className="w-1/2 flex items-center justify-center overflow-hidden">
-        <img
-          src="/images/png/about-focus-three.png"
-          className="object-cover w-4/5 object-center overflow-hidden h-[300px] about-about-image"
-          ref={(el) => (shortImageRef = el)}
-        />
+        <div className="w-1/2 flex items-center justify-center overflow-hidden">
+          <img
+            src="/images/png/about-focus-three.png"
+            className="object-cover w-4/5 object-center overflow-hidden h-[300px] about-about-image"
+            ref={(el) => (shortImageRef = el)}
+          />
+        </div>
       </div>
     </div>
   );

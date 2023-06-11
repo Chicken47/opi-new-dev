@@ -11,7 +11,9 @@ module.exports = {
       fontFamily: {
         oswald: ['Oswald'],
         garamond: ['EB Garamond'],
-        mont: ['Montserrat']
+        mont: ['Montserrat'],
+        jose: ['Josefin Sans'],
+        inter: ['Inter']
       }
     },
   },

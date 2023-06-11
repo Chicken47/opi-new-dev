@@ -53,7 +53,7 @@ const OurApproach = () => {
           <span className="font-oswald font-extrabold text-[50px]">
             Collaborative
           </span>
-          <p className="font-garamond text-[20px]">
+          <p className="font-jose text-[20px]">
             We believe in the power of partnerships. By working closely with our
             clients and stakeholders, we co-create solutions that are
             sustainable, inclusive, and aligned with their goals.
@@ -69,7 +69,7 @@ const OurApproach = () => {
           <span className="font-oswald font-extrabold text-[50px]">
             Innovative
           </span>
-          <p className="font-garamond text-[20px]">
+          <p className="font-jose text-[20px]">
             We embrace innovation to drive social impact. Through cutting-edge
             technologies, data-driven insights, and creative problem-solving,
           </p>
@@ -84,7 +84,7 @@ const OurApproach = () => {
           <span className="font-oswald font-extrabold text-[50px]">
             Gender Lens
           </span>
-          <p className="font-garamond text-[20px]">
+          <p className="font-jose text-[20px]">
             We recognize the critical role of gender in shaping societal
             dynamics. Our gender-sensitive approach ensures that our solutions
             address the unique needs and barriers faced by women and other
@@ -101,7 +101,7 @@ const OurApproach = () => {
           <span className="font-oswald font-extrabold text-[50px]">
             Evidence-Based
           </span>
-          <p className="font-garamond text-[20px]">
+          <p className="font-jose text-[20px]">
             We are committed to delivering results. Our rigorous monitoring and
             evaluation frameworks allow us to track progress, measure impact,
             and continuously refine our strategies for optimal outcomes.

@@ -117,7 +117,7 @@ const ServicesHero = () => {
           </span>
           <p
             ref={(el) => (paraRef = el)}
-            className="text-white max-w-[600px] font-garamond text-[14px] md:text-[16px] text-left"
+            className="text-white max-w-[600px] font-jose text-[14px] md:text-[16px] text-left"
           >
             We understand that each client and project is unique, and we pride
             ourselves on our ability to tailor our services to specific needs

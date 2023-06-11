@@ -125,7 +125,7 @@ const AboutHero = () => {
           </span>
           <p
             ref={(el) => (paraRef = el)}
-            className="text-white max-w-[600px] text-[14px] md:text-[20px] font-garamond text-left"
+            className="text-white max-w-[600px] text-[14px] md:text-[20px] font-jose text-left"
           >
             At OPI, we believe that policy and impact go hand in hand. Our
             multidisciplinary team brings together diverse backgrounds, ranging

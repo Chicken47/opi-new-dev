@@ -1,13 +1,13 @@
 .reveal {
-    /* background: */
-    padding-left: 10%;
-    /* padding-right: 10%; */
-  }
-  
+  /* background: */
+  /* padding-left: 10%; */
+  /* padding-right: 10%; */
+}
+
 .reveal-text {
-    font-weight: 700;
-    font-size: clamp(2rem, 6vw, 18rem);
-    line-height: clamp(2rem, 6vw, 18rem);
-    color: #fff;
-    filter: drop-shadow(0 0 0.06rem rgb(2, 2, 2));
-  }
+  font-weight: 700;
+  font-size: clamp(2rem, 6vw, 18rem);
+  line-height: clamp(2rem, 6vw, 18rem);
+  color: #fff;
+  filter: drop-shadow(0 0 0.06rem rgb(2, 2, 2));
+}

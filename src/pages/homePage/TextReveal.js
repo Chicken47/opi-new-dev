@@ -38,8 +38,8 @@ const TextReveal = () => {
   }, [lettersRef]);
 
   return (
-    <>
-      <div className="w-full py-20 bg-white reveal">
+    <div className="w-full flex justify-center">
+      <div className="w-full max-w-[1366px] py-20 bg-white reveal">
         <div ref={triggerRef} className="w-2/3 bg-white">
           {text.split("").map((letter, index) => (
             <span
@@ -52,7 +52,7 @@ const TextReveal = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

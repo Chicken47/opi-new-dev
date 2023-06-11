@@ -55,38 +55,38 @@ const PinRight = () => {
     >
       <div
         id="left"
-        className={`w-1/2 flex flex-col p-16 overflow-hidden bg-pblue sticky`}
+        className={`w-1/2 flex flex-col p-16 overflow-hidden bg-oblue sticky`}
       >
         <div className="h-auto py-20 flex flex-col">
           <span
             id="slide-text-one"
-            className="text-[32px] font-bold font-oswald text-ipink"
+            className="text-[32px] font-bold font-inter text-black"
           >
             Communications, Outreach, and Partnerships
           </span>
           <div className="flex flex-col space-y-5 mt-16">
             <span
               id="slide-text-one"
-              className="text-white font-mont font-bold text-[20px]"
+              className="text-pblue font-inter font-bold text-[20px]"
             >
               Engagement
             </span>
             <span
               id="slide-text-one"
-              className="text-white font-garamond text-[20px] max-w-[450px]"
+              className="text-black font-jose text-[20px] max-w-[450px]"
             >
               - Regional knowledge sharing through events, exchange workshops,
               and study visits, and investments.
             </span>
             <span
               id="slide-text-one"
-              className="text-white font-mont font-bold text-[20px]"
+              className="text-pblue font-inter font-bold text-[20px]"
             >
               Collaborations
             </span>
             <span
               id="slide-text-one"
-              className="text-white font-garamond text-[20px] max-w-[450px]"
+              className="text-black font-jose text-[20px] max-w-[450px]"
             >
               - Facilitate partnership channels, define the required
               collaborations, the roles of partnering organizations and bodies.
@@ -96,57 +96,57 @@ const PinRight = () => {
         <div className="h-auto py-20 flex flex-col">
           <span
             id="slide-text-one"
-            className="text-[32px] font-oswald font-bold text-ipink"
+            className="text-[32px] font-inter font-bold text-black"
           >
             Multi-Disciplinary | Sectoral | Stakeholder Partnerships
           </span>
           <div className="flex flex-col space-y-5 mt-10">
             <span
               id="slide-text-one"
-              className="text-white font-mont font-bold text-[20px]"
+              className="text-pblue font-inter font-bold text-[20px]"
             >
               Funding
             </span>
             <span
               id="slide-text-one"
-              className="text-white font-garamond text-[20px] max-w-[450px]"
+              className="text-black font-jose text-[20px] max-w-[450px]"
             >
               Facilitate partnership channels, define the required
               collaborations, the roles of partnering organizations and bodies.
             </span>
             <span
               id="slide-text-one"
-              className="text-white font-mont font-bold text-[20px]"
+              className="text-pblue font-inter font-bold text-[20px]"
             >
               Implementation
             </span>
             <span
               id="slide-text-one"
-              className="text-white font-garamond text-[20px] max-w-[450px]"
+              className="text-black font-jose text-[20px] max-w-[450px]"
             >
               Build and scale solutions and products in the thematic areas
             </span>
             <span
               id="slide-text-one"
-              className="text-white font-mont font-bold text-[20px]"
+              className="text-pblue font-inter font-bold text-[20px]"
             >
               Network
             </span>
             <span
               id="slide-text-one"
-              className="text-white font-garamond text-[20px] max-w-[450px]"
+              className="text-black font-jose text-[20px] max-w-[450px]"
             >
               Outreach, learning and knowledge exchange
             </span>
             <span
               id="slide-text-one"
-              className="text-white font-mont font-bold text-[20px]"
+              className="text-pblue font-inter font-bold text-[20px]"
             >
               Ecosystem
             </span>
             <span
               id="slide-text-one"
-              className="text-white font-garamond text-[20px] max-w-[450px]"
+              className="text-black font-jose text-[20px] max-w-[450px]"
             >
               Enhance and strengthen systems and approaches
             </span>
@@ -156,12 +156,12 @@ const PinRight = () => {
       <div
         id="right"
         ref={(el) => (sectionRef = el)}
-        className="w-1/2 p-16 flex flex-col items-center overflow-hidden bg-pblue "
+        className="w-1/2 p-16 flex flex-col items-center overflow-hidden bg-oblue "
       >
-        <span className="text-[50px] w-full text-left font-bold font-oswald text-ipink">
+        <span className="text-[50px] w-full text-left font-bold font-inter text-black">
           Involve
         </span>
-        <span className="font-garamond w-full text-left text-[20px] text-white">
+        <span className="font-jose w-full text-left text-[20px] text-black">
           We foster strategic collaborations and partnerships, setting clear
           objectives to align with our clients' goals. By bringing together
           like-minded organizations and individuals, we amplify our collective

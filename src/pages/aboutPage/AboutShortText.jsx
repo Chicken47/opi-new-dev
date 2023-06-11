@@ -32,7 +32,7 @@ const AboutIntro = () => {
   return (
     <div className="flex justify-evenly px-20 pb-32 mt-10">
       <div className="flex flex-col items-start py-40 w-1/2 px-20">
-        <span className={`text-[20px] font-garamond`}>
+        <span className={`text-[20px] font-jose`}>
           We are a dynamic consulting firm committed to driving positive change
           through innovative solutions and strategic partnerships. With our
           unique blend of expertise and passion, we empower organizations and

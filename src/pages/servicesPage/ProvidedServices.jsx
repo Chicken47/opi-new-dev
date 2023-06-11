@@ -42,7 +42,7 @@ const ProvidedServices = () => {
                 <span className="font-extrabold text-pblue font-oswald text-[26px]">
                   Public Policy Development and Analysis
                 </span>
-                <span className="flex items-center justify-center text-left text-[20px] font-garamond">
+                <span className="flex items-center justify-center text-left text-[20px] font-jose">
                   - Policy research and analysis: Rigorous research to analyze
                   policy landscapes, identify emerging trends, and develop
                   evidence-based recommendations. <br />
@@ -71,7 +71,7 @@ const ProvidedServices = () => {
                 <span className="font-extrabold text-pblue font-oswald text-[26px]">
                   Public Policy Development and Analysis
                 </span>
-                <span className="flex items-center justify-center text-left text-[20px] font-garamond">
+                <span className="flex items-center justify-center text-left text-[20px] font-jose">
                   - Policy research and analysis: Rigorous research to analyze
                   policy landscapes, identify emerging trends, and develop
                   evidence-based recommendations. <br />
@@ -100,7 +100,7 @@ const ProvidedServices = () => {
                 <span className="font-extrabold text-pblue font-oswald text-[26px]">
                   Partnerships and Stakeholder Engagement
                 </span>
-                <span className="flex items-center justify-center text-left text-[20px] font-garamond">
+                <span className="flex items-center justify-center text-left text-[20px] font-jose">
                   - Partnership development and management: Strategic
                   partnerships with diverse stakeholders, leveraging resources
                   and expertise for collective impact.
@@ -128,7 +128,7 @@ const ProvidedServices = () => {
                 <span className="font-extrabold text-pblue font-oswald text-[26px]">
                   Capacity Building and Training
                 </span>
-                <span className="flex items-center justify-center text-left text-[20px] font-garamond">
+                <span className="flex items-center justify-center text-left text-[20px] font-jose">
                   - Skill development programs: Designing and delivering
                   customized training programs to enhance organizational and
                   individual capacities.
@@ -158,7 +158,7 @@ const ProvidedServices = () => {
                 <span className="font-extrabold text-pblue font-oswald text-[26px]">
                   Public-Private Partnerships (PPPs)
                 </span>
-                <span className="flex items-center justify-center text-left text-[20px] font-garamond">
+                <span className="flex items-center justify-center text-left text-[20px] font-jose">
                   - PPP feasibility studies: Detailed assessments to determine
                   the viability of PPPs, identifying risks and opportunities.
                   <br />
@@ -187,7 +187,7 @@ const ProvidedServices = () => {
                 <span className="font-extrabold text-pblue font-oswald text-[26px]">
                   Relations and Advocacy
                 </span>
-                <span className="flex items-center justify-center text-left text-[20px] font-garamond">
+                <span className="flex items-center justify-center text-left text-[20px] font-jose">
                   - Government engagement strategies: Developing comprehensive
                   strategies to engage with governmental entities and navigate
                   regulatory environments.
@@ -217,7 +217,7 @@ const ProvidedServices = () => {
                 <span className="font-extrabold text-pblue font-oswald text-[26px]">
                   Monitoring, Evaluation, and Learning
                 </span>
-                <span className="flex items-center justify-center text-left text-[20px] font-garamond">
+                <span className="flex items-center justify-center text-left text-[20px] font-jose">
                   - Performance measurement frameworks: Designing and
                   implementing monitoring and evaluation frameworks to assess
                   program effectiveness and drive continuous improvement.
@@ -247,7 +247,7 @@ const ProvidedServices = () => {
                   {" "}
                   Digital Transformation and Innovation
                 </span>
-                <span className="flex items-center justify-center text-left text-[20px] font-garamond">
+                <span className="flex items-center justify-center text-left text-[20px] font-jose">
                   - Digital strategy development: Assisting organizations in
                   developing digital strategies aligned with their goals and
                   objectives.
