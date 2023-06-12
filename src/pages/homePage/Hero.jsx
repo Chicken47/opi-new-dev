@@ -86,7 +86,7 @@ const Hero = () => {
             <span className="title-inner">Welcome to opi</span>
           </span>
         </div>
-        <div className="w-full flex justify-between py-5 px-10">
+        <div className="w-full hidden md:flex justify-between py-5 px-10">
           <div
             ref={(el) => (logoRef = el)}
             onClick={() => navigate("/")}
@@ -126,22 +126,22 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex justify-between w-full h-full py-5">
-          <div className="w-2/5 pl-20 flex flex-col items-start justify-center overflow-hidden">
+          <div className="w-full md:w-2/5 pl-5 md:pl-20 flex flex-col items-start justify-center overflow-hidden">
             <span
               ref={(el) => (lineOneRef = el)}
-              className="font-extrabold font-inter text-[22px] md:text-[45px] text-left w-full text-white"
+              className="font-extrabold font-inter text-[32px] md:text-[45px] text-left w-full text-white"
             >
               Open for
             </span>
             <span
               ref={(el) => (lineTwoRef = el)}
-              className="font-extrabold text-[20px] font-inter md:text-[45px] text-left text-ipink"
+              className="font-extrabold text-[32px] font-inter md:text-[45px] text-left text-ipink"
             >
               Policy and Impact
             </span>
             <p
               ref={(el) => (paraRef = el)}
-              className="text-white max-w-[600px] font-jose text-[14px] md:text-[18px] text-left mt-10"
+              className="text-white max-w-[600px] font-jose text-[16px] pr-10 md:pr-0 md:text-[18px] text-left mt-10"
             >
               Driving Positive Change through Innovative Solutions and Strategic
               Partnerships: Empowering Organisations to Navigate Complex
@@ -151,7 +151,7 @@ const Hero = () => {
             About Us
           </button> */}
           </div>
-          <div className="w-3/5 flex flex-col space-y-5 items-center justify-center">
+          <div className="w-3/5 hidden md:flex flex-col space-y-5 items-center justify-center">
             <div className="flex justify-center items-center">
               <div ref={(el) => (hoverOne = el)} className="h-auto">
                 <HoverCardOne

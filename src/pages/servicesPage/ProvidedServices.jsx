@@ -13,7 +13,6 @@ const ProvidedServices = () => {
           scrollTrigger: {
             trigger: image,
             scrub: 5,
-            markers: true,
             endTrigger: image,
           },
         });
@@ -25,7 +24,6 @@ const ProvidedServices = () => {
             trigger: image,
             end: "top 20%",
             scrub: 0.2,
-            markers: true,
             endTrigger: image,
           },
         });
@@ -37,7 +35,6 @@ const ProvidedServices = () => {
             trigger: image,
             end: "top 10%",
             scrub: 0.2,
-            markers: true,
             endTrigger: image,
           },
         });

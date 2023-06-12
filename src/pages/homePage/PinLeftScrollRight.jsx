@@ -55,22 +55,22 @@ const PinLeftScrollRight = () => {
       <div className="w-full flex justify-center bg-gradient-to-r from-[#f96c961e] to-[#8bb4c73d]">
         <div
           ref={(el) => (triggerRef = el)}
-          className="flex justify-start max-w-[1366px] w-full trigger overflow-hidden bg-black"
+          className="flex flex-col md:flex-row justify-start max-w-[1366px] w-full trigger overflow-hidden bg-black"
         >
           <div
             ref={(el) => (sectionRef = el)}
             id="left"
-            className="w-1/2 p-16 flex flex-col overflow-hidden bg-gradient-to-r from-[#f96c961e] to-black [#8bb4c73d] sticky dark:bg-opacity-50"
+            className="w-full md:w-1/2 p-16 flex flex-col overflow-hidden bg-black z-50 md:bg-gradient-to-r from-[#f96c961e] to-black [#8bb4c73d] sticky dark:bg-opacity-50"
           >
-            <span className="text-[50px] w-full text-left font-bold font-inter text-white">
+            <span className="md:text-[50px] text-[28px] w-full text-left font-bold font-inter text-white pt-3 md:pt-0">
               Learn
             </span>
-            <span className="font-jose w-full text-left text-[18px] text-white">
+            <span className="font-jose w-full text-left text-[14px] md:text-[18px] text-white">
               We create innovative knowledge products and programs, empowering
               continuous learning and growth through research and evidence-based
               methodologies.
             </span>
-            <div className="overflow-hidden m-10 shadow-xl">
+            <div className="overflow-hidden hidden md:flex m-10 shadow-xl">
               <img
                 src="/images/png/about-focus-one.png"
                 alt=""
@@ -80,7 +80,7 @@ const PinLeftScrollRight = () => {
           </div>
           <div
             id="right"
-            className={`w-1/2 flex flex-col overflow-hidden bg-gradient-to-r from-black to-[#8bb4c73d]`}
+            className={`w-full md:w-1/2 flex flex-col overflow-hidden bg-gradient-to-r from-black to-[#8bb4c73d]`}
           >
             <div className="h-auto py-20 flex flex-col">
               <span
