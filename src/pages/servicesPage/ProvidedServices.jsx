@@ -9,7 +9,7 @@ const ProvidedServices = () => {
     let ctx = gsap.context(() => {
       gsap.utils.toArray(".provided-services-image").forEach((image) => {
         gsap.to(image, {
-          scale: 1.5,
+          scale: 1.2,
           scrollTrigger: {
             trigger: image,
             scrub: 5,
