@@ -52,7 +52,7 @@ const PinLeftScrollRight = () => {
 
   return (
     <div className="bg-black w-full">
-      <div className="w-full flex justify-center bg-gradient-to-r from-[#f96c963b] to-[#8bb4c73d]">
+      <div className="w-full flex justify-center bg-gradient-to-r from-[#f96c961e] to-[#8bb4c73d]">
         <div
           ref={(el) => (triggerRef = el)}
           className="flex justify-start max-w-[1366px] w-full trigger overflow-hidden bg-black"
@@ -60,7 +60,7 @@ const PinLeftScrollRight = () => {
           <div
             ref={(el) => (sectionRef = el)}
             id="left"
-            className="w-1/2 p-16 flex flex-col overflow-hidden bg-gradient-to-r from-[#f96c963b] to-black [#8bb4c73d] sticky dark:bg-opacity-50"
+            className="w-1/2 p-16 flex flex-col overflow-hidden bg-gradient-to-r from-[#f96c961e] to-black [#8bb4c73d] sticky dark:bg-opacity-50"
           >
             <span className="text-[50px] w-full text-left font-bold font-inter text-white">
               Learn

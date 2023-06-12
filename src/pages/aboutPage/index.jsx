@@ -11,8 +11,8 @@ const AboutPage = () => {
     <div className="w-full overflow-hidden">
       <AboutHero />
       <AboutIntro />
-      <SetApart />
       <FounderSection />
+      <SetApart />
       <MapSection />
       <Footer />
     </div>
