@@ -3,14 +3,14 @@ import Footer from "../../components/Footer";
 import ProvidedServices from "./ProvidedServices";
 import ServicesIntro from "./ServicesIntro";
 import ServicesHero from "./ServicesHero";
-import OurApproach from "./OurApproach";
+import Approach from "./Approach";
 
 const ServicesPage = () => {
   return (
     <div className="w-full">
       <ServicesHero />
       <ServicesIntro />
-      <OurApproach />
+      <Approach />
       <ProvidedServices />
       <Footer />
     </div>
