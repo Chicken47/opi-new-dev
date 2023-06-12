@@ -59,7 +59,7 @@ const FounderSection = () => {
         </div>
         <div
           id="sireesha-right"
-          className={`w-1/2 py-16 px-32 flex flex-col overflow-hidden bg-oblue font-jose text-[22px] text-black`}
+          className={`w-1/2 py-32 px-32 flex flex-col overflow-hidden bg-oblue font-jose text-[20px] text-black`}
         >
           Sireesha is the founder and managing partner of Open for Policy and
           Impact. She is a seasoned global health professional with over two

@@ -51,7 +51,7 @@ const OurApproach = () => {
             <img src="/images/png/bgImg1.png" />
           </div>
           <div class="card__text">
-            <span className="font-oswald font-extrabold text-[50px]">
+            <span className="font-inter font-extrabold text-[40px]">
               Collaborative
             </span>
             <p className="font-jose text-[20px]">
@@ -67,7 +67,7 @@ const OurApproach = () => {
             <img src="/images/png/bgImg.png" />
           </div>
           <div class="card__text text-white">
-            <span className="font-oswald font-extrabold text-[50px]">
+            <span className="font-inter font-extrabold text-[40px]">
               Innovative
             </span>
             <p className="font-jose text-[20px]">
@@ -82,7 +82,7 @@ const OurApproach = () => {
             <img src="/images/png/services-two.png" />
           </div>
           <div class="card__text">
-            <span className="font-oswald font-extrabold text-[50px]">
+            <span className="font-inter font-extrabold text-[40px]">
               Gender Lens
             </span>
             <p className="font-jose text-[20px]">
@@ -99,7 +99,7 @@ const OurApproach = () => {
             <img src="/images/png/services-three.png" />
           </div>
           <div class="card__text">
-            <span className="font-oswald font-extrabold text-[50px]">
+            <span className="font-inter font-extrabold text-[40px]">
               Evidence-Based
             </span>
             <p className="font-jose text-[20px]">

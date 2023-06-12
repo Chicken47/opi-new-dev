@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import HoverCard from "../../components/HoverCard";
+import HoverCardOne from "../../components/HoverCardOne";
 import { gsap, Power3 } from "gsap";
 import { useNavigate } from "react-router-dom";
 
@@ -40,7 +40,7 @@ const ServicesHero = () => {
         "-=0.3"
       );
       tl.from(
-        [hoverOne, hoverTwo, hoverThree, hoverFour, hoverFive],
+        [hoverOne, hoverTwo, hoverThree],
         0.8,
         {
           y: -1200,
@@ -100,7 +100,7 @@ const ServicesHero = () => {
             </div>
           </div>
           <div className="flex justify-between w-full h-full py-5">
-            <div className="w-2/5 flex flex-col items-start justify-center overflow-hidden">
+            <div className="w-2/5 flex flex-col items-start justify-center ml-20 overflow-hidden">
               <span
                 ref={(el) => (lineOneRef = el)}
                 className="font-extrabold text-[20px] font-inter md:text-[45px] text-left text-ipink"
@@ -109,7 +109,7 @@ const ServicesHero = () => {
               </span>
               <p
                 ref={(el) => (paraRef = el)}
-                className="text-white max-w-[600px] font-jose text-[14px] md:text-[18px] text-left mt-10"
+                className="text-white max-w-[600px] font-jose text-[14px] md:text-[18px]  text-left mt-10"
               >
                 We understand that each client and project is unique, and we
                 pride ourselves on our ability to tailor our services to
@@ -124,56 +124,52 @@ const ServicesHero = () => {
           </button> */}
             </div>
             <div className="w-3/5 flex flex-col space-y-5 items-center justify-center">
-              <div className="flex space-x-5">
-                <div ref={(el) => (hoverOne = el)}>
-                  <HoverCard
-                    title="Health"
-                    subtitle="We provide expertise in health policy, system strengthening, program evaluation, and innovative interventions."
-                    image="/images/png/about-focus-one.png"
-                    marginTop={30}
-                    width={250}
-                    height={250}
+              <div className="flex items-center justify-center">
+                <div ref={(el) => (hoverOne = el)} className="h-auto">
+                  <HoverCardOne
+                    title={"Multidisciplinary Research"}
+                    subtitles={
+                      "Multidisciplinary research promotes collaboration and integration across diverse fields, resulting in innovative and holistic solutions to complex problems. By combining knowledge from different disciplines, such research expands our understanding and drives scientific advancements. Through the process of learning, knowledge capture, and creation, multidisciplinary research enables the exploration of new frontiers, fostering innovation and pushing the boundaries of human knowledge."
+                    }
+                    width={300}
+                    height={400}
+                    marginLeft={-280}
+                    marginTop={-320}
+                    imageUrl={
+                      "https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80"
+                    }
                   />
                 </div>
                 <div ref={(el) => (hoverTwo = el)}>
-                  <HoverCard
-                    title="FinTech"
-                    subtitle="We guide organizations through financial technology complexities, offering regulatory analysis, market assessments, and inclusive digital solutions."
-                    image="/images/png/about-focus-two.png"
-                    width={180}
-                    height={300}
-                  />
-                </div>
-                <div ref={(el) => (hoverThree = el)}>
-                  <HoverCard
-                    title="Gender Equity"
-                    subtitle="We promote gender equity through mainstreaming, violence prevention, economic empowerment, and responsive evaluation."
-                    image="/images/png/services-two.png"
-                    marginTop={50}
-                    width={250}
-                    height={220}
+                  <HoverCardOne
+                    title={"Multi-sectoral Dialogue"}
+                    subtitles={
+                      "Engaging stakeholders from different sectors in meaningful conversations fosters comprehensive problem-solving and effective information sharing. By involving diverse perspectives and expertise, multi-sectoral dialogue enables more inclusive decision-making, leading to sustainable solutions."
+                    }
+                    width={280}
+                    height={290}
+                    marginTop={-430}
+                    marginLeft={50}
+                    imageUrl={
+                      "https://media.giphy.com/media/xUA7aPctmikpUjqUmI/giphy.gif"
+                    }
                   />
                 </div>
               </div>
-              <div className="flex space-x-5">
-                <div ref={(el) => (hoverFour = el)}>
-                  <HoverCard
-                    title="Climate"
-                    subtitle="Our services include climate policy, impact assessments, green growth strategies, and climate adaptation/mitigation project design."
-                    image="/images/png/about-focus-four.png"
-                    marginLeft={20}
-                    width={350}
-                    height={300}
-                  />
-                </div>
-                <div ref={(el) => (hoverFive = el)}>
-                  <HoverCard
-                    title="Policy Analysis"
-                    subtitle="Our rigorous analysis covers research, impact assessments, and concise briefs for informed strategies."
-                    image="/images/png/about-focus-five.png"
-                    marginTop={30}
-                    width={350}
-                    height={250}
+              <div className="flex items-center justify-center">
+                <div ref={(el) => (hoverThree = el)}>
+                  <HoverCardOne
+                    title={"Multi-stakeholder Continuum"}
+                    subtitles={
+                      "Building strong consortiums and partnerships leverages collective resources and expertise for impactful initiatives. By fostering collaboration and coordination among stakeholders, a multi-stakeholder continuum ensures the successful implementation of comprehensive and inclusive strategies."
+                    }
+                    width={290}
+                    height={290}
+                    marginLeft={60}
+                    marginTop={-100}
+                    imageUrl={
+                      "https://images.unsplash.com/photo-1630673470267-417e4d361129?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80"
+                    }
                   />
                 </div>
               </div>

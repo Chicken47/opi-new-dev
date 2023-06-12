@@ -60,7 +60,7 @@ const PinLeftOne = () => {
           <span className="text-[50px] w-full text-left font-bold font-inter text-pblue">
             Implement
           </span>
-          <span className="font-jose w-full text-left text-[20px] text-black">
+          <span className="font-jose w-full text-left text-[18px] text-black">
             Our mission is to catalyze digital solutions, extending beyond
             traditional approaches, to support development and revenue models.
             We thrive in thematic areas, using cutting-edge technology to drive
@@ -95,7 +95,7 @@ const PinLeftOne = () => {
               </span>
               <span
                 id="slide-text-two"
-                className="text-black font-jose text-[20px] max-w-[450px]"
+                className="text-black font-jose text-[18px] max-w-[450px]"
               >
                 Enhancing skills and knowledge through targeted trainings and
                 development programs.
@@ -108,7 +108,7 @@ const PinLeftOne = () => {
               </span>
               <span
                 id="slide-text-two"
-                className="text-black font-jose text-[20px] max-w-[450px]"
+                className="text-black font-jose text-[18px] max-w-[450px]"
               >
                 Mobilizing resources and providing early-stage support to
                 startups for growth and success.
@@ -121,7 +121,7 @@ const PinLeftOne = () => {
               </span>
               <span
                 id="slide-text-two"
-                className="text-black font-jose text-[20px] max-w-[450px]"
+                className="text-black font-jose text-[18px] max-w-[450px]"
               >
                 Accessing financing support from accelerators, funders, and
                 investors to fuel innovation and accelerate business growth.
@@ -129,28 +129,28 @@ const PinLeftOne = () => {
             </div>
           </div>
           <div className="h-auto py-20 flex flex-col">
-            {/* <span
-            id="slide-text-two"
-            className="text-[32px] font-bold font-inter text-pblue"
-          >
-            Bridge Initiative Fund
-          </span>
-          <div className="flex flex-col space-y-5 mt-16">
             <span
               id="slide-text-two"
-              className="text-black font-jose text-[20px] max-w-[450px]"
+              className="text-[32px] font-bold font-inter text-pblue"
             >
-              Mobilize and provide innovative financing to support development
-              and scale of:
-              <br />
-              - Digital Public Goods
-              <br />
-              - Digital Solutions
-              <br />
-              - DPI
-              <br />
+              Bridge Initiative Fund
             </span>
-          </div> */}
+            <div className="flex flex-col space-y-5 mt-16">
+              <span
+                id="slide-text-two"
+                className="text-black font-jose text-[18px] max-w-[450px]"
+              >
+                Mobilize and provide innovative financing to support development
+                and scale of:
+                <br />
+                - Digital Public Goods
+                <br />
+                - Digital Solutions
+                <br />
+                - DPI
+                <br />
+              </span>
+            </div>
           </div>
         </div>
       </div>

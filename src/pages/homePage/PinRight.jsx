@@ -74,7 +74,7 @@ const PinRight = () => {
               </span>
               <span
                 id="slide-text-one"
-                className="text-black font-jose text-[20px] max-w-[450px]"
+                className="text-black font-jose text-[18px] max-w-[450px]"
               >
                 - Regional knowledge sharing through events, exchange workshops,
                 and study visits, and investments.
@@ -87,7 +87,7 @@ const PinRight = () => {
               </span>
               <span
                 id="slide-text-one"
-                className="text-black font-jose text-[20px] max-w-[450px]"
+                className="text-black font-jose text-[18px] max-w-[450px]"
               >
                 - Facilitate partnership channels, define the required
                 collaborations, the roles of partnering organizations and
@@ -111,7 +111,7 @@ const PinRight = () => {
               </span>
               <span
                 id="slide-text-one"
-                className="text-black font-jose text-[20px] max-w-[450px]"
+                className="text-black font-jose text-[18px] max-w-[450px]"
               >
                 Facilitate partnership channels, define the required
                 collaborations, the roles of partnering organizations and
@@ -125,7 +125,7 @@ const PinRight = () => {
               </span>
               <span
                 id="slide-text-one"
-                className="text-black font-jose text-[20px] max-w-[450px]"
+                className="text-black font-jose text-[18px] max-w-[450px]"
               >
                 Build and scale solutions and products in the thematic areas
               </span>
@@ -137,7 +137,7 @@ const PinRight = () => {
               </span>
               <span
                 id="slide-text-one"
-                className="text-black font-jose text-[20px] max-w-[450px]"
+                className="text-black font-jose text-[18px] max-w-[450px]"
               >
                 Outreach, learning and knowledge exchange
               </span>
@@ -149,7 +149,7 @@ const PinRight = () => {
               </span>
               <span
                 id="slide-text-one"
-                className="text-black font-jose text-[20px] max-w-[450px]"
+                className="text-black font-jose text-[18px] max-w-[450px]"
               >
                 Enhance and strengthen systems and approaches
               </span>
@@ -164,7 +164,7 @@ const PinRight = () => {
           <span className="text-[50px] w-full text-left font-bold font-inter text-black">
             Involve
           </span>
-          <span className="font-jose w-full text-left text-[20px] text-white">
+          <span className="font-jose w-full text-left text-[18px] text-white">
             We foster strategic collaborations and partnerships, setting clear
             objectives to align with our clients' goals. By bringing together
             like-minded organizations and individuals, we amplify our collective

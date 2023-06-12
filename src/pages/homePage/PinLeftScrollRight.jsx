@@ -65,7 +65,7 @@ const PinLeftScrollRight = () => {
             <span className="text-[50px] w-full text-left font-bold font-inter text-white">
               Learn
             </span>
-            <span className="font-jose w-full text-left text-[20px] text-white">
+            <span className="font-jose w-full text-left text-[18px] text-white">
               We create innovative knowledge products and programs, empowering
               continuous learning and growth through research and evidence-based
               methodologies.
@@ -98,7 +98,7 @@ const PinLeftScrollRight = () => {
                 </span>
                 <span
                   id="slide-text-text"
-                  className="text-white font-jose text-[20px] max-w-[450px]"
+                  className="text-white font-jose text-[18px] max-w-[450px]"
                 >
                   In-depth research documents providing valuable insights and
                   analysis on specific topics.
@@ -111,7 +111,7 @@ const PinLeftScrollRight = () => {
                 </span>
                 <span
                   id="slide-text-text"
-                  className="text-white font-jose text-[20px] max-w-[450px]"
+                  className="text-white font-jose text-[18px] max-w-[450px]"
                 >
                   Real-world examples and experimental plans showcasing
                   effective strategies and approaches.
@@ -124,7 +124,7 @@ const PinLeftScrollRight = () => {
                 </span>
                 <span
                   id="slide-text-text"
-                  className="text-white font-jose text-[20px] max-w-[450px]"
+                  className="text-white font-jose text-[18px] max-w-[450px]"
                 >
                   Concise summaries highlighting key industry trends and policy
                   implications.
@@ -137,7 +137,7 @@ const PinLeftScrollRight = () => {
                 </span>
                 <span
                   id="slide-text-text"
-                  className="text-white font-jose text-[20px] max-w-[450px]"
+                  className="text-white font-jose text-[18px] max-w-[450px]"
                 >
                   Comprehensive evaluations to identify requirements and
                   determine optimal solutions.
@@ -150,7 +150,7 @@ const PinLeftScrollRight = () => {
                 </span>
                 <span
                   id="slide-text-text"
-                  className="text-white font-jose text-[20px] max-w-[450px]"
+                  className="text-white font-jose text-[18px] max-w-[450px]"
                 >
                   Strategic plans outlining step-by-step directions and
                   milestones for achieving desired outcomes.
@@ -163,7 +163,7 @@ const PinLeftScrollRight = () => {
                 </span>
                 <span
                   id="slide-text-text"
-                  className="text-white font-jose text-[20px] max-w-[450px]"
+                  className="text-white font-jose text-[18px] max-w-[450px]"
                 >
                   Platforms for collaborative knowledge-sharing and fostering
                   partnerships among stakeholders.
@@ -186,7 +186,7 @@ const PinLeftScrollRight = () => {
                 </span>
                 <span
                   id="slide-text-text"
-                  className="text-white font-jose text-[20px] max-w-[450px]"
+                  className="text-white font-jose text-[18px] max-w-[450px]"
                 >
                   A platform that facilitates open discussions and collaborative
                   efforts to generate innovative ideas and jointly develop new
@@ -200,7 +200,7 @@ const PinLeftScrollRight = () => {
                 </span>
                 <span
                   id="slide-text-text"
-                  className="text-white font-jose text-[20px] max-w-[450px]"
+                  className="text-white font-jose text-[18px] max-w-[450px]"
                 >
                   Initiatives focused on sharing knowledge, experiences, and
                   best practices among individuals or organizations, fostering a
