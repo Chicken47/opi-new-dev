@@ -45,7 +45,7 @@ const AboutHero = () => {
         {
           y: 450,
           opacity: 0,
-          skewY: 20,
+          skewX: -30,
           stagger: {
             amount: 0.2,
           },
@@ -81,7 +81,7 @@ const AboutHero = () => {
           >
             <img src="/images/png/Union.png" className="h-[40px]" />
           </div>
-          <div className="flex items-center space-x-8">
+          <div className="flex items-center space-x-16">
             <a
               href="/about"
               ref={(el) => (header_item_one = el)}
@@ -95,6 +95,13 @@ const AboutHero = () => {
               className="text-white font-bold cursor-pointer"
             >
               What We Do
+            </a>
+            <a
+              href="/services"
+              ref={(el) => (header_item_two = el)}
+              className="text-white font-bold cursor-pointer"
+            >
+              Insights
             </a>
             <a
               href="/about"
@@ -138,7 +145,7 @@ const AboutHero = () => {
                   width={350}
                   height={200}
                   marginLeft={-280}
-                  marginTop={-320}
+                  marginTop={-250}
                   imageUrl={
                     "https://media0.giphy.com/media/GtYcMGjx8vy6TiKI3m/giphy.gif?cid=ecf05e47soxs9kqsimh57m34z4q4n0snt2pcozovb8nik9g9&ep=v1_gifs_search&rid=giphy.gif&ct=g"
                   }
@@ -152,7 +159,7 @@ const AboutHero = () => {
                   }
                   width={280}
                   height={290}
-                  marginTop={-400}
+                  marginTop={-320}
                   marginLeft={120}
                   imageUrl={
                     "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
@@ -170,7 +177,7 @@ const AboutHero = () => {
                   width={230}
                   height={290}
                   marginLeft={-300}
-                  marginTop={-100}
+                  marginTop={-10}
                   imageUrl={
                     "https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
                   }
@@ -185,7 +192,7 @@ const AboutHero = () => {
                   width={230}
                   height={290}
                   marginLeft={-60}
-                  marginTop={-100}
+                  marginTop={-10}
                   imageUrl={
                     "https://media1.giphy.com/media/l49JMVDvP8D38LHwI/giphy.gif?cid=ecf05e473adsdytqksfnbrzcddsem69memj6maek1ekcavm9&ep=v1_gifs_search&rid=giphy.gif&ct=g"
                   }
@@ -200,7 +207,7 @@ const AboutHero = () => {
                   width={230}
                   height={290}
                   marginLeft={180}
-                  marginTop={-100}
+                  marginTop={-10}
                   imageUrl={
                     "https://images.unsplash.com/photo-1570358934836-6802981e481e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
                   }

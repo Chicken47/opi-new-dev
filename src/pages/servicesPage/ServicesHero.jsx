@@ -44,6 +44,7 @@ const ServicesHero = () => {
         0.8,
         {
           y: -1200,
+          skewX: 50,
           stagger: {
             amount: 0.2,
           },
@@ -75,7 +76,7 @@ const ServicesHero = () => {
             >
               <img src="/images/png/Union.png" className="h-[40px]" />
             </div>
-            <div className="flex items-center space-x-8">
+            <div className="flex items-center space-x-16">
               <a
                 href="/about"
                 ref={(el) => (header_item_one = el)}
@@ -89,6 +90,13 @@ const ServicesHero = () => {
                 className="text-white font-bold cursor-pointer"
               >
                 What We Do
+              </a>
+              <a
+                href="/services"
+                ref={(el) => (header_item_two = el)}
+                className="text-white font-bold cursor-pointer"
+              >
+                Insights
               </a>
               <a
                 href="/about"
@@ -134,7 +142,7 @@ const ServicesHero = () => {
                     width={300}
                     height={400}
                     marginLeft={-280}
-                    marginTop={-320}
+                    marginTop={-220}
                     imageUrl={
                       "https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80"
                     }
@@ -148,7 +156,7 @@ const ServicesHero = () => {
                     }
                     width={280}
                     height={290}
-                    marginTop={-430}
+                    marginTop={-330}
                     marginLeft={50}
                     imageUrl={
                       "https://media.giphy.com/media/xUA7aPctmikpUjqUmI/giphy.gif"
@@ -163,10 +171,10 @@ const ServicesHero = () => {
                     subtitles={
                       "Building strong consortiums and partnerships leverages collective resources and expertise for impactful initiatives. By fostering collaboration and coordination among stakeholders, a multi-stakeholder continuum ensures the successful implementation of comprehensive and inclusive strategies."
                     }
-                    width={290}
+                    width={320}
                     height={290}
                     marginLeft={60}
-                    marginTop={-100}
+                    marginTop={-30}
                     imageUrl={
                       "https://images.unsplash.com/photo-1630673470267-417e4d361129?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80"
                     }

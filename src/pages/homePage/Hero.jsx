@@ -94,7 +94,7 @@ const Hero = () => {
           >
             <img src="/images/png/Union.png" className="h-[40px]" />
           </div>
-          <div className="flex items-center space-x-8">
+          <div className="flex items-center space-x-16">
             <a
               href="/about"
               ref={(el) => (header_item_one = el)}
@@ -108,6 +108,13 @@ const Hero = () => {
               className="text-white font-bold cursor-pointer"
             >
               What We Do
+            </a>
+            <a
+              href="/services"
+              ref={(el) => (header_item_two = el)}
+              className="text-white font-bold cursor-pointer"
+            >
+              Insights
             </a>
             <a
               href="/about"
@@ -155,7 +162,7 @@ const Hero = () => {
                   width={280}
                   height={290}
                   marginLeft={-250}
-                  marginTop={-420}
+                  marginTop={-320}
                   imageUrl={
                     "https://media4.giphy.com/media/1lCG3iiJB9w0NkqpU9/giphy.gif?cid=ecf05e47r2omoylzaz55e773wncamx3kc5fr8dcvtx5ya4ie&ep=v1_gifs_search&rid=giphy.gif&ct=g"
                   }
@@ -169,7 +176,7 @@ const Hero = () => {
                   }
                   width={280}
                   height={290}
-                  marginTop={-400}
+                  marginTop={-290}
                   marginLeft={60}
                   imageUrl={
                     "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80"
@@ -187,7 +194,7 @@ const Hero = () => {
                   width={280}
                   height={290}
                   marginLeft={-250}
-                  marginTop={-100}
+                  marginTop={-20}
                   imageUrl={
                     "https://images.unsplash.com/photo-1550332781-aecd27f7434f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
                   }
@@ -202,7 +209,7 @@ const Hero = () => {
                   width={280}
                   height={290}
                   marginLeft={60}
-                  marginTop={-90}
+                  marginTop={10}
                   imageUrl={
                     "https://i.giphy.com/media/oj4HL6yoqbLRv7iUqI/giphy.webp"
                   }
