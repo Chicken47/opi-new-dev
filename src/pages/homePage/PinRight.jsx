@@ -164,7 +164,7 @@ const PinRight = () => {
           <span className="text-[50px] w-full text-left font-bold font-inter text-black">
             Involve
           </span>
-          <span className="font-jose w-full text-left text-[20px] text-black">
+          <span className="font-jose w-full text-left text-[20px] text-white">
             We foster strategic collaborations and partnerships, setting clear
             objectives to align with our clients' goals. By bringing together
             like-minded organizations and individuals, we amplify our collective

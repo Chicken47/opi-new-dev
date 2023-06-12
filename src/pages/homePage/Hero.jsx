@@ -47,9 +47,10 @@ const Hero = () => {
       );
       tl.from(
         [hoverOne, hoverTwo, hoverThree, hoverFour],
-        0.8,
+        1.2,
         {
           y: -1200,
+          skewX: 30,
           stagger: {
             amount: 0.2,
           },
@@ -57,14 +58,19 @@ const Hero = () => {
         },
         "-=1"
       );
-      tl.from([lineOneRef, lineTwoRef, paraRef], 0.5, {
-        y: 50,
-        ease: ease,
-        opacity: 0,
-        stagger: {
-          amount: 0.2,
+      tl.from(
+        [lineOneRef, lineTwoRef, paraRef],
+        0.5,
+        {
+          y: 50,
+          ease: ease,
+          opacity: 0,
+          stagger: {
+            amount: 0.2,
+          },
         },
-      });
+        "-=0.5"
+      );
     });
     return () => ctx.revert();
   }, []);
@@ -140,10 +146,7 @@ const Hero = () => {
           </div>
           <div className="w-3/5 flex flex-col space-y-5 items-center justify-center">
             <div className="flex justify-center items-center">
-              <div
-                ref={(el) => (hoverOne = el)}
-                className="bg-green-400 h-auto"
-              >
+              <div ref={(el) => (hoverOne = el)} className="h-auto">
                 <HoverCardOne
                   title={"Digital Economy"}
                   subtitles={
