@@ -66,7 +66,7 @@ const InsightsHero = () => {
 
   return (
     <div className="w-full flex justify-center bg-black">
-      <div className="w-full h-screen max-w-[1366px] flex justify-center bg-black">
+      <div className="w-full h-screen max-w-[1366px] hidden md:flex justify-center bg-black">
         <div className="w-full h-screen max-w-[1366px] flex flex-col relative overflow-hidden main-hero-wrapper">
           <div className="w-full flex justify-between py-5 px-10">
             <div
@@ -92,7 +92,7 @@ const InsightsHero = () => {
                 What We Do
               </a>
               <a
-                href="/services"
+                href="/insights"
                 ref={(el) => (header_item_two = el)}
                 className="text-white font-bold cursor-pointer"
               >
@@ -119,13 +119,15 @@ const InsightsHero = () => {
                 ref={(el) => (paraRef = el)}
                 className="text-white max-w-[600px] font-jose text-[14px] md:text-[18px]  text-left mt-10"
               >
-                We understand that each client and project is unique, and we
-                pride ourselves on our ability to tailor our services to
-                specific needs and contexts.
+                We believe in sharing knowledge and empowering our readers with
+                valuable information. Feel free to browse through our Insights
+                page, read our articles, and engage in discussions through the
+                comments section.
                 <br />
                 <br />
-                Get in touch with us today to explore how we can collaborate to
-                achieve your organization's goals and create a lasting impact.
+                Our insights page is regularly updated with new content. Make
+                sure to visit frequently to stay informed about the latest
+                insights from our experts.
               </p>
               {/* <button className="px-6 py-1 mt-[2vh] rounded hover:shadow-2xl hover:shadow-slate-800 transition-all border border-white bg-black text-white font-bold uppercase text-[14px]">
             About Us
@@ -135,24 +137,24 @@ const InsightsHero = () => {
               <div className="flex items-center justify-center">
                 <div ref={(el) => (hoverOne = el)} className="h-auto">
                   <HoverCardOne
-                    title={"Multidisciplinary Research"}
+                    title={"Research Papers"}
                     subtitles={
-                      "Multidisciplinary research promotes collaboration and integration across diverse fields, resulting in innovative and holistic solutions to complex problems. By combining knowledge from different disciplines, such research expands our understanding and drives scientific advancements. Through the process of learning, knowledge capture, and creation, multidisciplinary research enables the exploration of new frontiers, fostering innovation and pushing the boundaries of human knowledge."
+                      "Our research papers offer comprehensive analyses, data-driven insights, and expert perspectives on various subjects. They provide valuable contributions to industry knowledge and guide informed decision-making."
                     }
                     width={300}
                     height={400}
                     marginLeft={-280}
                     marginTop={-220}
                     imageUrl={
-                      "https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80"
+                      "https://media3.giphy.com/media/sRHX9qwNKQaQB48RAM/giphy.gif?cid=ecf05e47cdh2wlc34qki4v9ofmz407hmx1q1sa1taomm5fy6&ep=v1_gifs_search&rid=giphy.gif&ct=g"
                     }
                   />
                 </div>
                 <div ref={(el) => (hoverTwo = el)}>
                   <HoverCardOne
-                    title={"Multi-sectoral Dialogue"}
+                    title={"Case Studies"}
                     subtitles={
-                      "Engaging stakeholders from different sectors in meaningful conversations fosters comprehensive problem-solving and effective information sharing. By involving diverse perspectives and expertise, multi-sectoral dialogue enables more inclusive decision-making, leading to sustainable solutions."
+                      "Our case studies showcase successful projects, highlighting challenges, strategies, and measurable outcomes. They offer practical insights and lessons learned for effective problem-solving."
                     }
                     width={280}
                     height={290}
@@ -167,9 +169,9 @@ const InsightsHero = () => {
               <div className="flex items-center justify-center">
                 <div ref={(el) => (hoverThree = el)}>
                   <HoverCardOne
-                    title={"Multi-stakeholder Continuum"}
+                    title={"Facts & Numbers"}
                     subtitles={
-                      "Building strong consortiums and partnerships leverages collective resources and expertise for impactful initiatives. By fostering collaboration and coordination among stakeholders, a multi-stakeholder continuum ensures the successful implementation of comprehensive and inclusive strategies."
+                      "Our facts and numbers section provides key statistics and trends relevant to different sectors. It offers accurate and up-to-date information for data-driven decision-making."
                     }
                     width={320}
                     height={290}
@@ -183,6 +185,30 @@ const InsightsHero = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="flex md:hidden h-screen flex-col">
+        <div className="flex px-10 flex-col">
+          <span className="text-white font-inter text-center font-bold text-[12px] mt-10">
+            Welcome to OPI
+          </span>
+          <span className="text-ipink font-inter text-center text-[36px] font-extrabold">
+            Insights
+          </span>
+          <img
+            src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+            className="mt-10"
+          />
+          <span className="text-white font-jose text-center font-bold text-[14px] mt-16">
+            We believe in sharing knowledge and empowering our readers with
+            valuable information. Feel free to browse through our Insights page,
+            read our articles, and engage in discussions through the comments
+            section.
+            <br />
+            Our insights page is regularly updated with new content. Make sure
+            to visit frequently to stay informed about the latest insights from
+            our experts.
+          </span>
         </div>
       </div>
     </div>

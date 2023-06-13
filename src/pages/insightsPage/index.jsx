@@ -19,14 +19,16 @@ const InsightsPage = () => {
   return (
     <div className="flex flex-wrap justify-evenly">
       <InsightsHero />
-      <BlogCard />
-      <BlogCard />
-      <BlogCard />
-      <BlogCard />
-      <BlogCard />
-      <BlogCard />
-      <BlogCard />
-      <BlogCard />
+      <div className="p-10 w-full flex flex-wrap justify-evenly">
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+      </div>
     </div>
   );
 };

@@ -72,7 +72,7 @@ const AboutHero = () => {
 
   return (
     <div className="w-full h-screen flex justify-center bg-black">
-      <div className="w-full h-screen max-w-[1366px] flex flex-col relative overflow-hidden main-hero-wrapper">
+      <div className="w-full h-screen max-w-[1366px] hidden md:flex flex-col relative overflow-hidden main-hero-wrapper">
         <div className="w-full flex justify-between py-5 px-10">
           <div
             ref={(el) => (logoRef = el)}
@@ -97,7 +97,7 @@ const AboutHero = () => {
               What We Do
             </a>
             <a
-              href="/services"
+              href="/insights"
               ref={(el) => (header_item_two = el)}
               className="text-white font-bold cursor-pointer"
             >
@@ -215,6 +215,26 @@ const AboutHero = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="flex md:hidden flex-col">
+        <div className="flex px-10 flex-col">
+          <span className="text-white font-inter text-center font-bold text-[12px] mt-16">
+            Welcome to OPI
+          </span>
+          <span className="text-ipink font-inter text-center text-[36px] font-extrabold">
+            About Us
+          </span>
+          <img
+            src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+            className="mt-10"
+          />
+          <span className="text-white font-jose text-center font-bold text-[14px] mt-16 ">
+            At OPI, we believe that policy and impact go hand in hand. Our
+            multidisciplinary team brings together diverse backgrounds, ranging
+            from policy analysis and advocacy to project management and
+            technology, enabling us to tackle complex societal issues with
+          </span>
         </div>
       </div>
     </div>

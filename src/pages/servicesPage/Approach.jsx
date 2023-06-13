@@ -21,10 +21,10 @@ const Approach = () => {
 
   return (
     <div className="w-full flex justify-center pb-20 pt-32">
-      <div className="w-full max-w-[1366px] flex justify-between">
+      <div className="w-full max-w-[1366px] flex flex-col md:flex-row justify-between">
         <div
           id="left-about-image-id"
-          className="w-1/3 overflow-hidden shadow-xl shadow-pblue rounded"
+          className="md:w-1/3 overflow-hidden shadow-xl shadow-pblue rounded mx-10 md:mx-0"
         >
           <img
             src="https://images.unsplash.com/photo-1627215750463-3386c8ed92ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
@@ -34,12 +34,12 @@ const Approach = () => {
         </div>
         <div
           id="right-side-about-id"
-          className="w-2/3 flex flex-col justify-start items-center px-10"
+          className="md:w-2/3 flex flex-col justify-start items-center px-10"
         >
-          <span className="font-inter text-[40px] font-extrabold text-ipink ml-[3vw]">
+          <span className="font-inter text-[40px] font-extrabold text-ipink ml-[3vw] mt-10 md:mt-10">
             Our Approach
           </span>
-          <div className="w-full flex items-center justify-around mt-10">
+          <div className="w-full flex flex-col md:flex-row items-center justify-around mt-10">
             <CardHoverTwo
               title={"Collaborative"}
               subtitle={
@@ -53,7 +53,7 @@ const Approach = () => {
               }
             />
           </div>
-          <div className="w-full mt-5 flex items-center justify-around">
+          <div className="w-full mt-5 flex flex-col md:flex-row items-center justify-around">
             <CardHoverTwo
               title={"Gender Lens"}
               subtitle={

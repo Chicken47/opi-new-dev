@@ -21,10 +21,10 @@ const MapSection = () => {
   });
   return (
     <div className="flex flex-col items-center justify-center w-full bg-black py-32">
-      <span className="font-inter font-bold text-[40px] text-ipink">
+      <span className="font-inter font-bold md:text-[40px] text-ipink">
         Exposure and Experience
       </span>
-      <span className="text-[22px] font-jose text-white mt-5">
+      <span className="md:text-[22px] font-jose text-white mt-5 text-center mx-10 md:mx-0">
         Our team has engaged with partners and worked on projects extending more
         than 35 countries.
       </span>

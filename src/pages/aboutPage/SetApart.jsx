@@ -26,12 +26,12 @@ const SetApart = () => {
   return (
     <div className="w-full flex justify-center">
       <div className="flex max-w-[1366px] flex-col w-full my-20">
-        <span className="text-[40px] font-inter font-extrabold pl-20">
+        <span className="text-[40px] font-inter font-extrabold pl-16 md:pl-20">
           What sets us apart.
         </span>
-        <div className="h-[15px] bg-pink-800 w-1/3 ml-20 rounded-full blue-underline" />
-        <div className="flex w-full p-10 justify-evenly">
-          <div className="flex flex-col w-[30%] p-10 shadow-xl rounded-xl shadow-sky-100 hover:shadow-xl hover:shadow-oblue transition-all group">
+        <div className="h-[15px] bg-pink-800 w-1/3 ml-16 md:ml-20 rounded-full blue-underline" />
+        <div className="flex flex-col md:flex-row w-full p-10 justify-evenly">
+          <div className="flex flex-col md:w-[30%] p-10 shadow-xl rounded-xl shadow-sky-100 hover:shadow-xl hover:shadow-oblue transition-all group">
             <span className="font-bold text-[32px] font-inter group-hover:text-oblue">
               Local Expertise
             </span>
@@ -43,7 +43,7 @@ const SetApart = () => {
               relevant solutions.
             </span>
           </div>
-          <div className="flex flex-col w-[30%] p-10 shadow-xl rounded-xl shadow-indigo-200 hover:shadow-xl hover:shadow-pblue transition-all group">
+          <div className="flex flex-col md:w-[30%] p-10 shadow-xl rounded-xl shadow-indigo-200 hover:shadow-xl hover:shadow-pblue transition-all group">
             <span className="font-bold text-[32px] font-inter group-hover:text-pblue">
               Client-Centered
             </span>
@@ -53,7 +53,7 @@ const SetApart = () => {
               ensure maximum value creation and sustainable impact.
             </span>
           </div>
-          <div className="flex flex-col w-[30%] p-10 shadow-xl rounded-xl shadow-pink-100 hover:shadow-xl hover:shadow-ipink transition-all group">
+          <div className="flex flex-col md:w-[30%] p-10 shadow-xl rounded-xl shadow-pink-100 hover:shadow-xl hover:shadow-ipink transition-all group">
             <span className="font-bold text-[32px] font-inter group-hover:text-ipink">
               Leadership
             </span>
