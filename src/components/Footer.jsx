@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     // <div className="flex justify-start py-20 bg-gray-950">
     //   <div className="flex flex-col items-center w-1/3 px-20 pt-10 space-y-3 item-start">
@@ -37,11 +39,34 @@ const Footer = () => {
         </span>
         <div className="w-full mx-10 h-[2px] bg-white my-5" />
         <div className="w-full flex flex-col md:flex-row  items-center space-y-1 md:space-y-0 justify-evenly md:py-5">
-          <span className="text-white font-inter font-bold">Home</span>
-          <span className="text-white font-inter font-bold">Who We Are</span>
-          <span className="text-white font-inter font-bold">What We Do</span>
-          <span className="text-white font-inter font-bold">Insights</span>
-          <span className="text-white font-inter font-bold">
+          <span
+            onClick={() => navigate("/")}
+            className="text-white font-inter cursor-pointer font-bold"
+          >
+            Home
+          </span>
+          <span
+            onClick={() => navigate("/about")}
+            className="text-white font-inter cursor-pointer font-bold"
+          >
+            Who We Are
+          </span>
+          <span
+            onClick={() => navigate("/services")}
+            className="text-white font-inter cursor-pointer font-bold"
+          >
+            What We Do
+          </span>
+          <span
+            onClick={() => navigate("/insights")}
+            className="text-white font-inter cursor-pointer font-bold"
+          >
+            Insights
+          </span>
+          <span
+            onClick={() => navigate("/contact")}
+            className="text-white font-inter cursor-pointer font-bold"
+          >
             Connect With Us
           </span>
         </div>
