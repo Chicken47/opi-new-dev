@@ -100,58 +100,48 @@ const PinRight = () => {
               id="slide-text-one"
               className="text-[32px] font-inter font-bold text-black"
             >
-              Multi-Disciplinary | Sectoral | Stakeholder Partnerships
+              Dialogue before Delivery
             </span>
             <div className="flex flex-col space-y-5 mt-10">
               <span
                 id="slide-text-one"
                 className="text-white font-inter font-bold text-[20px]"
               >
-                Funding
+                Networking
               </span>
               <span
                 id="slide-text-one"
                 className="text-black font-jose text-[18px] max-w-[450px]"
               >
-                Facilitate partnership channels, define the required
-                collaborations, the roles of partnering organizations and
-                bodies.
+                Organize events, knowledge exchange workshops, and study visits
+                for the partners on digitalization.
               </span>
               <span
                 id="slide-text-one"
                 className="text-white font-inter font-bold text-[20px]"
               >
-                Implementation
+                Ideation
               </span>
               <span
                 id="slide-text-one"
                 className="text-black font-jose text-[18px] max-w-[450px]"
               >
-                Build and scale solutions and products in the thematic areas
+                Define the required partnerships, the roles of partnering
+                organizations
               </span>
               <span
                 id="slide-text-one"
                 className="text-white font-inter font-bold text-[20px]"
               >
-                Network
+                Dissemination
               </span>
               <span
                 id="slide-text-one"
                 className="text-black font-jose text-[18px] max-w-[450px]"
               >
-                Outreach, learning and knowledge exchange
-              </span>
-              <span
-                id="slide-text-one"
-                className="text-white font-inter font-bold text-[20px]"
-              >
-                Ecosystem
-              </span>
-              <span
-                id="slide-text-one"
-                className="text-black font-jose text-[18px] max-w-[450px]"
-              >
-                Enhance and strengthen systems and approaches
+                Identify the opportunities for dissemination and knowledge
+                sharing <br /> Showcase the impact of knowledge, pilots, and
+                programs
               </span>
             </div>
           </div>

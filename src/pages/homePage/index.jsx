@@ -7,10 +7,12 @@ import PinLeftScrollRight from "./PinLeftScrollRight";
 import PinRight from "./PinRight";
 import PinLeftOne from "./PinLeftOne";
 import PinSectionsPhone from "./PinSectionsPhone";
+import NewsletterSection from "./NewsletterSection";
+import Newsletter from "./Newsletter";
 
 export const HomePage = () => {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full overflow-hidden">
       <Hero />
       <TextReveal />
       <ShortText />
@@ -22,7 +24,9 @@ export const HomePage = () => {
         <PinRight />
         <PinLeftOne />
       </div>
-      {/* <Footer /> */}
+      <Newsletter />
+      <NewsletterSection />
+      <Footer />
     </div>
   );
 };

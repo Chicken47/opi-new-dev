@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import useContentful from "../../hooks/useContentful";
 import BlogCard from "../../components/BlogCard";
-import ServicesHero from "../servicesPage/ServicesHero";
 import InsightsHero from "./InsightsHero";
+import Footer from "../../components/Footer";
 
 const InsightsPage = () => {
   const { getData } = useContentful();
@@ -10,8 +10,8 @@ const InsightsPage = () => {
 
   useEffect(() => {
     getData().then((response) => {
-      console.log("custom hook response", response);
-      setPostData(response); // Assuming `response` is the data you want to store in `postData`
+      console.log("custom hook response", response.items);
+      setPostData(response.items);
       console.log(postData);
     });
   }, []);
@@ -29,6 +29,7 @@ const InsightsPage = () => {
         <BlogCard />
         <BlogCard />
       </div>
+      <Footer />
     </div>
   );
 };

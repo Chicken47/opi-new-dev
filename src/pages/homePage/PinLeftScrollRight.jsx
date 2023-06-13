@@ -100,8 +100,9 @@ const PinLeftScrollRight = () => {
                   id="slide-text-text"
                   className="text-white font-jose text-[18px] max-w-[450px]"
                 >
-                  In-depth research documents providing valuable insights and
-                  analysis on specific topics.
+                  Our white papers provide valuable insights and analysis on
+                  specific topics, informing decision-making and driving
+                  innovation through in-depth research.
                 </span>
                 <span
                   id="slide-text-text"
@@ -113,8 +114,10 @@ const PinLeftScrollRight = () => {
                   id="slide-text-text"
                   className="text-white font-jose text-[18px] max-w-[450px]"
                 >
-                  Real-world examples and experimental plans showcasing
-                  effective strategies and approaches.
+                  Through real-world examples and experimental plans, our case
+                  studies and pilot designs showcase effective strategies and
+                  approaches for successful implementation, offering practical
+                  guidance and inspiration.
                 </span>
                 <span
                   id="slide-text-text"
@@ -126,8 +129,10 @@ const PinLeftScrollRight = () => {
                   id="slide-text-text"
                   className="text-white font-jose text-[18px] max-w-[450px]"
                 >
-                  Concise summaries highlighting key industry trends and policy
-                  implications.
+                  Our briefs offer concise summaries that highlight key industry
+                  trends and policy implications, serving as valuable resources
+                  for stakeholders to stay informed and make informed decisions
+                  in a rapidly changing landscape.
                 </span>
                 <span
                   id="slide-text-text"
@@ -139,8 +144,10 @@ const PinLeftScrollRight = () => {
                   id="slide-text-text"
                   className="text-white font-jose text-[18px] max-w-[450px]"
                 >
-                  Comprehensive evaluations to identify requirements and
-                  determine optimal solutions.
+                  Our comprehensive evaluations identify requirements and
+                  optimal solutions, enabling organizations to make informed
+                  decisions and allocate resources effectively, ensuring a
+                  targeted and effective approach to addressing their needs.
                 </span>
                 <span
                   id="slide-text-text"
@@ -152,8 +159,11 @@ const PinLeftScrollRight = () => {
                   id="slide-text-text"
                   className="text-white font-jose text-[18px] max-w-[450px]"
                 >
-                  Strategic plans outlining step-by-step directions and
-                  milestones for achieving desired outcomes.
+                  Our roadmaps are strategic plans that outline step-by-step
+                  directions and milestones for achieving desired outcomes. We
+                  collaborate closely with our clients to develop customized
+                  roadmaps that align with their goals, objectives, and
+                  available resources.
                 </span>
                 <span
                   id="slide-text-text"
@@ -165,12 +175,15 @@ const PinLeftScrollRight = () => {
                   id="slide-text-text"
                   className="text-white font-jose text-[18px] max-w-[450px]"
                 >
-                  Platforms for collaborative knowledge-sharing and fostering
-                  partnerships among stakeholders.
+                  Our learning exchange avenues provide dynamic platforms for
+                  collaborative knowledge-sharing and fostering partnerships
+                  among stakeholders. Through webinars, conferences, workshops,
+                  and interactive events, we facilitate the exchange of ideas,
+                  best practices, and lessons learned.
                 </span>
               </div>
             </div>
-            <div className="h-auto py-20 flex flex-col">
+            {/* <div className="h-auto py-20 flex flex-col">
               <span
                 id="slide-text-text"
                 className="text-[32px] font-inter font-bold text-white"
@@ -208,7 +221,7 @@ const PinLeftScrollRight = () => {
                   enhancing collective learning.
                 </span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

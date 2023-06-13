@@ -92,7 +92,6 @@ const AboutLanding = () => {
         className="flex items-center justify-between w-full main-nav lg:px-20"
       >
         <a href="/">
-          {" "}
           <img src="/images/png/Union.png" className="h-[50px]" alt="" />
         </a>
         <ul>

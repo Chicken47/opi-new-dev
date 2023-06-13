@@ -128,7 +128,7 @@ const PinLeftOne = () => {
               </span>
             </div>
           </div>
-          <div className="h-auto py-20 flex flex-col">
+          {/* <div className="h-auto py-20 flex flex-col">
             <span
               id="slide-text-two"
               className="text-[32px] font-bold font-inter text-pblue"
@@ -151,7 +151,7 @@ const PinLeftOne = () => {
                 <br />
               </span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
