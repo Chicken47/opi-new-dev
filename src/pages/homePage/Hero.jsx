@@ -220,8 +220,34 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex md:hidden flex-col">
+        <div className="w-full flex justify-evenly py-4">
+          <span
+            onClick={() => navigate("/about")}
+            className="text-white text-[12px] font-oswald font-bold"
+          >
+            Who We Are
+          </span>
+          <span
+            onClick={() => navigate("/services")}
+            className="text-white text-[12px] font-oswald font-bold"
+          >
+            What We Do
+          </span>
+          <span
+            onClick={() => navigate("/insights")}
+            className="text-white text-[12px] font-oswald font-bold"
+          >
+            Insights
+          </span>
+          <span
+            onClick={() => navigate("/contact")}
+            className="text-white text-[12px] font-oswald font-bold"
+          >
+            Contact Us
+          </span>
+        </div>
         <div className="flex px-10 flex-col">
-          <span className="text-white font-inter text-center font-bold text-[12px] mt-20">
+          <span className="text-white font-inter text-center font-bold text-[12px] mt-8">
             Welcome to OPI
           </span>
           <span className="text-ipink font-inter text-center text-[36px] font-extrabold">

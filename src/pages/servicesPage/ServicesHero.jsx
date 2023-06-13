@@ -186,21 +186,51 @@ const ServicesHero = () => {
         </div>
       </div>
       <div className="flex md:hidden h-screen flex-col">
+        <div className="w-full flex justify-evenly py-4">
+          <span
+            onClick={() => navigate("/about")}
+            className="text-white text-[12px] font-oswald font-bold"
+          >
+            Who We Are
+          </span>
+          <span
+            onClick={() => navigate("/services")}
+            className="text-white text-[12px] font-oswald font-bold"
+          >
+            What We Do
+          </span>
+          <span
+            onClick={() => navigate("/insights")}
+            className="text-white text-[12px] font-oswald font-bold"
+          >
+            Insights
+          </span>
+          <span
+            onClick={() => navigate("/contact")}
+            className="text-white text-[12px] font-oswald font-bold"
+          >
+            Contact Us
+          </span>
+        </div>
         <div className="flex px-10 flex-col">
-          <span className="text-white font-inter text-center font-bold text-[12px] mt-20">
+          <span className="text-white font-inter text-center font-bold text-[12px] mt-8">
             Welcome to OPI
           </span>
           <span className="text-ipink font-inter text-center text-[36px] font-extrabold">
-            Open for Policy & Impact
+            Services
           </span>
           <img
             src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
             className="mt-10"
           />
-          <span className="text-white font-jose text-center font-bold text-[14px] mt-16">
+          <span className="text-white font-jose text-center font-bold text-[12px] mt-16">
             Driving Positive Change through Innovative Solutions and Strategic
             Partnerships: Empowering Organisations to Navigate Complex
             Challenges
+            <br />
+            <br />
+            Get in touch with us today to explore how we can collaborate to
+            achieve your organization's goals and create a lasting impact.
           </span>
         </div>
       </div>
