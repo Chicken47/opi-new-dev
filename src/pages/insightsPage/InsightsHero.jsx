@@ -188,11 +188,39 @@ const InsightsHero = () => {
         </div>
       </div>
       <div className="flex md:hidden h-screen flex-col">
-        <div className="flex px-10 flex-col">
-          <span className="text-white font-inter text-center font-bold text-[12px] mt-10">
-            Welcome to OPI
+        <div className="w-full flex justify-evenly py-4">
+          <span
+            onClick={() => navigate("/about")}
+            className="text-white text-[12px] font-oswald font-bold"
+          >
+            Who We Are
           </span>
-          <span className="text-ipink font-inter text-center text-[36px] font-extrabold">
+          <span
+            onClick={() => navigate("/services")}
+            className="text-white text-[12px] font-oswald font-bold"
+          >
+            What We Do
+          </span>
+          <span
+            onClick={() => navigate("/insights")}
+            className="text-white text-[12px] font-oswald font-bold"
+          >
+            Insights
+          </span>
+          <span
+            onClick={() => navigate("/contact")}
+            className="text-white text-[12px] font-oswald font-bold"
+          >
+            Contact Us
+          </span>
+        </div>
+        <div className="flex px-10 flex-col items-center">
+          <img
+            src="/images/png/Union.png"
+            className="w-[50px] mt-5"
+            onClick={() => navigate("/")}
+          />
+          <span className="text-ipink font-inter text-center text-[36px] mt-2 font-extrabold">
             Insights
           </span>
           <img
@@ -204,10 +232,6 @@ const InsightsHero = () => {
             valuable information. Feel free to browse through our Insights page,
             read our articles, and engage in discussions through the comments
             section.
-            <br />
-            Our insights page is regularly updated with new content. Make sure
-            to visit frequently to stay informed about the latest insights from
-            our experts.
           </span>
         </div>
       </div>

@@ -246,11 +246,16 @@ const Hero = () => {
             Contact Us
           </span>
         </div>
-        <div className="flex px-10 flex-col">
-          <span className="text-white font-inter text-center font-bold text-[12px] mt-8">
+        <div className="flex px-10 flex-col items-center">
+          <img
+            src="/images/png/Union.png"
+            className="w-[50px] mt-5"
+            onClick={() => navigate("/")}
+          />
+          <span className="text-white font-inter text-center text-[11px] mt-5 font-extrabold">
             Welcome to OPI
           </span>
-          <span className="text-ipink font-inter text-center text-[36px] font-extrabold">
+          <span className="text-ipink font-inter text-center text-[20px] mt-3 font-extrabold">
             Open for Policy & Impact
           </span>
           <img

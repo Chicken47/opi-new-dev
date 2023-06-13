@@ -244,22 +244,25 @@ const AboutHero = () => {
             Contact Us
           </span>
         </div>
-        <div className="flex px-10 flex-col">
-          <span className="text-white font-inter text-center font-bold text-[12px] mt-16">
-            Welcome to OPI
-          </span>
-          <span className="text-ipink font-inter text-center text-[36px] font-extrabold">
+        <div className="flex px-10 flex-col items-center">
+          <img
+            src="/images/png/Union.png"
+            className="w-[50px] mt-5"
+            onClick={() => navigate("/")}
+          />
+          <span className="text-ipink font-inter text-center text-[20px] mt-3 font-extrabold">
             About Us
           </span>
           <img
             src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
             className="mt-10"
           />
-          <span className="text-white font-jose text-center font-bold text-[14px] mt-16 ">
+          <span className="text-white font-jose text-center font-bold text-[14px] mt-16">
             At OPI, we believe that policy and impact go hand in hand. Our
             multidisciplinary team brings together diverse backgrounds, ranging
             from policy analysis and advocacy to project management and
-            technology, enabling us to tackle complex societal issues with
+            technology, enabling us to tackle complex societal issues with a
+            holistic approach.
           </span>
         </div>
       </div>
