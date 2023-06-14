@@ -4,6 +4,7 @@ import BlogCard from "../../components/BlogCard";
 import InsightsHero from "./InsightsHero";
 import Footer from "../../components/Footer";
 import LatestNews from "./LatestNews";
+import BlogItem from "./BlogItem";
 
 const InsightsPage = () => {
   const { getData } = useContentful();
@@ -32,6 +33,7 @@ const InsightsPage = () => {
         <BlogCard />
       </div>
       <Footer />
+      <BlogItem />
     </div>
   );
 };
