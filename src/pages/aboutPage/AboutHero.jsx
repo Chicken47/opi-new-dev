@@ -104,7 +104,7 @@ const AboutHero = () => {
               Insights
             </a>
             <a
-              href="/about"
+              href="/contact"
               ref={(el) => (header_item_three = el)}
               className="text-white font-bold cursor-pointer"
             >

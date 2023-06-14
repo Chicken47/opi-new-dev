@@ -3,7 +3,7 @@ import HoverCardOne from "../../components/HoverCardOne";
 import { gsap, Power3 } from "gsap";
 import { useNavigate } from "react-router-dom";
 
-const InsightsHero = () => {
+const ContactHero = () => {
   const ease = Power3.easeInOut();
   let introRef = useRef(null);
   let logoRef = useRef(null);
@@ -113,7 +113,7 @@ const InsightsHero = () => {
                 ref={(el) => (lineOneRef = el)}
                 className="font-extrabold text-[20px] font-inter md:text-[45px] text-left text-ipink"
               >
-                Insights
+                Connect With Us
               </span>
               <p
                 ref={(el) => (paraRef = el)}
@@ -125,9 +125,7 @@ const InsightsHero = () => {
                 comments section.
                 <br />
                 <br />
-                Our insights page is regularly updated with new content. Make
-                sure to visit frequently to stay informed about the latest
-                insights from our experts.
+                Connect with us to warp to success.
               </p>
               {/* <button className="px-6 py-1 mt-[2vh] rounded hover:shadow-2xl hover:shadow-slate-800 transition-all border border-white bg-black text-white font-bold uppercase text-[14px]">
             About Us
@@ -220,8 +218,8 @@ const InsightsHero = () => {
             className="w-[50px] mt-5"
             onClick={() => navigate("/")}
           />
-          <span className="text-ipink font-inter text-center text-[36px] mt-2 font-extrabold">
-            Insights
+          <span className="text-ipink font-inter text-center text-[30px] mt-2 font-extrabold">
+            Connect With Us
           </span>
           <img
             src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
@@ -239,4 +237,4 @@ const InsightsHero = () => {
   );
 };
 
-export default InsightsHero;
+export default ContactHero;
