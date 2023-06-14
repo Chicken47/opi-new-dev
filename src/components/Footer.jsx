@@ -14,7 +14,7 @@ const Footer = () => {
           Bridging sectors, disciplines, and stakeholders for a digital and
           inclusive future.
         </span>
-        <div className="w-full mx-10 h-[2px] bg-white my-5" />
+        <div className="w-full mx-10 h-[2px] bg-white mb-2 mt-10" />
         <div className="w-full flex flex-col md:flex-row  items-center space-y-1 md:space-y-0 justify-evenly md:py-5">
           <span
             onClick={() => navigate("/")}
@@ -47,7 +47,7 @@ const Footer = () => {
             Connect With Us
           </span>
         </div>
-        <div className="w-full mx-10 h-[2px] bg-white mt-5" />
+        <div className="w-full mx-10 h-[2px] bg-white mt-2" />
         <span className="text-white font-oswald text-[10px] mt-5">
           © Open for Policy & Impact 2023
         </span>
