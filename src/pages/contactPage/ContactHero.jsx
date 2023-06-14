@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import HoverCardOne from "../../components/HoverCardOne";
 import { gsap, Power3 } from "gsap";
 import { useNavigate } from "react-router-dom";
+import TextHover from "../../components/TextHover";
 
 const ContactHero = () => {
   const ease = Power3.easeInOut();
@@ -10,6 +11,7 @@ const ContactHero = () => {
   let header_item_one = useRef(null);
   let header_item_two = useRef(null);
   let header_item_three = useRef(null);
+  let header_item_four = useRef(null);
   let hoverOne = useRef(null);
   let hoverTwo = useRef(null);
   let hoverThree = useRef(null);
@@ -76,35 +78,19 @@ const ContactHero = () => {
             >
               <img src="/images/png/Union.png" className="h-[50px]" />
             </div>
-            <div className="flex items-center space-x-16">
-              <a
-                href="/about"
-                ref={(el) => (header_item_one = el)}
-                className="text-white font-bold cursor-pointer"
-              >
-                Who We Are
-              </a>
-              <a
-                href="/services"
-                ref={(el) => (header_item_two = el)}
-                className="text-white font-bold cursor-pointer"
-              >
-                What We Do
-              </a>
-              <a
-                href="/insights"
-                ref={(el) => (header_item_two = el)}
-                className="text-white font-bold cursor-pointer"
-              >
-                Insights
-              </a>
-              <a
-                href="/contact"
-                ref={(el) => (header_item_three = el)}
-                className="text-white font-bold cursor-pointer"
-              >
-                Connect With Us
-              </a>
+            <div className="flex items-center space-x-2">
+              <div ref={(el) => (header_item_one = el)}>
+                <TextHover text={"Who We Are"} path={"/about"} />
+              </div>
+              <div ref={(el) => (header_item_two = el)}>
+                <TextHover text={"What We Do"} path={"/services"} />
+              </div>
+              <div ref={(el) => (header_item_three = el)}>
+                <TextHover text={"Insights"} path={"/insights"} />
+              </div>
+              <div ref={(el) => (header_item_four = el)}>
+                <TextHover text={"Connect With Us"} path={"/contact"} />
+              </div>
             </div>
           </div>
           <div className="flex justify-between w-full h-full py-5">
