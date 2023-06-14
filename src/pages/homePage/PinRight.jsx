@@ -28,20 +28,20 @@ const PinRight = () => {
         end: "bottom bottom",
       },
     });
-    const anim2 = gsap.utils.toArray("#slide-text-one").forEach((text) => {
-      gsap.to(text, {
-        y: 20,
-        x: 40,
-        ease: Power3.easeOut(),
-        scrollTrigger: {
-          trigger: text,
-          start: "top bottom",
-          end: "bottom top",
-          scrub: 5,
-          endTrigger: text,
-        },
-      });
-    });
+    // const anim2 = gsap.utils.toArray("#slide-text-one").forEach((text) => {
+    //   gsap.to(text, {
+    //     y: 20,
+    //     x: 40,
+    //     ease: Power3.easeOut(),
+    //     scrollTrigger: {
+    //       trigger: text,
+    //       start: "top bottom",
+    //       end: "bottom top",
+    //       scrub: 5,
+    //       endTrigger: text,
+    //     },
+    //   });
+    // });
     return () => {
       anim.kill();
       //   anim2.kill();

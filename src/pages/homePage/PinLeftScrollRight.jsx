@@ -28,23 +28,23 @@ const PinLeftScrollRight = () => {
         end: "bottom bottom",
       },
     });
-    const anim2 = gsap.utils.toArray("#slide-text-text").forEach((text) => {
-      gsap.to(
-        text,
-        {
-          x: 60,
-          ease: Power3.easeOut(),
-          scrollTrigger: {
-            trigger: text,
-            start: "top bottom",
-            end: "top center",
-            scrub: 5,
-            endTrigger: text,
-          },
-        },
-        "=-1"
-      );
-    });
+    // const anim2 = gsap.utils.toArray("#slide-text-text").forEach((text) => {
+    //   gsap.to(
+    //     text,
+    //     {
+    //       x: 60,
+    //       ease: Power3.easeOut(),
+    //       scrollTrigger: {
+    //         trigger: text,
+    //         start: "top bottom",
+    //         end: "top center",
+    //         scrub: 5,
+    //         endTrigger: text,
+    //       },
+    //     },
+    //     "=-1"
+    //   );
+    // });
     return () => {
       anim.kill();
     };

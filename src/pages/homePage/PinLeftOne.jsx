@@ -28,19 +28,19 @@ const PinLeftOne = () => {
         end: "bottom bottom",
       },
     });
-    const anim2 = gsap.utils.toArray("#slide-text-two").forEach((text) => {
-      gsap.to(text, {
-        x: 60,
-        ease: Power3.easeOut(),
-        scrollTrigger: {
-          trigger: text,
-          start: "top bottom",
-          end: "bottom top",
-          scrub: 5,
-          endTrigger: text,
-        },
-      });
-    });
+    // const anim2 = gsap.utils.toArray("#slide-text-two").forEach((text) => {
+    //   gsap.to(text, {
+    //     x: 60,
+    //     ease: Power3.easeOut(),
+    //     scrollTrigger: {
+    //       trigger: text,
+    //       start: "top bottom",
+    //       end: "bottom top",
+    //       scrub: 5,
+    //       endTrigger: text,
+    //     },
+    //   });
+    // });
     return () => {
       anim.kill();
     };
