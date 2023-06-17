@@ -74,7 +74,7 @@ const InsightsHero = () => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col justify-center bg-black">
+    <div className="w-full flex flex-col justify-center overflow-hidden bg-black">
       <div
         ref={(el) => (introRefOne = el)}
         className="absolute w-full hidden md:flex h-full top-0 left-0 bg-oblue"
