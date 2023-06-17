@@ -83,6 +83,18 @@ const AboutHero = () => {
 
   return (
     <div className="w-full h-screen flex justify-center bg-black">
+      <div
+        ref={(el) => (introRefOne = el)}
+        className="absolute hidden md:flex w-full h-full top-0 left-0 bg-oblue"
+      />
+      <div
+        ref={(el) => (introRefTwo = el)}
+        className="absolute hidden md:flex w-full h-full top-0 left-0 bg-pblue"
+      />
+      <div
+        ref={(el) => (introRefThree = el)}
+        className="absolute hidden md:flex w-full h-full top-0 left-0 bg-ipink"
+      />
       <div className="w-full h-screen max-w-[1366px] hidden md:flex flex-col relative overflow-hidden main-hero-wrapper ">
         <div className="w-full flex justify-between py-5 px-10">
           <div

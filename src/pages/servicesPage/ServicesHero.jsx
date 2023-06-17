@@ -79,15 +79,15 @@ const ServicesHero = () => {
     <div className="w-full flex justify-center bg-black">
       <div
         ref={(el) => (introRefOne = el)}
-        className="absolute w-full h-full top-0 left-0 bg-oblue"
+        className="absolute w-full hidden md:flex h-full top-0 left-0 bg-oblue"
       />
       <div
         ref={(el) => (introRefTwo = el)}
-        className="absolute w-full h-full top-0 left-0 bg-pblue"
+        className="absolute w-full hidden md:flex h-full top-0 left-0 bg-pblue"
       />
       <div
         ref={(el) => (introRefThree = el)}
-        className="absolute w-full h-full top-0 left-0 bg-ipink"
+        className="absolute w-full hidden md:flex h-full top-0 left-0 bg-ipink"
       />
       <div className="w-full h-screen max-w-[1366px] hidden md:flex justify-center bg-black">
         <div className="w-full h-screen max-w-[1366px] flex flex-col relative overflow-hidden main-hero-wrapper">
