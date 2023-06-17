@@ -6,7 +6,9 @@ import TextHover from "../../components/TextHover";
 
 const ContactHero = () => {
   const ease = Power3.easeInOut();
-  let introRef = useRef(null);
+  let introRefOne = useRef(null);
+  let introRefTwo = useRef(null);
+  let introRefThree = useRef(null);
   let logoRef = useRef(null);
   let header_item_one = useRef(null);
   let header_item_two = useRef(null);
@@ -25,12 +27,19 @@ const ContactHero = () => {
   useEffect(() => {
     let ctx = gsap.context(() => {
       const tl = gsap.timeline();
+      tl.to([introRefThree, introRefTwo, introRefOne], 0.5, {
+        xPercent: 100,
+        duration: 1,
+        stagger: {
+          amount: 0.2,
+        },
+      });
       tl.from(logoRef, 0.2, {
         y: -100,
         ease: ease,
       });
       tl.from(
-        [header_item_one, header_item_two, header_item_three],
+        [header_item_one, header_item_two, header_item_three, header_item_four],
         0.5,
         {
           y: -100,
@@ -68,6 +77,18 @@ const ContactHero = () => {
 
   return (
     <div className="w-full flex justify-center bg-black">
+      <div
+        ref={(el) => (introRefOne = el)}
+        className="absolute w-full h-full top-0 left-0 bg-oblue"
+      />
+      <div
+        ref={(el) => (introRefTwo = el)}
+        className="absolute w-full h-full top-0 left-0 bg-pblue"
+      />
+      <div
+        ref={(el) => (introRefThree = el)}
+        className="absolute w-full h-full top-0 left-0 bg-ipink"
+      />
       <div className="w-full h-screen max-w-[1366px] hidden md:flex justify-center bg-black">
         <div className="w-full h-screen max-w-[1366px] flex flex-col relative overflow-hidden main-hero-wrapper">
           <div className="w-full flex justify-between py-5 px-10">

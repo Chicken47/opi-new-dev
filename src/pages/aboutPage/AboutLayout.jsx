@@ -20,7 +20,7 @@ const AboutLayout = () => {
   }, []);
 
   return (
-    <div className="w-full flex justify-center pb-20">
+    <div className="w-full flex justify-center py-20">
       <div className="w-full max-w-[1366px] flex flex-col md:flex-row justify-between">
         <div
           id="left-about-image-id"

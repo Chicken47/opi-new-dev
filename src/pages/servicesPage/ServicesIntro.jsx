@@ -37,7 +37,12 @@ const ShortText = () => {
     <div className="w-full flex justify-center">
       <div className="flex flex-col md:flex-row justify-between items-center max-w-[1366px] w-full md:px-0">
         <div className="w-full h-[10vh] flex md:hidden items-center justify-between px-5 py-3">
-          <img src="/images/png/Union.png" alt="" className="h-[20px]" />
+          <img
+            onClick={() => navigate("/")}
+            src="/images/png/Union.png"
+            alt=""
+            className="h-[40px]"
+          />
           {showMenu}
           <div
             onClick={() => setShowMenu(!showMenu)}

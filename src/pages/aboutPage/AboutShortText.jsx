@@ -36,7 +36,12 @@ const AboutIntro = () => {
     <div className="w-full flex justify-center">
       <div className="flex flex-col md:flex-row justify-between items-center max-w-[1366px] w-full">
         <div className="w-full h-[10vh] flex md:hidden items-center justify-between px-5 py-3">
-          <img src="/images/png/Union.png" alt="" className="h-[20px]" />
+          <img
+            onClick={() => navigate("/")}
+            src="/images/png/Union.png"
+            alt=""
+            className="h-[40px]"
+          />
           {showMenu}
           <div
             onClick={() => setShowMenu(!showMenu)}
@@ -121,7 +126,7 @@ const AboutIntro = () => {
             </div>
           </div>
         </div>
-        <div className="md:w-1/2 hidden md:flex items-center justify-center mt-10 md:mt-0 overflow-hidden">
+        <div className="w-1/2 h-[80vh] hidden md:flex items-center justify-center m-10 overflow-hidden">
           <img
             src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
             className="object-cover w-4/5 my-20 object-center overflow-hidden h-full aaaabout-about-image"

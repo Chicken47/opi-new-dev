@@ -10,7 +10,12 @@ const ContactForm = () => {
       <div className="w-full max-w-[1366px] flex items-center flex-col">
         <div className="w-full flex flex-col bg-white">
           <div className="w-full h-[10vh] flex md:hidden items-center justify-between px-5 py-3">
-            <img src="/images/png/Union.png" alt="" className="h-[20px]" />
+            <img
+              onClick={() => navigate("/")}
+              src="/images/png/Union.png"
+              alt=""
+              className="h-[40px]"
+            />
             {showMenu}
             <div
               onClick={() => setShowMenu(!showMenu)}

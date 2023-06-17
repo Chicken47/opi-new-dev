@@ -7,7 +7,7 @@ const PinSectionsPhone = () => {
         <span className="md:text-[50px] text-[28px] w-full text-left font-bold font-inter text-black pt-3 md:pt-0">
           Learn
         </span>
-        <span className="font-jose w-full text-left text-[14px] md:text-[18px] text-pblue">
+        <span className="font-jose w-full text-left text-[14px] md:text-[18px] text-white">
           We create innovative knowledge products and programs, empowering
           continuous learning and growth through research and evidence-based
           methodologies.
@@ -60,9 +60,10 @@ const PinSectionsPhone = () => {
           Implement
         </span>
         <span className="font-jose w-full text-left text-[14px] md:text-[18px] text-black">
-          We create innovative knowledge products and programs, empowering
-          continuous learning and growth through research and evidence-based
-          methodologies.
+          We foster strategic collaborations and partnerships, setting clear
+          objectives to align with our clients' goals. By bringing together
+          like-minded organizations and individuals, we amplify our collective
+          impact.
         </span>
         <span className="text-white text-left text-[12px] font-jose mt-3">
           - Capacity Building

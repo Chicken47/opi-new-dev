@@ -44,10 +44,10 @@ const FounderSection = () => {
           className="w-1/2 p-16 flex flex-col items-center overflow-hidden bg-oblue sticky"
         >
           <span className="w-full text-center font-inter font-bold text-black text-[32px]">
-            Managing Director
+            Managing Partner
           </span>
           <span className="w-full text-center font-inter font-bold text-white text-[22px]">
-            Sireesha Perambathina
+            Sireesha Perabathina
           </span>
           <span className="flex justify-center w-2/3 rounded mt-10 overflow-hidden">
             <img
@@ -97,7 +97,7 @@ const FounderSection = () => {
       </div>
       <div className="flex flex-col items-center md:hidden p-10 bg-oblue py-10">
         <span className="w-full text-center font-inter font-bold text-black text-[28px] md:text-[32px]">
-          Managing Director
+          Managing Partner
         </span>
         <span className="w-full text-center font-inter font-bold text-white text-[18px] md:text-[22px]">
           Sireesha Perabathina

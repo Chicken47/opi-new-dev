@@ -237,7 +237,12 @@ const Hero = () => {
       >
         {/* <div className="absolute bg-black w-full h-screen"></div> */}
         <div className="w-full h-[10vh] flex items-center justify-between px-5 py-3">
-          <img src="/images/png/Union.png" alt="" className="h-[20px]" />
+          <img
+            onClick={() => navigate("/")}
+            src="/images/png/Union.png"
+            alt=""
+            className="h-[40px]"
+          />
           {showMenu}
           <div
             onClick={() => setShowMenu(!showMenu)}

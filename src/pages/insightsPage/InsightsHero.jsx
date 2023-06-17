@@ -8,6 +8,9 @@ const InsightsHero = () => {
   const ease = Power3.easeInOut();
   const [showMenu, setShowMenu] = useState(false);
   let logoRef = useRef(null);
+  let introRefOne = useRef(null);
+  let introRefTwo = useRef(null);
+  let introRefThree = useRef(null);
   let header_item_one = useRef(null);
   let header_item_two = useRef(null);
   let header_item_three = useRef(null);
@@ -22,6 +25,13 @@ const InsightsHero = () => {
   useEffect(() => {
     let ctx = gsap.context(() => {
       const tl = gsap.timeline();
+      tl.to([introRefThree, introRefTwo, introRefOne], 0.5, {
+        xPercent: 100,
+        duration: 1,
+        stagger: {
+          amount: 0.2,
+        },
+      });
       tl.from(logoRef, 0.2, {
         y: -100,
         ease: ease,
@@ -65,6 +75,18 @@ const InsightsHero = () => {
 
   return (
     <div className="w-full flex flex-col justify-center bg-black">
+      <div
+        ref={(el) => (introRefOne = el)}
+        className="absolute w-full h-full top-0 left-0 bg-oblue"
+      />
+      <div
+        ref={(el) => (introRefTwo = el)}
+        className="absolute w-full h-full top-0 left-0 bg-pblue"
+      />
+      <div
+        ref={(el) => (introRefThree = el)}
+        className="absolute w-full h-full top-0 left-0 bg-ipink"
+      />
       <div className="w-full h-screen max-w-[1366px] hidden md:flex justify-center bg-black">
         <div className="w-full h-screen max-w-[1366px] flex flex-col relative overflow-hidden main-hero-wrapper">
           <div className="w-full flex justify-between py-5 px-10">
@@ -172,7 +194,12 @@ const InsightsHero = () => {
       </div>
       <div className="w-full flex flex-col bg-white">
         <div className="w-full h-[10vh] flex md:hidden items-center justify-between px-5 py-3">
-          <img src="/images/png/Union.png" alt="" className="h-[20px]" />
+          <img
+            onClick={() => navigate("/")}
+            src="/images/png/Union.png"
+            alt=""
+            className="h-[40px]"
+          />
           {showMenu}
           <div
             onClick={() => setShowMenu(!showMenu)}
