@@ -28,7 +28,7 @@ const TextSlide = () => {
   }, []);
 
   return (
-    <div className="slider-div w-[4500px] h-[60px] mb-2" ref={triggerRef}>
+    <div className="slider-div w-[2500px] h-[60px] mb-2" ref={triggerRef}>
       <span
         className="text-[45px] font-extralight text-white h-full ml-4"
         ref={sectionRef}
@@ -36,8 +36,7 @@ const TextSlide = () => {
         <span
           className={` text-[35px] md:text-[80px] text-black font-extrabold uppercase`}
         >
-          Bridging Sectors Bridging Sectors Bridging Sectors Bridging Sectors
-          Bridging Sectors
+          Bridging Sectors Bridging Sectors Bridging Sectors
         </span>
       </span>
     </div>

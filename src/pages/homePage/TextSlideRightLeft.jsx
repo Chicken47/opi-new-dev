@@ -12,9 +12,9 @@ export const TextSlideRightLeft = () => {
     let ctx = gsap.context(() => {
       gsap.fromTo(
         ".slider-div-one",
-        { x: 700 },
+        { x: 400 },
         {
-          x: -1500,
+          x: -400,
           scrollTrigger: {
             trigger: triggerRef.current,
             start: "top bottom",
