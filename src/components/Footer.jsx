@@ -62,7 +62,7 @@ const Footer = () => {
       <div className="w-full flex md:hidden space-x-12">
         <div className="w-1/2 items-end justify-between flex flex-col">
           <img className="h-[60px]" src="/images/png/Union.png" />
-          <span className="text-white text-[12px] font-bold font-inter">
+          <span className="text-white text-[12px] text-right font-bold font-inter">
             Open for Policy & Impact
           </span>
           <span className="text-white font-oswald text-[10px]">
