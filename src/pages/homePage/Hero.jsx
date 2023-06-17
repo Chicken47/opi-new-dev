@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap, Power3 } from "gsap";
 import { useNavigate } from "react-router-dom";
 import HoverCardOne from "../../components/HoverCardOne";
-import "./intro.css";
 import TextHover from "../../components/TextHover";
 
 const Hero = () => {
@@ -101,14 +100,15 @@ const Hero = () => {
 
   return (
     <div className="w-full bg-black">
-      <div className="w-full h-screen hidden md:flex justify-center bg-gradient-to-r from-[#f96c9610] to-[#8bb4c710]">
+      <div className="w-full h-screen hidden md:flex justify-center bg-gradient-to-r from-[#f96c9610] to-[#8bb4c720]">
         <div className="w-full h-screen max-w-[1366px] hidden md:flex flex-col relative overflow-hidden main-hero-wrapper">
           <div
             ref={(el) => (introRef = el)}
-            className="bg-gradient-to-r from-[#f96c9600] to-[#8bb4c700] absolute w-full h-full top-0 left-0 z-50 flex items-center justify-center"
+            className="bg-gradient-to-r from-[#f96c9600] to-[#8bb4c700] absolute w-full h-full top-0 left-0 z-50 flex flex-col items-center justify-center"
           >
-            <span className="z-50 text-white intro-title">
-              <span className="title-inner">Welcome to opi</span>
+            <img src="/images/png/Union.png" className="h-[150px]" />
+            <span className="text-center font-inter text-white font-bold text-[20px]">
+              Open for Policy & Impact
             </span>
           </div>
           <div className="w-full hidden md:flex justify-between py-5 px-10">

@@ -12,9 +12,9 @@ const AboutPage = () => {
     <div className="w-full overflow-hidden">
       <AboutHero />
       <AboutIntro />
-      <SetApart />
-      <AboutLayout />
       <MapSection />
+      <AboutLayout />
+      <SetApart />
       <FounderSection />
       <Footer />
     </div>

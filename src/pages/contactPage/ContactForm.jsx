@@ -78,7 +78,7 @@ const ContactForm = () => {
           </div>
           <div className="w-full  bg-white px-5 flex md:hidden flex-col py-10">
             <span className="font-extrabold text-ipink font-inter text-center text-[32px]">
-              Our Insights
+              Be a part of our network.
             </span>
             <span className="text-black text-center font-jose text-[14px] px-5 mt-[3vh]">
               We believe in sharing knowledge and empowering our readers with

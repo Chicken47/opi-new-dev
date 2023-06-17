@@ -154,11 +154,11 @@ const LatestNews = () => {
         <div className="h-screen w-1/3 -mt-16">
           <div className="-m-10 bg-white h-1/3 flex flex-col overflow-hidden rounded-full p-10">
             <span className="text-ipink font-bold text-[40px] font-inter w-full text-center">
-              News Insights
+              Our Research and Knowledge Products
             </span>
             <span className="text-black font-bold text-[16px] font-mont w-full text-center">
-              Stay Informed with Our Comprehensive News Insights: Your Source
-              for Daily Updates on the Biggest Stories.
+              Our knowledge creation drives partnerships and catalyzes
+              innovative solutions.
             </span>
           </div>
           <div

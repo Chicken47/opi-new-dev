@@ -33,9 +33,11 @@ const TextSlide = () => {
         className="text-[45px] font-extralight text-white h-full ml-4"
         ref={sectionRef}
       >
-        <span className={`text-[80px] text-black font-extrabold uppercase`}>
-          Practical Solutions Practical Solutions Practical Solutions Practical
-          Solutions
+        <span
+          className={` text-[35px] md:text-[80px] text-black font-extrabold uppercase`}
+        >
+          Bridging Sectors Bridging Sectors Bridging Sectors Bridging Sectors
+          Bridging Sectors
         </span>
       </span>
     </div>

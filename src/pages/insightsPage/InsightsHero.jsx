@@ -96,7 +96,7 @@ const InsightsHero = () => {
                 ref={(el) => (lineOneRef = el)}
                 className="font-extrabold text-[20px] font-inter md:text-[45px] text-left text-ipink"
               >
-                Insights
+                Our Work
               </span>
               <p
                 ref={(el) => (paraRef = el)}

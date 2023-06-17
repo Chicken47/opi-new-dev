@@ -62,7 +62,7 @@ const PinLeftScrollRight = () => {
             id="left"
             className="w-full md:w-1/2 p-16 flex flex-col overflow-hidden bg-black z-50 md:bg-gradient-to-r from-[#f96c961e] to-black [#8bb4c73d] sticky dark:bg-opacity-50"
           >
-            <span className="md:text-[50px] text-[28px] w-full text-left font-bold font-inter text-white pt-3 md:pt-0">
+            <span className="md:text-[50px] text-[28px] w-full text-left font-bold font-inter text-pblue pt-3 md:pt-0">
               Learn
             </span>
             <span className="font-jose w-full text-left text-[14px] md:text-[18px] text-white">

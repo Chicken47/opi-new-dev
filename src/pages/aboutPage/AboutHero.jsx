@@ -74,7 +74,7 @@ const AboutHero = () => {
 
   return (
     <div className="w-full h-screen hidden md:flex justify-center bg-black">
-      <div className="w-full h-screen max-w-[1366px] hidden md:flex flex-col relative overflow-hidden main-hero-wrapper">
+      <div className="w-full h-screen max-w-[1366px] hidden md:flex flex-col relative overflow-hidden main-hero-wrapper ">
         <div className="w-full flex justify-between py-5 px-10">
           <div
             ref={(el) => (logoRef = el)}

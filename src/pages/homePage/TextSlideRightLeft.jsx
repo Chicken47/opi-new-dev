@@ -36,9 +36,11 @@ export const TextSlideRightLeft = () => {
         className="text-[45px] font-extralight text-white h-full ml-4"
         ref={sectionRef}
       >
-        <span className={`text-[80px] text-black font-extrabold uppercase`}>
-          Radical Ideas Radical Ideas Radical Ideas Radical Ideas Radical Ideas
-          Radical Ideas
+        <span
+          className={`text-[35px] md:text-[80px] text-black font-extrabold uppercase`}
+        >
+          Touching Lives Touching Lives Touching Lives Touching Lives Touching
+          Lives
         </span>
       </span>
     </div>

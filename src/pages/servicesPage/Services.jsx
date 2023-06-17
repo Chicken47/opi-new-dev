@@ -271,7 +271,7 @@ export const Services = () => {
           className="flex flex-col items-end justify-center w-1/2 p-10 left-six"
         >
           <span className={`font-extrabold text-right text-[26px]`}>
-            Digital Transformation and Innovation
+            Digital Strategy Development and Adoption Support
           </span>
           <span className={`flex items-center justify-center text-right`}>
             - Digital strategy development: Assisting organizations in

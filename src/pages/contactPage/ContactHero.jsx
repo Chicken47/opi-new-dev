@@ -99,7 +99,7 @@ const ContactHero = () => {
                 ref={(el) => (lineOneRef = el)}
                 className="font-extrabold text-[20px] font-inter md:text-[45px] text-left text-ipink"
               >
-                Connect With Us
+                Be part of our Network
               </span>
               <p
                 ref={(el) => (paraRef = el)}
@@ -121,9 +121,9 @@ const ContactHero = () => {
               <div className="flex items-center justify-center">
                 <div ref={(el) => (hoverOne = el)} className="h-auto">
                   <HoverCardOne
-                    title={"Research Papers"}
+                    title={"Partnerships"}
                     subtitles={
-                      "Our research papers offer comprehensive analyses, data-driven insights, and expert perspectives on various subjects. They provide valuable contributions to industry knowledge and guide informed decision-making."
+                      "Partnerships are collaborative alliances formed between individuals or organizations with shared goals, pooling resources, expertise, and efforts to achieve mutual success. Successful partnerships rely on open communication, trust, and a shared vision, enabling partners to leverage each other's strengths and expand their reach in new markets or ventures. "
                     }
                     width={300}
                     height={400}
@@ -136,9 +136,9 @@ const ContactHero = () => {
                 </div>
                 <div ref={(el) => (hoverTwo = el)}>
                   <HoverCardOne
-                    title={"Case Studies"}
+                    title={"Knowledge Sharing"}
                     subtitles={
-                      "Our case studies showcase successful projects, highlighting challenges, strategies, and measurable outcomes. They offer practical insights and lessons learned for effective problem-solving."
+                      "Knowledge sharing involves the exchange of information, insights, and experiences among individuals or organizations, fostering collaboration, learning, and innovation. By sharing knowledge, individuals and organizations tap into a broader pool of ideas and perspectives, enabling better-informed decision-making and creative problem-solving. "
                     }
                     width={280}
                     height={290}
@@ -153,9 +153,9 @@ const ContactHero = () => {
               <div className="flex items-center justify-center">
                 <div ref={(el) => (hoverThree = el)}>
                   <HoverCardOne
-                    title={"Facts & Numbers"}
+                    title={"Consulting"}
                     subtitles={
-                      "Our facts and numbers section provides key statistics and trends relevant to different sectors. It offers accurate and up-to-date information for data-driven decision-making."
+                      "Knowledge sharing involves the exchange of information, insights, and experiences among individuals or organizations, fostering collaboration, learning, and innovation. By sharing knowledge, individuals and organizations tap into a broader pool of ideas and perspectives, enabling better-informed decision-making and creative problem-solving. "
                     }
                     width={320}
                     height={290}

@@ -76,7 +76,7 @@ const PinRight = () => {
                 id="slide-text-one"
                 className="text-black font-jose text-[18px] max-w-[450px]"
               >
-                - Regional knowledge sharing through events, exchange workshops,
+                Regional knowledge sharing through events, exchange workshops,
                 and study visits, and investments.
               </span>
               <span
@@ -89,7 +89,7 @@ const PinRight = () => {
                 id="slide-text-one"
                 className="text-black font-jose text-[18px] max-w-[450px]"
               >
-                - Facilitate partnership channels, define the required
+                Facilitate partnership channels, define the required
                 collaborations, the roles of partnering organizations and
                 bodies.
               </span>

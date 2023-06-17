@@ -181,7 +181,7 @@ const ProvidedServices = () => {
         <div className="w-full text-left flex flex-row-reverse items-center">
           <div className="md:w-1/2 flex flex-col items-start provided-services-right-text p-10">
             <span className="font-inter text-[25px] font-extrabold text-ipink">
-              Digital Transformation and Innovation
+              Digital Strategy Development and Adoption Support
             </span>
             <span className="font-jose text-white mt-5">
               - Digital strategy development: Assisting organizations in
@@ -328,7 +328,7 @@ const ProvidedServices = () => {
         <div className="w-full text-left flex flex-row-reverse items-center">
           <div className="md:w-1/2 flex flex-col items-start p-10">
             <span className="font-inter text-[25px] font-extrabold text-ipink">
-              Digital Transformation and Innovation
+              Digital Strategy Development and Adoption Support
             </span>
             <span className="font-jose text-white mt-5">
               - Digital strategy development: Assisting organizations in
