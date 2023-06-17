@@ -82,7 +82,7 @@ const AboutHero = () => {
   }, []);
 
   return (
-    <div className="w-full h-screen hidden md:flex justify-center bg-black">
+    <div className="w-full h-screen flex justify-center bg-black">
       <div
         ref={(el) => (introRefOne = el)}
         className="absolute w-full h-full top-0 left-0 bg-oblue"
