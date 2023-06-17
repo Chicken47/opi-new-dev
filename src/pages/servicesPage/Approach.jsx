@@ -20,11 +20,11 @@ const Approach = () => {
   }, []);
 
   return (
-    <div className="w-full flex justify-center pb-20 pt-32">
+    <div className="w-full flex justify-center pb-10 md:pb-20 md:pt-32">
       <div className="w-full max-w-[1366px] flex flex-col md:flex-row justify-between">
         <div
           id="left-about-image-id"
-          className="md:w-1/3 overflow-hidden shadow-xl shadow-pblue rounded mx-10 md:mx-0"
+          className="md:w-1/3 overflow-hidden hidden md:flex shadow-xl shadow-pblue rounded mx-10 md:mx-0"
         >
           <img
             src="https://images.unsplash.com/photo-1627215750463-3386c8ed92ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"

@@ -9,28 +9,27 @@ const FounderSection = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    const anim = gsap.to(".trigger", {
-      scrollTrigger: {
-        trigger: triggerRef,
-        scrub: 1,
-        start: "top top",
-        end: "bottom bottom",
-        pin: sectionRef,
-      },
+    let ctx = gsap.context(() => {
+      gsap.to(".trigger", {
+        scrollTrigger: {
+          trigger: triggerRef,
+          scrub: 1,
+          start: "top top",
+          end: "bottom bottom",
+          pin: sectionRef,
+        },
+      });
+      gsap.to(".sireesha-image", {
+        scale: 1.3,
+        scrollTrigger: {
+          trigger: "#sireesha-right",
+          scrub: 5,
+          start: "top 20%",
+          end: "bottom top",
+        },
+      });
     });
-    const anim2 = gsap.to(".sireesha-image", {
-      scale: 1.3,
-      scrollTrigger: {
-        trigger: "#sireesha-right",
-        scrub: 5,
-        start: "top 20%",
-        end: "bottom top",
-      },
-    });
-    return () => {
-      anim.kill();
-      anim2.kill();
-    };
+    return () => ctx.revert();
   }, []);
 
   return (
@@ -109,7 +108,10 @@ const FounderSection = () => {
             className="sireesha-image shadow-lg shadow-black"
           />
         </span>
-        <div id="sireesha-right" className={`font-jose text-center mt-10`}>
+        <div
+          id="sireesha-right"
+          className={`font-jose text-[14px] md:text-[16px] md:text-center mt-10`}
+        >
           Sireesha is the founder and managing partner of Open for Policy and
           Impact. She is a seasoned global health professional with over two
           decades of experience working with the leadership team of global

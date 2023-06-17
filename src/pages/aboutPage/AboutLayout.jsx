@@ -24,7 +24,7 @@ const AboutLayout = () => {
       <div className="w-full max-w-[1366px] flex flex-col md:flex-row justify-between">
         <div
           id="left-about-image-id"
-          className="md:w-1/3 overflow-hidden shadow-xl shadow-pblue rounded m-10 md:m-0"
+          className="md:w-1/3 overflow-hidden md:shadow-xl shadow-pblue md:rounded m-5 md:m-0"
         >
           <img
             src="https://images.unsplash.com/photo-1539627831859-a911cf04d3cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80"
@@ -34,12 +34,12 @@ const AboutLayout = () => {
         </div>
         <div
           id="right-side-about-id"
-          className="w-2/3 flex flex-col justify-start px-10"
+          className="md:w-2/3 flex flex-col justify-start mt-10 md:mt-0 px-5 md:px-10"
         >
-          <span className="font-inter text-[40px] font-extrabold text-ipink ml-[3vw]">
+          <span className="font-inter text-[25px] md:text-[40px] text-center md:text-left font-extrabold text-ipink md:ml-[3vw]">
             Driving Collaborative Solutions
           </span>
-          <div className="w-full flex flex-col md:flex-row items-center justify-around ml-16 md:ml-0 mt-10">
+          <div className="w-full flex flex-col md:flex-row items-center justify-around md:ml-0 mt-10">
             <CardHoverTwo
               title={"Multidisciplinary Research"}
               subtitle={
@@ -53,7 +53,7 @@ const AboutLayout = () => {
               }
             />
           </div>
-          <div className="w-full mt-5 flex flex-col md:flex-row items-center ml-16 md:ml-0 justify-around">
+          <div className="w-full mt-5 flex flex-col md:flex-row items-center md:ml-0 justify-around">
             <CardHoverTwo
               title={"Global Connectivity"}
               subtitle={

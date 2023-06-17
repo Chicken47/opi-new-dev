@@ -9,7 +9,7 @@ const BlogCard = () => {
             className="w-full object-cover"
           />
         </div>
-        <div className="flex flex-col items-start p-10">
+        <div className="flex flex-col items-start p-5 md:p-10">
           <span className="font-bold md:text-[24px] font-inter text-ipink">
             Is Apple a design company?
           </span>

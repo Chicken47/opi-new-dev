@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import HoverCardOne from "../../components/HoverCardOne";
 import { gsap, Power3 } from "gsap";
 import { useNavigate } from "react-router-dom";
@@ -6,7 +6,7 @@ import TextHover from "../../components/TextHover";
 
 const InsightsHero = () => {
   const ease = Power3.easeInOut();
-  let introRef = useRef(null);
+  const [showMenu, setShowMenu] = useState(false);
   let logoRef = useRef(null);
   let header_item_one = useRef(null);
   let header_item_two = useRef(null);
@@ -15,10 +15,7 @@ const InsightsHero = () => {
   let hoverOne = useRef(null);
   let hoverTwo = useRef(null);
   let hoverThree = useRef(null);
-  let hoverFour = useRef(null);
-  let hoverFive = useRef(null);
   let lineOneRef = useRef(null);
-  let lineTwoRef = useRef(null);
   let paraRef = useRef(null);
   const navigate = useNavigate();
 
@@ -67,7 +64,7 @@ const InsightsHero = () => {
   }, []);
 
   return (
-    <div className="w-full flex justify-center bg-black">
+    <div className="w-full flex flex-col justify-center bg-black">
       <div className="w-full h-screen max-w-[1366px] hidden md:flex justify-center bg-black">
         <div className="w-full h-screen max-w-[1366px] flex flex-col relative overflow-hidden main-hero-wrapper">
           <div className="w-full flex justify-between py-5 px-10">
@@ -173,51 +170,87 @@ const InsightsHero = () => {
           </div>
         </div>
       </div>
-      <div className="flex md:hidden h-screen flex-col">
-        <div className="w-full flex justify-evenly py-4">
+      <div className="w-full flex flex-col bg-white">
+        <div className="w-full h-[10vh] flex md:hidden items-center justify-between px-5 py-3">
+          <img src="/images/png/Union.png" alt="" className="h-[20px]" />
+          {showMenu}
+          <div
+            onClick={() => setShowMenu(!showMenu)}
+            className=" cursor-pointer"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
+              alt=""
+              className="h-[20px]"
+            />
+          </div>
+        </div>
+        <div
+          className={
+            showMenu
+              ? "h-full bg-white flex md:hidden flex-col space-y-4 items-center justify-center"
+              : "hidden"
+          }
+        >
           <span
-            onClick={() => navigate("/about")}
-            className="text-white text-[12px] font-oswald font-bold"
+            onClick={() => {
+              setShowMenu(false);
+              navigate("/");
+            }}
+            className="text-black font-mont text-[22px] font-bold"
+          >
+            Home
+          </span>
+          <span
+            onClick={() => {
+              setShowMenu(false);
+              navigate("/about");
+            }}
+            className="text-black font-mont text-[22px] font-bold"
           >
             Who We Are
           </span>
           <span
-            onClick={() => navigate("/services")}
-            className="text-white text-[12px] font-oswald font-bold"
+            onClick={() => {
+              setShowMenu(false);
+              navigate("/services");
+            }}
+            className="text-black font-mont text-[22px] font-bold"
           >
             What We Do
           </span>
           <span
-            onClick={() => navigate("/insights")}
-            className="text-white text-[12px] font-oswald font-bold"
+            onClick={() => {
+              setShowMenu(false);
+              navigate("/insights");
+            }}
+            className="text-black font-mont text-[22px] font-bold"
           >
             Insights
           </span>
           <span
-            onClick={() => navigate("/contact")}
-            className="text-white text-[12px] font-oswald font-bold"
+            onClick={() => {
+              setShowMenu(false);
+              navigate("/contact");
+            }}
+            className="text-black font-mont text-[22px] font-bold"
           >
             Contact Us
           </span>
         </div>
-        <div className="flex px-10 flex-col items-center">
-          <img
-            src="/images/png/Union.png"
-            className="w-[50px] mt-5"
-            onClick={() => navigate("/")}
-          />
-          <span className="text-ipink font-inter text-center text-[36px] mt-2 font-extrabold">
-            Insights
+        <div className="w-full  bg-white px-5 flex md:hidden flex-col py-10">
+          <span className="font-extrabold text-ipink font-inter text-center text-[32px]">
+            Our Insights
           </span>
-          <img
-            src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
-            className="mt-10"
-          />
-          <span className="text-white font-jose text-center font-bold text-[14px] mt-16">
+          <span className="text-black text-center font-jose text-[14px] px-5 mt-[3vh]">
             We believe in sharing knowledge and empowering our readers with
             valuable information. Feel free to browse through our Insights page,
             read our articles, and engage in discussions through the comments
             section.
+            <br />
+            Our insights page is regularly updated with new content. Make sure
+            to visit frequently to stay informed about the latest insights from
+            our experts.
           </span>
         </div>
       </div>

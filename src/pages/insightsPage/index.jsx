@@ -33,7 +33,7 @@ const InsightsPage = () => {
         <BlogCard />
       </div>
       <Footer />
-      <BlogItem />
+      {/* <BlogItem /> */}
     </div>
   );
 };

@@ -73,7 +73,7 @@ const AboutHero = () => {
   }, []);
 
   return (
-    <div className="w-full h-screen flex justify-center bg-black">
+    <div className="w-full h-screen hidden md:flex justify-center bg-black">
       <div className="w-full h-screen max-w-[1366px] hidden md:flex flex-col relative overflow-hidden main-hero-wrapper">
         <div className="w-full flex justify-between py-5 px-10">
           <div
@@ -201,55 +201,6 @@ const AboutHero = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="flex md:hidden flex-col">
-        <div className="w-full flex justify-evenly py-4">
-          <span
-            onClick={() => navigate("/about")}
-            className="text-white text-[12px] font-oswald font-bold"
-          >
-            Who We Are
-          </span>
-          <span
-            onClick={() => navigate("/services")}
-            className="text-white text-[12px] font-oswald font-bold"
-          >
-            What We Do
-          </span>
-          <span
-            onClick={() => navigate("/insights")}
-            className="text-white text-[12px] font-oswald font-bold"
-          >
-            Insights
-          </span>
-          <span
-            onClick={() => navigate("/contact")}
-            className="text-white text-[12px] font-oswald font-bold"
-          >
-            Contact Us
-          </span>
-        </div>
-        <div className="flex px-10 flex-col items-center">
-          <img
-            src="/images/png/Union.png"
-            className="w-[50px] mt-5"
-            onClick={() => navigate("/")}
-          />
-          <span className="text-ipink font-inter text-center text-[20px] mt-3 font-extrabold">
-            About Us
-          </span>
-          <img
-            src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
-            className="mt-10"
-          />
-          <span className="text-white font-jose text-center font-bold text-[14px] mt-16">
-            At OPI, we believe that policy and impact go hand in hand. Our
-            multidisciplinary team brings together diverse backgrounds, ranging
-            from policy analysis and advocacy to project management and
-            technology, enabling us to tackle complex societal issues with a
-            holistic approach.
-          </span>
         </div>
       </div>
     </div>

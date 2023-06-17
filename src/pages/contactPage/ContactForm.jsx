@@ -1,17 +1,97 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const ContactForm = () => {
+  const navigate = useNavigate();
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
-    <div className="w-full justify-center flex py-20">
+    <div className="w-full justify-center flex flex-col md:py-20">
       <div className="w-full max-w-[1366px] flex items-center flex-col">
-        <span className="text-ipink font-extrabold text-[40px] font-inter">
-          Contact Us
-        </span>
-        <span className="text-black font-extrabold w-1/2 text-center font-jose">
-          Thank you for reaching out! We appreciate your interest. Kindly take a
-          moment to fill out the form below, providing us with the necessary
-          details. We look forward to assisting you further. Thank you!
-        </span>
+        <div className="w-full flex flex-col bg-white">
+          <div className="w-full h-[10vh] flex md:hidden items-center justify-between px-5 py-3">
+            <img src="/images/png/Union.png" alt="" className="h-[20px]" />
+            {showMenu}
+            <div
+              onClick={() => setShowMenu(!showMenu)}
+              className=" cursor-pointer"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
+                alt=""
+                className="h-[20px]"
+              />
+            </div>
+          </div>
+          <div
+            className={
+              showMenu
+                ? "h-full bg-white flex md:hidden flex-col space-y-4 items-center justify-center"
+                : "hidden"
+            }
+          >
+            <span
+              onClick={() => {
+                setShowMenu(false);
+                navigate("/");
+              }}
+              className="text-black font-mont text-[22px] font-bold"
+            >
+              Home
+            </span>
+            <span
+              onClick={() => {
+                setShowMenu(false);
+                navigate("/about");
+              }}
+              className="text-black font-mont text-[22px] font-bold"
+            >
+              Who We Are
+            </span>
+            <span
+              onClick={() => {
+                setShowMenu(false);
+                navigate("/services");
+              }}
+              className="text-black font-mont text-[22px] font-bold"
+            >
+              What We Do
+            </span>
+            <span
+              onClick={() => {
+                setShowMenu(false);
+                navigate("/insights");
+              }}
+              className="text-black font-mont text-[22px] font-bold"
+            >
+              Insights
+            </span>
+            <span
+              onClick={() => {
+                setShowMenu(false);
+                navigate("/contact");
+              }}
+              className="text-black font-mont text-[22px] font-bold"
+            >
+              Contact Us
+            </span>
+          </div>
+          <div className="w-full  bg-white px-5 flex md:hidden flex-col py-10">
+            <span className="font-extrabold text-ipink font-inter text-center text-[32px]">
+              Our Insights
+            </span>
+            <span className="text-black text-center font-jose text-[14px] px-5 mt-[3vh]">
+              We believe in sharing knowledge and empowering our readers with
+              valuable information. Feel free to browse through our Insights
+              page, read our articles, and engage in discussions through the
+              comments section.
+              <br />
+              Our insights page is regularly updated with new content. Make sure
+              to visit frequently to stay informed about the latest insights
+              from our experts.
+            </span>
+          </div>
+        </div>
         <div className="p-5 w-4/5 border md:w-2/5 border-black flex flex-col mt-10">
           <span className="font-mont text-black mt-7">Name</span>
           <input

@@ -38,7 +38,7 @@ const TextReveal = () => {
   }, [lettersRef]);
 
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full hidden md:flex justify-center">
       <div className="w-full max-w-[1366px] p-20 bg-white reveal">
         <div ref={triggerRef} className="w-2/3 bg-white">
           {text.split("").map((letter, index) => (

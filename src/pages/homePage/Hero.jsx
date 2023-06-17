@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap, Power3 } from "gsap";
 import { useNavigate } from "react-router-dom";
 import HoverCardOne from "../../components/HoverCardOne";
@@ -20,6 +20,8 @@ const Hero = () => {
   let lineOneRef = useRef(null);
   let lineTwoRef = useRef(null);
   let paraRef = useRef(null);
+  let phoneMenuRef = useRef(null);
+  const [showMenu, setShowMenu] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -75,11 +77,31 @@ const Hero = () => {
       );
     });
     return () => ctx.revert();
+    // eslint-disable-next-line
   }, []);
+
+  // useEffect(() => {
+  //   let ctx = gsap.context(() => {
+  //     const timeline = gsap.timeline({
+  //       paused: true,
+  //       reversed: true,
+  //     });
+  //     timeline.to(phoneMenuRef, {
+  //       scaleY: 1,
+  //       duration: 2,
+  //     });
+  //     if (showMenu) {
+  //       timeline.play();
+  //     } else {
+  //       timeline.reverse();
+  //     }
+  //   });
+  //   return () => ctx.revert();
+  // }, [showMenu]);
 
   return (
     <div className="w-full bg-black">
-      <div className="w-full h-screen flex justify-center bg-gradient-to-r from-[#f96c9610] to-[#8bb4c710]">
+      <div className="w-full h-screen hidden md:flex justify-center bg-gradient-to-r from-[#f96c9610] to-[#8bb4c710]">
         <div className="w-full h-screen max-w-[1366px] hidden md:flex flex-col relative overflow-hidden main-hero-wrapper">
           <div
             ref={(el) => (introRef = el)}
@@ -206,56 +228,89 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="flex md:hidden flex-col">
-          <div className="w-full flex justify-evenly py-4">
-            <span
-              onClick={() => navigate("/about")}
-              className="text-white text-[12px] font-oswald font-bold"
-            >
-              Who We Are
-            </span>
-            <span
-              onClick={() => navigate("/services")}
-              className="text-white text-[12px] font-oswald font-bold"
-            >
-              What We Do
-            </span>
-            <span
-              onClick={() => navigate("/insights")}
-              className="text-white text-[12px] font-oswald font-bold"
-            >
-              Insights
-            </span>
-            <span
-              onClick={() => navigate("/contact")}
-              className="text-white text-[12px] font-oswald font-bold"
-            >
-              Contact Us
-            </span>
-          </div>
-          <div className="flex px-10 flex-col items-center">
-            <img
-              src="/images/png/Union.png"
-              className="w-[50px] mt-5"
-              onClick={() => navigate("/")}
-            />
-            <span className="text-white font-inter text-center text-[11px] mt-5 font-extrabold">
-              Welcome to OPI
-            </span>
-            <span className="text-ipink font-inter text-center text-[20px] mt-3 font-extrabold">
-              Open for Policy & Impact
-            </span>
-            <img
-              src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
-              className="mt-10"
-            />
-            <span className="text-white font-jose text-center font-bold text-[14px] mt-16">
-              Driving Positive Change through Innovative Solutions and Strategic
-              Partnerships: Empowering Organisations to Navigate Complex
-              Challenges
-            </span>
+      </div>
+      <div
+        className="w-full flex md:hidden flex-col h-screen bg-black z-50"
+        style={{
+          backgroundImage: `url(https://images.unsplash.com/photo-1618123069754-cd64c230a169?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80)`,
+        }}
+      >
+        {/* <div className="absolute bg-black w-full h-screen"></div> */}
+        <div className="w-full h-[10vh] flex items-center justify-between px-5 py-3">
+          <img src="/images/png/Union.png" alt="" className="h-[20px]" />
+          {showMenu}
+          <div
+            onClick={() => setShowMenu(!showMenu)}
+            className=" cursor-pointer"
+          >
+            <img src="/images/png/MenuIcon.png" alt="" className="h-[20px]" />
           </div>
         </div>
+        <div
+          style={{
+            backgroundImage: `url(https://images.unsplash.com/photo-1618123069754-cd64c230a169?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80)`,
+          }}
+          ref={(el) => (phoneMenuRef = el)}
+          className={
+            showMenu
+              ? "h-full bg-black flex flex-col space-y-4 items-center justify-center"
+              : "hidden"
+          }
+        >
+          <span
+            onClick={() => navigate("/")}
+            className="text-white font-mont text-[22px] font-bold"
+          >
+            Home
+          </span>
+          <span
+            onClick={() => navigate("/about")}
+            className="text-white font-mont text-[22px] font-bold"
+          >
+            Who We Are
+          </span>
+          <span
+            onClick={() => navigate("/services")}
+            className="text-white font-mont text-[22px] font-bold"
+          >
+            What We Do
+          </span>
+          <span
+            onClick={() => navigate("/insights")}
+            className="text-white font-mont text-[22px] font-bold"
+          >
+            Insights
+          </span>
+          <span
+            onClick={() => navigate("/contact")}
+            className="text-white font-mont text-[22px] font-bold"
+          >
+            Contact Us
+          </span>
+        </div>
+        <div
+          className={
+            showMenu ? "hidden" : "w-full  flex flex-col h-full justify-center"
+          }
+        >
+          <span className="text-white font-inter text-[14px] w-full text-center">
+            WELCOME TO OPI
+          </span>
+          <span className="text-ipink font-inter font-extrabold text-[28px] mt-2 w-full text-center">
+            Open for Policy
+            <br />& Impact
+          </span>
+          <span className="text-[12px] font-inter text-white px-16 mt-5 text-center">
+            Bridging sectors, disciplines, and stakeholders for a digital and
+            inclusive future.
+          </span>
+        </div>
+        <span
+          onClick={() => setShowMenu(!showMenu)}
+          className="w-full text-center text-white font-inter text-[10px] pb-10"
+        >
+          Explore
+        </span>
       </div>
     </div>
   );
