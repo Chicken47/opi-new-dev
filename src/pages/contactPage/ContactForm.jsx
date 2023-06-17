@@ -97,23 +97,23 @@ const ContactForm = () => {
             </span>
           </div>
         </div>
-        <div className="p-5 w-4/5 border md:w-2/5 border-ipink flex flex-col mt-10">
+        <div className="p-5 w-4/5 border md:w-2/5 border-ipink shadow-xl rounded flex flex-col mt-10">
           <span className="font-mont text-pblue mt-7">Name</span>
           <input
             type="text"
-            className="px-3 py-1 border border-oblue mt-2"
+            className="px-3 py-1 border border-oblue mt-2 rounded shadow-lg"
             placeholder=""
           />
           <span className="font-mont text-pblue mt-10">Number</span>
           <input
             type="text"
-            className="px-3 py-1 border border-oblue mt-2"
+            className="px-3 py-1 border border-oblue mt-2 rounded shadow-lg"
             placeholder=""
           />
           <span className="font-mont text-pblue mt-10">e-Mail</span>
           <input
             type="text"
-            className="px-3 py-1 border border-oblue mt-2"
+            className="px-3 py-1 border border-oblue mt-2 rounded shadow-lg"
             placeholder=""
           />
           <span className="font-mont text-pblue mt-10">
@@ -121,7 +121,7 @@ const ContactForm = () => {
           </span>
           <input
             type="text"
-            className="px-3 py-1 border border-oblue mt-2"
+            className="px-3 py-1 border border-oblue mt-2 rounded shadow-lg"
             placeholder=""
           />
           <div className="px-5 py-2 mt-10 cursor-pointer hover:text-white hover:bg-pblue transition-all duration-500 border border-pblue font-mont text-center md:w-1/5">
