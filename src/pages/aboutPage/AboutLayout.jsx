@@ -27,14 +27,14 @@ const AboutLayout = () => {
           className="md:w-1/3 overflow-hidden md:shadow-xl shadow-pblue md:rounded m-5 md:m-0"
         >
           <img
-            src="https://images.unsplash.com/photo-1539627831859-a911cf04d3cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80"
+            src="https://plus.unsplash.com/premium_photo-1686244745902-3a6a84708a8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
             className="w-full h-full object-cover"
             ref={(el) => (aboutLayoutImageRef = el)}
           />
         </div>
         <div
           id="right-side-about-id"
-          className="md:w-2/3 flex flex-col justify-start mt-10 md:mt-0 px-5 md:px-10"
+          className="md:w-2/3 flex flex-col md:justify-center mt-10 md:mt-0 px-5 md:px-10"
         >
           <span className="font-inter text-[25px] md:text-[40px] text-center md:text-left font-extrabold text-ipink md:ml-[3vw]">
             Driving Collaborative Solutions
