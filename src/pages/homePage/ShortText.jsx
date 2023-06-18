@@ -1,9 +1,11 @@
 import { Power3, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import React, { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 const ShortText = () => {
   const ease = Power3.easeOut();
+  const navigate = useNavigate();
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     let ctx = gsap.context(() => {
@@ -42,6 +44,12 @@ const ShortText = () => {
             organizations and governments to create meaningful impact and
             navigate complex challenges.
           </span>
+          <div
+            onClick={() => navigate("/contact")}
+            className="cursor-pointer hidden md:flex justify-center mt-10 border border-white duration-500 transition-all hover:text-ipink hover:bg-white font-bold font-inter hover:border hover:border-ipink px-4 py-2 uppercase text-white bg-ipink"
+          >
+            Connect With Us
+          </div>
         </div>
         <div className="md:w-1/2 items-center justify-center overflow-hidden mt-5 md:mt-0 mb-10 md:mb-0">
           <img
