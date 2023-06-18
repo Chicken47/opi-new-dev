@@ -97,7 +97,7 @@ const ContactHero = () => {
               onClick={() => navigate("/")}
               className="cursor-pointer"
             >
-              <img src="/images/png/Union.png" className="h-[50px]" />
+              <img src="/images/png/Union.png" className="h-[70px]" />
             </div>
             <div className="flex text-white font-inter font-bold items-center space-x-10">
               <div
@@ -132,7 +132,7 @@ const ContactHero = () => {
                 ref={(el) => (lineOneRef = el)}
                 className="font-extrabold text-[20px] font-inter md:text-[45px] text-left text-ipink"
               >
-                Be part of our Network
+                Be part of our network.
               </span>
               <p
                 ref={(el) => (paraRef = el)}

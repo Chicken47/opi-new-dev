@@ -102,7 +102,7 @@ const AboutHero = () => {
             onClick={() => navigate("/")}
             className="cursor-pointer"
           >
-            <img src="/images/png/Union.png" className="h-[50px]" />
+            <img src="/images/png/Union.png" className="h-[70px]" />
           </div>
           <div className="flex text-white font-inter font-bold items-center space-x-10">
             <div
@@ -213,7 +213,7 @@ const AboutHero = () => {
                   marginLeft={-60}
                   marginTop={-40}
                   imageUrl={
-                    "https://media1.giphy.com/media/l49JMVDvP8D38LHwI/giphy.gif?cid=ecf05e473adsdytqksfnbrzcddsem69memj6maek1ekcavm9&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+                    "https://images.unsplash.com/photo-1571867424488-4565932edb41?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
                   }
                 />
               </div>

@@ -95,7 +95,7 @@ const InsightsHero = () => {
               onClick={() => navigate("/")}
               className="cursor-pointer"
             >
-              <img src="/images/png/Union.png" className="h-[50px]" />
+              <img src="/images/png/Union.png" className="h-[70px]" />
             </div>
             <div className="flex text-white font-inter font-bold items-center space-x-10">
               <div
@@ -279,7 +279,7 @@ const InsightsHero = () => {
         </div>
         <div className="w-full  bg-white px-5 flex md:hidden flex-col py-10">
           <span className="font-extrabold text-ipink font-inter text-center text-[32px]">
-            Our Insights
+            Our Work
           </span>
           <span className="text-black text-center font-jose text-[14px] px-5 mt-[3vh]">
             We believe in sharing knowledge and empowering our readers with

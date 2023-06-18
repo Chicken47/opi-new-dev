@@ -110,7 +110,7 @@ const ShortText = () => {
         </div>
         <div className="flex flex-row md:flex-col justify-center items-start px-5 md:w-1/2 max-w-[600px] md:pl-20 my-10">
           <span className="w-1/3 text-[22px] flex md:hidden text-right font-extrabold pr-10 -mt-2 mr-1 font-inter text-ipink">
-            {`Our Services`}
+            {`We can help with`}
           </span>
           <div className="flex flex-col w-2/3">
             <span className={`text-[18px] font-jose w-full`}>

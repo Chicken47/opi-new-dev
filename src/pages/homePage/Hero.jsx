@@ -117,7 +117,7 @@ const Hero = () => {
               onClick={() => navigate("/")}
               className="cursor-pointer"
             >
-              <img src="/images/png/Union.png" className="h-[50px]" />
+              <img src="/images/png/Union.png" className="h-[70px]" />
             </div>
             <div className="flex text-white font-inter font-bold items-center space-x-10">
               <div

@@ -4,7 +4,6 @@ import BlogCard from "../../components/BlogCard";
 import InsightsHero from "./InsightsHero";
 import Footer from "../../components/Footer";
 import LatestNews from "./LatestNews";
-import BlogItem from "./BlogItem";
 
 const InsightsPage = () => {
   const { getData } = useContentful();
@@ -14,10 +13,13 @@ const InsightsPage = () => {
     getData().then((response) => {
       console.log("custom hook response", response.items);
       setPostData(response.items);
-
       console.log(postData, "lmfao");
     });
   }, []);
+
+  useEffect(() => {
+    console.log(postData, "lmfao");
+  }, [postData]);
 
   return (
     <div className="flex flex-wrap justify-evenly">
@@ -69,7 +71,6 @@ const InsightsPage = () => {
         <BlogCard /> */}
       </div>
       <Footer />
-      {/* <BlogItem /> */}
     </div>
   );
 };

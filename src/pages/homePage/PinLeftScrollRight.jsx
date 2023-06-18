@@ -72,7 +72,7 @@ const PinLeftScrollRight = () => {
             </span>
             <div className="overflow-hidden hidden md:flex m-10 shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1465433045946-ba6506ce5a59?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+                src="https://images.unsplash.com/photo-1678390210450-22bd7664dc05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNvZGluZyUyMGxlYXJufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
                 alt=""
                 className="plsr-image"
               />
