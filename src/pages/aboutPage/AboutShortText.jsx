@@ -121,9 +121,6 @@ const AboutIntro = () => {
               organizations and governments to create meaningful impact and
               navigate complex challenges.
             </span>
-            <div className="px-8 py-2 mt-10 font-bold text-white uppercase hidden md:flex justify-center transition-all bg-ipink border-2 border-ipink rounded cursor-pointer hover:font-bold hover:border-2 hover:rounded-lg">
-              Check out more
-            </div>
           </div>
         </div>
         <div className="w-1/2 h-[80vh] hidden md:flex items-center justify-center m-10 overflow-hidden">

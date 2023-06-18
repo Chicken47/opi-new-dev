@@ -42,9 +42,6 @@ const ShortText = () => {
             organizations and governments to create meaningful impact and
             navigate complex challenges.
           </span>
-          <div className="px-8 py-2 mt-10 font-bold text-white uppercase transition-all bg-ipink border-2 border-ipink rounded cursor-pointer  hidden md:flex justify-center hover:font-bold hover:border-2 hover:rounded-lg">
-            Check out more
-          </div>
         </div>
         <div className="md:w-1/2 items-center justify-center overflow-hidden mt-5 md:mt-0 mb-10 md:mb-0">
           <img

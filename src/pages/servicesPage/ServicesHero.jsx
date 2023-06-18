@@ -99,18 +99,30 @@ const ServicesHero = () => {
             >
               <img src="/images/png/Union.png" className="h-[50px]" />
             </div>
-            <div className="flex items-center space-x-2">
-              <div ref={(el) => (header_item_one = el)}>
-                <TextHover text={"Who We Are"} path={"/about"} />
+            <div className="flex text-white font-inter font-bold items-center space-x-10">
+              <div
+                onClick={() => navigate("/about")}
+                ref={(el) => (header_item_one = el)}
+              >
+                <span className="cursor-pointer">Who We Are</span>
               </div>
-              <div ref={(el) => (header_item_two = el)}>
-                <TextHover text={"What We Do"} path={"/services"} />
+              <div
+                onClick={() => navigate("/services")}
+                ref={(el) => (header_item_two = el)}
+              >
+                <span className="cursor-pointer">What We Do</span>
               </div>
-              <div ref={(el) => (header_item_three = el)}>
-                <TextHover text={"Insights"} path={"/insights"} />
+              <div
+                onClick={() => navigate("/insights")}
+                ref={(el) => (header_item_three = el)}
+              >
+                <span className="cursor-pointer">Insights</span>
               </div>
-              <div ref={(el) => (header_item_four = el)}>
-                <TextHover text={"Connect With Us"} path={"/contact"} />
+              <div
+                onClick={() => navigate("/contact")}
+                ref={(el) => (header_item_four = el)}
+              >
+                <span className="cursor-pointer">Connect With Us</span>
               </div>
             </div>
           </div>

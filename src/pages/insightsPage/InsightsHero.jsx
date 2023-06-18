@@ -97,18 +97,30 @@ const InsightsHero = () => {
             >
               <img src="/images/png/Union.png" className="h-[50px]" />
             </div>
-            <div className="flex items-center space-x-2">
-              <div ref={(el) => (header_item_one = el)}>
-                <TextHover text={"Who We Are"} path={"/about"} />
+            <div className="flex text-white font-inter font-bold items-center space-x-10">
+              <div
+                onClick={() => navigate("/about")}
+                ref={(el) => (header_item_one = el)}
+              >
+                <span className="cursor-pointer">Who We Are</span>
               </div>
-              <div ref={(el) => (header_item_two = el)}>
-                <TextHover text={"What We Do"} path={"/services"} />
+              <div
+                onClick={() => navigate("/services")}
+                ref={(el) => (header_item_two = el)}
+              >
+                <span className="cursor-pointer">What We Do</span>
               </div>
-              <div ref={(el) => (header_item_three = el)}>
-                <TextHover text={"Insights"} path={"/insights"} />
+              <div
+                onClick={() => navigate("/insights")}
+                ref={(el) => (header_item_three = el)}
+              >
+                <span className="cursor-pointer">Insights</span>
               </div>
-              <div ref={(el) => (header_item_four = el)}>
-                <TextHover text={"Connect With Us"} path={"/contact"} />
+              <div
+                onClick={() => navigate("/contact")}
+                ref={(el) => (header_item_four = el)}
+              >
+                <span className="cursor-pointer">Connect With Us</span>
               </div>
             </div>
           </div>
@@ -147,11 +159,11 @@ const InsightsHero = () => {
                       "Our research papers offer comprehensive analyses, data-driven insights, and expert perspectives on various subjects. They provide valuable contributions to industry knowledge and guide informed decision-making."
                     }
                     width={300}
-                    height={400}
+                    height={300}
                     marginLeft={-280}
-                    marginTop={-220}
+                    marginTop={-10}
                     imageUrl={
-                      "https://media3.giphy.com/media/sRHX9qwNKQaQB48RAM/giphy.gif?cid=ecf05e47cdh2wlc34qki4v9ofmz407hmx1q1sa1taomm5fy6&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+                      "https://images.unsplash.com/photo-1532153955177-f59af40d6472?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzZWFyY2glMjBwYXBlcnN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
                     }
                   />
                 </div>
@@ -161,12 +173,12 @@ const InsightsHero = () => {
                     subtitles={
                       "Our case studies showcase successful projects, highlighting challenges, strategies, and measurable outcomes. They offer practical insights and lessons learned for effective problem-solving."
                     }
-                    width={280}
-                    height={290}
-                    marginTop={-330}
-                    marginLeft={50}
+                    width={400}
+                    height={250}
+                    marginTop={-300}
+                    marginLeft={-150}
                     imageUrl={
-                      "https://media.giphy.com/media/xUA7aPctmikpUjqUmI/giphy.gif"
+                      "https://images.unsplash.com/photo-1526378787940-576a539ba69d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80"
                     }
                   />
                 </div>
@@ -183,7 +195,7 @@ const InsightsHero = () => {
                     marginLeft={60}
                     marginTop={-30}
                     imageUrl={
-                      "https://images.unsplash.com/photo-1630673470267-417e4d361129?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80"
+                      "https://media2.giphy.com/media/JrXas5ecb4FkwbFpIE/giphy.gif?cid=ecf05e47oo8i116jgaf1mb99b58ltglg8wvsbbttq3brkzek&ep=v1_gifs_search&rid=giphy.gif&ct=g"
                     }
                   />
                 </div>

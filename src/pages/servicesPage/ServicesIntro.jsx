@@ -35,7 +35,7 @@ const ShortText = () => {
 
   return (
     <div className="w-full flex justify-center">
-      <div className="flex flex-col md:flex-row justify-between items-center max-w-[1366px] w-full md:px-0">
+      <div className="flex flex-col md:flex-row justify-between items-center max-w-[1366px] mt-0 md:mt-8 w-full md:px-0">
         <div className="w-full h-[10vh] flex md:hidden items-center justify-between px-5 py-3">
           <img
             onClick={() => navigate("/")}
@@ -122,14 +122,11 @@ const ShortText = () => {
               organizations and governments to create meaningful impact and
               navigate complex challenges.
             </span>
-            <div className="px-8 py-2 mt-10 font-bold text-white uppercase hidden md:flex justify-center transition-all bg-ipink border-2 border-ipink rounded cursor-pointer hover:font-bold hover:border-2 hover:rounded-lg">
-              Check out more
-            </div>
           </div>
         </div>
         <div className="md:w-1/2 flex items-center mt-8 md:mt-0 justify-center overflow-hidden">
           <img
-            src="/images/png/about-focus-three.png"
+            src="https://images.unsplash.com/photo-1573166801077-d98391a43199?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80"
             className="object-cover md:w-4/5 object-center overflow-hidden h-full w-full services-about-image"
           />
         </div>

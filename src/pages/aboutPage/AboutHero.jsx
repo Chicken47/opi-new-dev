@@ -104,18 +104,30 @@ const AboutHero = () => {
           >
             <img src="/images/png/Union.png" className="h-[50px]" />
           </div>
-          <div className="flex items-center space-x-2">
-            <div ref={(el) => (header_item_one = el)}>
-              <TextHover text={"Who We Are"} path={"/about"} />
+          <div className="flex text-white font-inter font-bold items-center space-x-10">
+            <div
+              onClick={() => navigate("/about")}
+              ref={(el) => (header_item_one = el)}
+            >
+              <span className="cursor-pointer">Who We Are</span>
             </div>
-            <div ref={(el) => (header_item_two = el)}>
-              <TextHover text={"What We Do"} path={"/services"} />
+            <div
+              onClick={() => navigate("/services")}
+              ref={(el) => (header_item_two = el)}
+            >
+              <span className="cursor-pointer">What We Do</span>
             </div>
-            <div ref={(el) => (header_item_three = el)}>
-              <TextHover text={"Insights"} path={"/insights"} />
+            <div
+              onClick={() => navigate("/insights")}
+              ref={(el) => (header_item_three = el)}
+            >
+              <span className="cursor-pointer">Insights</span>
             </div>
-            <div ref={(el) => (header_item_four = el)}>
-              <TextHover text={"Connect With Us"} path={"/contact"} />
+            <div
+              onClick={() => navigate("/contact")}
+              ref={(el) => (header_item_four = el)}
+            >
+              <span className="cursor-pointer">Connect With Us</span>
             </div>
           </div>
         </div>
@@ -150,9 +162,9 @@ const AboutHero = () => {
                     "Improving access to information enhances knowledge sharing and empowers individuals with the tools to make informed decisions, fostering a more inclusive society."
                   }
                   width={350}
-                  height={200}
+                  height={230}
                   marginLeft={-280}
-                  marginTop={-250}
+                  marginTop={-300}
                   imageUrl={
                     "https://media0.giphy.com/media/GtYcMGjx8vy6TiKI3m/giphy.gif?cid=ecf05e47soxs9kqsimh57m34z4q4n0snt2pcozovb8nik9g9&ep=v1_gifs_search&rid=giphy.gif&ct=g"
                   }
@@ -167,7 +179,7 @@ const AboutHero = () => {
                   width={280}
                   height={290}
                   marginTop={-320}
-                  marginLeft={120}
+                  marginLeft={90}
                   imageUrl={
                     "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
                   }
@@ -184,7 +196,7 @@ const AboutHero = () => {
                   width={230}
                   height={290}
                   marginLeft={-300}
-                  marginTop={-10}
+                  marginTop={-60}
                   imageUrl={
                     "https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
                   }
@@ -199,7 +211,7 @@ const AboutHero = () => {
                   width={230}
                   height={290}
                   marginLeft={-60}
-                  marginTop={-10}
+                  marginTop={-40}
                   imageUrl={
                     "https://media1.giphy.com/media/l49JMVDvP8D38LHwI/giphy.gif?cid=ecf05e473adsdytqksfnbrzcddsem69memj6maek1ekcavm9&ep=v1_gifs_search&rid=giphy.gif&ct=g"
                   }
