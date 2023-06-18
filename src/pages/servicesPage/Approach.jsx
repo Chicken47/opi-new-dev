@@ -27,7 +27,7 @@ const Approach = () => {
           className="md:w-1/3 overflow-hidden hidden md:flex shadow-xl shadow-pblue rounded mx-10 md:mx-0"
         >
           <img
-            src="https://images.unsplash.com/photo-1627215750463-3386c8ed92ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+            src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80"
             className="w-full h-full object-cover"
             ref={(el) => (aboutLayoutImageRef = el)}
           />

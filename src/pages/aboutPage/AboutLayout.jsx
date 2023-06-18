@@ -27,7 +27,7 @@ const AboutLayout = () => {
           className="md:w-1/3 overflow-hidden md:shadow-xl shadow-pblue md:rounded m-5 md:m-0"
         >
           <img
-            src="https://plus.unsplash.com/premium_photo-1686244745902-3a6a84708a8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+            src="https://images.unsplash.com/photo-1535957998253-26ae1ef29506?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80"
             className="w-full h-full object-cover"
             ref={(el) => (aboutLayoutImageRef = el)}
           />

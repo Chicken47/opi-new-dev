@@ -14,7 +14,8 @@ const InsightsPage = () => {
     getData().then((response) => {
       console.log("custom hook response", response.items);
       setPostData(response.items);
-      console.log(postData);
+
+      console.log(postData, "lmfao");
     });
   }, []);
 
@@ -23,14 +24,49 @@ const InsightsPage = () => {
       <InsightsHero />
       <LatestNews />
       <div className="p-10 w-full flex flex-wrap justify-evenly">
+        <BlogCard
+          title={postData[0]?.fields?.title}
+          subtitle={postData[0]?.fields?.subtitle}
+        />
+        <BlogCard
+          title={postData[0]?.fields?.title}
+          subtitle={postData[0]?.fields?.subtitle}
+        />
+        <BlogCard
+          title={postData[0]?.fields?.title}
+          subtitle={postData[0]?.fields?.subtitle}
+        />
+        <BlogCard
+          title={postData[0]?.fields?.title}
+          subtitle={postData[0]?.fields?.subtitle}
+        />
+        <BlogCard
+          title={postData[0]?.fields?.title}
+          subtitle={postData[0]?.fields?.subtitle}
+        />
+        <BlogCard
+          title={postData[0]?.fields?.title}
+          subtitle={postData[0]?.fields?.subtitle}
+        />
+        <BlogCard
+          title={postData[0]?.fields?.title}
+          subtitle={postData[0]?.fields?.subtitle}
+        />
+        <BlogCard
+          title={postData[0]?.fields?.title}
+          subtitle={postData[0]?.fields?.subtitle}
+        />
+        <BlogCard
+          title={postData[0]?.fields?.title}
+          subtitle={postData[0]?.fields?.subtitle}
+        />
+        {/* <BlogCard />
         <BlogCard />
         <BlogCard />
         <BlogCard />
         <BlogCard />
         <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+        <BlogCard /> */}
       </div>
       <Footer />
       {/* <BlogItem /> */}
